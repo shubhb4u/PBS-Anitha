@@ -1,0 +1,738 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Shop Now",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "0rem",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"690d0410-2a48-4f96-a85d-66da0bd838d4\",\"columns\":[{\"UUID\":\"1e1cff6c-9be0-4f74-ab6b-d1d468ee17e0\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "bannerAlignment" : "left",
+                "bannerLinkAssistiveText" : "",
+                "borderColor" : "",
+                "borderRadius" : 0,
+                "borderWidth" : 0,
+                "buttonDirection" : "horizontal",
+                "buttonGroupAlignment" : "left",
+                "buttonGroupHeight" : 50,
+                "buttonGroupSpacingHorizontal" : "space-evenly",
+                "buttonGroupSpacingVertical" : "space-evenly",
+                "buttonGroupWidth" : 50,
+                "contentPadding" : "large",
+                "contentPosition" : "bottom left",
+                "contentWidth" : 50,
+                "height" : 502,
+                "imageFit" : "cover",
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"\",\"altText\":\"\",\"contentKey\":\"MCKV7R3XLRJRBBFGCW7L4MX7SVGE\",\"contentType\":null}}",
+                "imagePosition" : "center center",
+                "isBannerLink" : false,
+                "overlayColor" : "",
+                "showButtons" : true,
+                "showSecondaryButton" : false,
+                "singleButtonAlignment" : "left",
+                "width" : 100
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "richTextValue" : "<div class = \"snbannerheading\">\n      Designed for Cell <br>\n        Therapy Processes \n</div>\n<div class = \"shopnowbannerparagraph\">\n      The Vertical-Wheel® bioreactor family provides robust, scalable, <br>\n        and flexible performance for any stage of cell manufacturing. \n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "33cc0884-f126-4027-9c02-2b1f902c8801",
+                  "type" : "component"
+                } ],
+                "id" : "f9593033-fba4-4091-8d8b-03d00d6d5dbc",
+                "name" : "contentRegion",
+                "title" : "contentRegion",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "",
+                        "top" : "15px"
+                      }
+                    },
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Request Quote",
+                    "type" : "primary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "2914636b-4f2d-48dc-9ce6-770a944bb60e",
+                  "type" : "component"
+                } ],
+                "id" : "0bd41bac-8293-4728-9d85-15f48d9f3f07",
+                "name" : "bannerPrimaryButton",
+                "title" : "bannerPrimaryButton",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Contact Us",
+                    "type" : "secondary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "78ab9821-fab3-4881-824a-a06df04f2928",
+                  "type" : "component"
+                } ],
+                "id" : "9d739dc6-5bce-47d5-a5c5-ee6e3600ac38",
+                "name" : "bannerSecondaryButton",
+                "title" : "bannerSecondaryButton",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "dxp_page_layout:placeHolder",
+                  "id" : "c13d9e1d-c848-4344-b0f2-0a6aa279692c",
+                  "type" : "component"
+                } ],
+                "id" : "be6ff137-0d0f-4788-9c38-4c4098664ec2",
+                "name" : "placeholder",
+                "title" : "placeholder",
+                "type" : "region"
+              } ],
+              "customCssClasses" : "shopnow-banner",
+              "definition" : "dxp_content_layout:banner",
+              "id" : "5824bba2-921b-4aae-9d4e-1a4559ea6945",
+              "type" : "component",
+              "dataProviders" : [ {
+                "definition" : "sfdc_cms__cmsDetailDataProvider",
+                "sfdcExpressionKey" : "Item",
+                "attributes" : {
+                  "contentKey" : "MCKV7R3XLRJRBBFGCW7L4MX7SVGE"
+                }
+              } ]
+            } ],
+            "id" : "1e1cff6c-9be0-4f74-ab6b-d1d468ee17e0",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "690d0410-2a48-4f96-a85d-66da0bd838d4",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "0rem",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"4e3d06d8-58e6-426c-aa3e-0f8fefed15eb\",\"columns\":[{\"UUID\":\"3c004dfd-453b-4a85-b47f-7b7954c4a566\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "2%",
+                    "left" : "15%",
+                    "right" : "",
+                    "top" : "1%"
+                  }
+                },
+                "richTextValue" : "<div> \n    <h1 class =\"shopnowheading\"> Single-Use Systems for All Your Scale Up Needs </h1>\n</div>\n\n<div> \n    <h2 class =\"shopnowparagraph\"> From small scale process development to large scale clinical and commercial production, Vertical-<br>\n        Wheel bioreactors are the enabling technology for allogeneic cell therapies. All bioreactors, including <br>\n        product contact materials and software, are manufactured to meet or exceed cGMP quality and <br>\n        regulatory standards. </h2>\n</div>"
+              },
+              "customCssClasses" : "shop-nowbg",
+              "definition" : "community_builder:htmlEditor",
+              "id" : "80f86c8a-03a4-48f5-a2ae-f2abcd37f2ed",
+              "type" : "component"
+            } ],
+            "id" : "3c004dfd-453b-4a85-b47f-7b7954c4a566",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "4e3d06d8-58e6-426c-aa3e-0f8fefed15eb",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "{\"url\":\"/sfsites/c/cms/delivery/media/MCZBZK2Q5F2BELZOPQF6LTNZHATA?lastModifiedDate=Fri Mar 29 11:16:38 GMT 2024&height=144&width=192\",\"contentKey\":\"MCZBZK2Q5F2BELZOPQF6LTNZHATA\",\"altText\":\"\",\"contentType\":\"sfdc_cms__image\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
+            "backgroundImageOverlay" : "rgba(255, 255, 255, 0.61)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "50px",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"8e6cf87b-f8d6-44fc-a173-28326823a617\",\"columns\":[{\"UUID\":\"cf6334ec-9845-496f-95b8-31e80a17a2d1\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"503605cd-b19b-499d-8277-07690c339202\",\"columnName\":\"Column 2\",\"columnKey\":\"68adf\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "columnGutterWidth" : "",
+                "sectionConfig" : "{\"UUID\":\"2c88c613-d574-4c9c-9a92-f69e6361c2ad\",\"columns\":[{\"UUID\":\"a498e861-6fd9-43ad-9624-9dd73a608448\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "22%",
+                        "right" : "",
+                        "top" : "2%"
+                      }
+                    },
+                    "richTextValue" : "<div class = \"Productheading\"> PBS-Mini Vertical-Wheel Bioreactor</div>\n<div class = \"productdescription\"> The entry-level tool for representative process development. 0.1 <br>\n    and 0.5 L maximum working volumes available.</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "0b910b6f-644f-4113-9928-cafd8b6c66d9",
+                  "type" : "component"
+                } ],
+                "id" : "a498e861-6fd9-43ad-9624-9dd73a608448",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "2c88c613-d574-4c9c-9a92-f69e6361c2ad",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "columnGutterWidth" : "0rem",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "15px",
+                    "right" : "",
+                    "top" : "25px"
+                  }
+                },
+                "sectionConfig" : "{\"UUID\":\"7c931053-4b2f-4f34-898d-e2dc00b1f60d\",\"columns\":[{\"UUID\":\"ea115d7d-1a3e-4f46-81d0-df0bb21c12f1\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"ad221b52-a41d-4a79-9838-9222673da0f0\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "14%",
+                        "right" : "",
+                        "top" : "0%"
+                      }
+                    },
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Product Details",
+                    "type" : "primary",
+                    "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHFIAZ\"},\"state\":{\"recordName\":\"PBS-Mini Vertical-Wheel Bioreactor\"}}}}"
+                  },
+                  "customCssClasses" : "shopnow-button",
+                  "definition" : "dxp_base:button",
+                  "id" : "0db0ead6-1130-4281-b22e-73e751c453e9",
+                  "type" : "component"
+                } ],
+                "id" : "ea115d7d-1a3e-4f46-81d0-df0bb21c12f1",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Request Quote",
+                    "type" : "primary"
+                  },
+                  "customCssClasses" : "",
+                  "definition" : "dxp_base:button",
+                  "id" : "438ae5a0-be58-4099-9dea-60fc9cbad5f5",
+                  "type" : "component"
+                } ],
+                "id" : "ad221b52-a41d-4a79-9838-9222673da0f0",
+                "name" : "col2",
+                "title" : "Column 2",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "7c931053-4b2f-4f34-898d-e2dc00b1f60d",
+              "type" : "component"
+            } ],
+            "id" : "cf6334ec-9845-496f-95b8-31e80a17a2d1",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : "5px"
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MC5724FWFPK5AY5NP7TQOGQ2VG7Q?lastModifiedDate=Tue Mar 12 04:18:45 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MC5724FWFPK5AY5NP7TQOGQ2VG7Q\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 70
+              },
+              "definition" : "dxp_base:image",
+              "id" : "d694424f-f8c4-4e8e-a0cb-d15267036c2c",
+              "type" : "component"
+            } ],
+            "id" : "503605cd-b19b-499d-8277-07690c339202",
+            "name" : "68adf",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8e6cf87b-f8d6-44fc-a173-28326823a617",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "{\"url\":\"/sfsites/c/cms/delivery/media/MCZBZK2Q5F2BELZOPQF6LTNZHATA?lastModifiedDate=Fri Mar 29 11:16:38 GMT 2024&height=144&width=192\",\"contentKey\":\"MCZBZK2Q5F2BELZOPQF6LTNZHATA\",\"altText\":\"\",\"contentType\":\"sfdc_cms__image\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
+            "backgroundImageOverlay" : "rgba(255, 255, 255, 0.61)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "50px",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"45ee9e1b-7a0d-4c29-a993-71835552e74f\",\"columns\":[{\"UUID\":\"6ac02c3b-228e-42f9-8ec8-96ecee2042ea\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"fdf80449-5be8-42ad-8b6b-a926bd7fe6b2\",\"columnName\":\"Column 2\",\"columnKey\":\"b8f85\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "22%",
+                    "right" : "",
+                    "top" : "3%"
+                  }
+                },
+                "richTextValue" : "<div class = \"Productheading\"> PBS-3 Vertical-Wheel Bioreactor</div>\n<div class = \"productdescription\">Take your process development to the next level with this full <br>\n    feature bioreactor. 3L maximum working volume.</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "7122823d-bc1a-4af8-887b-0c33adaa180a",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "columnGutterWidth" : "0rem",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "15px",
+                    "right" : "",
+                    "top" : "25px"
+                  }
+                },
+                "sectionConfig" : "{\"UUID\":\"457a8623-5069-4a60-a09b-8251011df993\",\"columns\":[{\"UUID\":\"0f99552b-fd12-4bde-8ae0-e9bd9dd0791d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"d07f5161-ca57-48ff-8a11-7fee8d4cbda0\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "12%",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Product Details",
+                    "type" : "primary",
+                    "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHKIAZ\"},\"state\":{\"recordName\":\"PBS-3 Vertical-Wheel Bioreactor\"}}}}"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "381c86fa-f917-4f74-b24d-41adbff0db2b",
+                  "type" : "component"
+                } ],
+                "id" : "0f99552b-fd12-4bde-8ae0-e9bd9dd0791d",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Request Quote",
+                    "type" : "primary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "75849267-b579-47ec-bb74-72521ad433fc",
+                  "type" : "component"
+                } ],
+                "id" : "d07f5161-ca57-48ff-8a11-7fee8d4cbda0",
+                "name" : "col2",
+                "title" : "Column 2",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "457a8623-5069-4a60-a09b-8251011df993",
+              "type" : "component"
+            } ],
+            "id" : "6ac02c3b-228e-42f9-8ec8-96ecee2042ea",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCTRVLTLZKOBAOTIVNSQX2YXCFRE?lastModifiedDate=Tue Mar 12 04:19:40 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCTRVLTLZKOBAOTIVNSQX2YXCFRE\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 45
+              },
+              "definition" : "dxp_base:image",
+              "id" : "3c31daf6-2967-4c70-a846-7d3a3fe962b7",
+              "type" : "component"
+            } ],
+            "id" : "fdf80449-5be8-42ad-8b6b-a926bd7fe6b2",
+            "name" : "b8f85",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "45ee9e1b-7a0d-4c29-a993-71835552e74f",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "{\"url\":\"/sfsites/c/cms/delivery/media/MCZBZK2Q5F2BELZOPQF6LTNZHATA?lastModifiedDate=Fri Mar 29 11:16:38 GMT 2024&height=144&width=192\",\"contentKey\":\"MCZBZK2Q5F2BELZOPQF6LTNZHATA\",\"altText\":\"\",\"contentType\":\"sfdc_cms__image\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
+            "backgroundImageOverlay" : "rgba(255, 255, 255, 0.61)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "50px",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"7cfbaf67-3f65-41e5-9015-e2150e3dca1c\",\"columns\":[{\"UUID\":\"18199b16-aee8-4c55-a915-358bdc0f971d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"6c7b110c-651a-485a-a66b-111e0091b934\",\"columnName\":\"Column 2\",\"columnKey\":\"42a7a\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "22%",
+                    "right" : "",
+                    "top" : "2%"
+                  }
+                },
+                "richTextValue" : "<div class = \"Productheading\"> PBS-15 Vertical-Wheel Bioreactor</div>\n<div class = \"productdescription\">Continue your cell culture process scale up for clinical stage <br>\n    production. 15L maximum working volume.</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "22b4de9d-cbc3-4462-b943-08edd478161a",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "columnGutterWidth" : "0rem",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "15px",
+                    "right" : "",
+                    "top" : "25px"
+                  }
+                },
+                "sectionConfig" : "{\"UUID\":\"8b2a9276-b577-465f-ab62-adaaf2590f4b\",\"columns\":[{\"UUID\":\"c5be4934-a82f-4a56-9830-e49263158cd2\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"c5422f47-5f36-44e5-b137-7f689d6614b8\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "12%",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Product Details",
+                    "type" : "primary",
+                    "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHPIAZ\"},\"state\":{\"recordName\":\"PBS-15 Vertical-Wheel Bioreactor\"}}}}"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "5af802f2-dfc7-4d46-a384-bff05e5b8abb",
+                  "type" : "component"
+                } ],
+                "id" : "c5be4934-a82f-4a56-9830-e49263158cd2",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Request Quote",
+                    "type" : "primary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "7a332a2c-d010-4434-a8a5-3f1c8252f704",
+                  "type" : "component"
+                } ],
+                "id" : "c5422f47-5f36-44e5-b137-7f689d6614b8",
+                "name" : "col2",
+                "title" : "Column 2",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "8b2a9276-b577-465f-ab62-adaaf2590f4b",
+              "type" : "component"
+            } ],
+            "id" : "18199b16-aee8-4c55-a915-358bdc0f971d",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCAOT7CO6YFZCIPHPMMNVLE5AGMI?lastModifiedDate=Tue Mar 12 04:21:03 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCAOT7CO6YFZCIPHPMMNVLE5AGMI\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 50
+              },
+              "definition" : "dxp_base:image",
+              "id" : "456ba047-7904-44e1-9d64-def4ec6a3a7c",
+              "type" : "component"
+            } ],
+            "id" : "6c7b110c-651a-485a-a66b-111e0091b934",
+            "name" : "42a7a",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "7cfbaf67-3f65-41e5-9015-e2150e3dca1c",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "{\"url\":\"/sfsites/c/cms/delivery/media/MCZBZK2Q5F2BELZOPQF6LTNZHATA?lastModifiedDate=Fri Mar 29 11:16:38 GMT 2024&height=144&width=192\",\"contentKey\":\"MCZBZK2Q5F2BELZOPQF6LTNZHATA\",\"altText\":\"\",\"contentType\":\"sfdc_cms__image\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
+            "backgroundImageOverlay" : "rgba(255, 255, 255, 0.61)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"9118d7eb-b6af-43f4-90c7-8594fba44bab\",\"columns\":[{\"UUID\":\"60558791-0e60-41a7-a59f-12d5c4bd88a0\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"601f7aaf-0580-4f23-9373-79eeda39febd\",\"columnName\":\"Column 2\",\"columnKey\":\"bf2d8\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "22%",
+                    "right" : "",
+                    "top" : "2%"
+                  }
+                },
+                "richTextValue" : "<div class = \"Productheading\"> PBS-80 Vertical-Wheel Bioreactor</div>\n<div class = \"productdescription\">Prepare for commercial-scale manufacturing of your cell <br>\n    therapy products. 80L maximum working volume.</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "523af003-53dc-4f12-8068-63fac48c12b5",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "columnGutterWidth" : "0rem",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "15px",
+                    "right" : "",
+                    "top" : "25px"
+                  }
+                },
+                "sectionConfig" : "{\"UUID\":\"9d99914d-c0f3-47c7-b277-738473ad7f27\",\"columns\":[{\"UUID\":\"cabc934f-150c-4851-b697-f81cf424a37f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"4d155ade-be5a-4087-b369-c4f73fede121\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "12%",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Product Details",
+                    "type" : "primary",
+                    "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHLIAZ\"},\"state\":{\"recordName\":\"PBS-80 Vertical-Wheel Bioreactor\"}}}}"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "5c9f1650-6f97-4af3-97a3-0cbc636fb092",
+                  "type" : "component"
+                } ],
+                "id" : "cabc934f-150c-4851-b697-f81cf424a37f",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Request Quote",
+                    "type" : "primary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "0d140d68-e389-4f6a-925c-91ab7bb095bb",
+                  "type" : "component"
+                } ],
+                "id" : "4d155ade-be5a-4087-b369-c4f73fede121",
+                "name" : "col2",
+                "title" : "Column 2",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "9d99914d-c0f3-47c7-b277-738473ad7f27",
+              "type" : "component"
+            } ],
+            "id" : "60558791-0e60-41a7-a59f-12d5c4bd88a0",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MC4JH7FQN4ZZGQDLQZJ73XDTIY3I?lastModifiedDate=Tue Mar 12 04:22:18 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MC4JH7FQN4ZZGQDLQZJ73XDTIY3I\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 40
+              },
+              "definition" : "dxp_base:image",
+              "id" : "de46d040-ddeb-4ab3-b9e5-75af0a2f6751",
+              "type" : "component"
+            } ],
+            "id" : "601f7aaf-0580-4f23-9373-79eeda39febd",
+            "name" : "bf2d8",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "9118d7eb-b6af-43f4-90c7-8594fba44bab",
+          "type" : "component"
+        } ],
+        "id" : "d9b17877-ac8b-4773-a432-64c1ab1a5f66",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Shop Now",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "d146c28e-2dc1-4d00-a4c6-1f543be218f3",
+          "type" : "component"
+        } ],
+        "id" : "a3cc836c-6064-4fdb-aa8a-e42635101ad9",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "77486945-fb16-436e-b1b3-c96393e72ade",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-shop-now"
+  }
+}

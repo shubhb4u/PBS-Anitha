@@ -1,0 +1,27 @@
+{
+  "type" : "sfdc_cms__trustedSites",
+  "title" : "trustedSites",
+  "contentBody" : {
+    "trustedSites" : [ {
+      "isActive" : true,
+      "source" : "https://youtu.be/AbYiNR9Qgm8?si=0gLMKkq4nB9I_oJk",
+      "sourceName" : "Video"
+    }, {
+      "isActive" : true,
+      "source" : "https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730621f484eda_download-icon.svg",
+      "sourceName" : "Icon"
+    }, {
+      "isActive" : true,
+      "source" : "https://assets-global.website-files.com/62cc627d7fe730df74484ebd/65247c99f7f5eb41b2fef558_Life%20Sciences%20Review%20-%20Editor%27s%20Choice%202023.pdf",
+      "sourceName" : "PDF"
+    }, {
+      "isActive" : true,
+      "source" : "https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe7301598484edc_footer-logo.svg",
+      "sourceName" : "Footer Logo"
+    }, {
+      "isActive" : true,
+      "source" : "https://code.jquery.com/jquery-3.2.1.slim.min.js",
+      "sourceName" : "Javascript"
+    } ]
+  }
+}

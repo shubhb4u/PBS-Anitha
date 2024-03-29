@@ -1,0 +1,775 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Commerce Layout",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "hidePromoBanner" : false,
+            "hideWishlistShortcut" : true
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "columnGutterWidth" : "0rem",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "50px",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "sectionConfig" : "{\"UUID\":\"9d4c5d72-cd6a-4c2f-89fe-98ebec48d82f\",\"columns\":[{\"UUID\":\"dcf68b02-81dc-4788-b7cf-f07c2ecaf2e2\",\"columnName\":\"Column 1\",\"columnKey\":\"f75ba\",\"columnWidth\":\"3\",\"seedComponents\":[]},{\"UUID\":\"0024b966-bf60-44c8-ad40-c389fa04ca2e\",\"columnName\":\"Column 2\",\"columnKey\":\"1c1da\",\"columnWidth\":\"9\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "100px",
+                        "right" : "",
+                        "top" : "15px"
+                      }
+                    },
+                    "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCADHW3P5DK5GMPIUWDDDI35A5GY?lastModifiedDate=Mon Mar 11 09:24:23 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCADHW3P5DK5GMPIUWDDDI35A5GY\",\"contentType\":null}}",
+                    "logoWidth" : 150
+                  },
+                  "definition" : "dxp_content_layout:siteLogo",
+                  "id" : "36838822-85ea-4936-88ec-d985458cdd4b",
+                  "type" : "component"
+                } ],
+                "id" : "dcf68b02-81dc-4788-b7cf-f07c2ecaf2e2",
+                "name" : "f75ba",
+                "title" : "Column 1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "20px",
+                        "top" : ""
+                      },
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "70px",
+                        "right" : "",
+                        "top" : "20px"
+                      }
+                    },
+                    "navigationMenuEditor" : "Default_Navigation2",
+                    "showBackLabel" : false,
+                    "showHomeLink" : true
+                  },
+                  "definition" : "commerce_builder:drilldownNavigation",
+                  "id" : "669ad59d-7eed-4f41-89ba-53539f2f3803",
+                  "type" : "component"
+                } ],
+                "id" : "0024b966-bf60-44c8-ad40-c389fa04ca2e",
+                "name" : "1c1da",
+                "title" : "Column 2",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "9d4c5d72-cd6a-4c2f-89fe-98ebec48d82f",
+              "type" : "component"
+            } ],
+            "id" : "3916381f-72db-424f-82ba-12738f7818d8",
+            "name" : "promoBanner",
+            "title" : "Rich Text Editor (Promo Banner)",
+            "type" : "region"
+          }, {
+            "id" : "2440e407-ed6c-4e8c-8823-ea3c688f8237",
+            "name" : "storeLogo",
+            "title" : "Site Logo",
+            "type" : "region"
+          }, {
+            "id" : "1f172faa-37ab-4d44-becf-8127f0829267",
+            "name" : "navigation",
+            "title" : "Multilevel Navigation Menu",
+            "type" : "region"
+          }, {
+            "id" : "eec97d20-7ba3-44bd-a29b-6ef2f06e2175",
+            "name" : "searchInput",
+            "title" : "Search Bar",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "iconStyle" : "userIcon",
+                "includeCompanyName" : false,
+                "logOutLabel" : "Log Out",
+                "loginLinkText" : "Log In",
+                "loginLinkTextColor" : "rgb(238, 159, 64)",
+                "loginLinkTextDecoration" : "{\"underline\":true}",
+                "loginLinkTextOrientation" : "leftOfIcon",
+                "menuStyle" : "iconAndName",
+                "userNameTextOrientation" : "leftOfIcon",
+                "userProfileMenuNavigationMenuEditor" : "Default_User_Profile_Menu2"
+              },
+              "definition" : "commerce_builder:userProfileMenu",
+              "id" : "f83a9d30-b1ed-4f4a-84ff-80ae57bd4f52",
+              "type" : "component"
+            } ],
+            "id" : "cdf1fdff-2b3b-4a3e-ba70-e26495fd973b",
+            "name" : "myAccount",
+            "title" : "Profile Menu",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "iconType" : "heart"
+              },
+              "definition" : "commerce_builder:wishlistShortcut",
+              "id" : "0def5138-efd5-4c4a-a006-ca99d8750b66",
+              "type" : "component"
+            } ],
+            "id" : "6a7422ae-86bc-4259-8cd6-33175b2089fb",
+            "name" : "wishlist",
+            "title" : "List Badge",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "countType" : "TotalProductCount",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "iconLinkColor" : "rgb(238, 159, 64)",
+                "showCount" : true
+              },
+              "definition" : "commerce_builder:cartBadge",
+              "id" : "c07df883-fe99-4f16-bda6-7d9b9dbffdc9",
+              "type" : "component"
+            } ],
+            "id" : "57e47431-7635-4d4f-a6bb-8bd007fd0005",
+            "name" : "cart",
+            "title" : "Cart Badge",
+            "type" : "region"
+          } ],
+          "definition" : "commerce_builder:layoutHeader",
+          "id" : "8d850dd6-4aed-4426-9dd7-affcf859b6f7",
+          "type" : "component"
+        } ],
+        "id" : "2bad0280-56bc-408d-a580-71a72acb7646",
+        "name" : "header",
+        "title" : "Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundColor" : "rgb(35, 59, 91)"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundImageConfig" : "",
+                "backgroundImageOverlay" : "rgba(0,0,0,0)",
+                "componentSpacerSize" : "0rem",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "50px",
+                    "left" : "",
+                    "right" : "30px",
+                    "top" : ""
+                  }
+                },
+                "maxContentWidth" : "",
+                "sectionColumnGutterWidth" : "",
+                "sectionConfig" : "{\"UUID\":\"d4f4304f-7197-4185-a45f-2af0b9412ae7\",\"columns\":[{\"UUID\":\"30d80017-115d-4cbc-b036-bf94ec12c6a7\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"5\",\"seedComponents\":null},{\"UUID\":\"365ecf67-b352-4a52-a38d-7afa3aa39fe6\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"7\",\"seedComponents\":null}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "35px",
+                        "right" : "",
+                        "top" : "27px"
+                      }
+                    },
+                    "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCWK4EH7H4GZEUPLEFYXPDEYK5EQ?lastModifiedDate=Wed Mar 13 06:13:23 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCWK4EH7H4GZEUPLEFYXPDEYK5EQ\",\"contentType\":null}}",
+                    "logoWidth" : 210
+                  },
+                  "definition" : "dxp_content_layout:siteLogo",
+                  "id" : "fbfd056e-0d6f-4c33-a742-19763ffcff94",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "36%",
+                        "right" : "",
+                        "top" : "7%"
+                      }
+                    },
+                    "richTextValue" : "<p class = \"address\">PBS Biotech, Inc. <br>\n4721 Calle Carga <br>\nCamarillo, CA 93012​ <br>\n    USA</p>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "0f761b51-319d-4ccc-9e6d-d077d156040a",
+                  "type" : "component"
+                } ],
+                "id" : "30d80017-115d-4cbc-b036-bf94ec12c6a7",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "columnGutterWidth" : "0rem",
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "30px",
+                        "top" : "25px"
+                      }
+                    },
+                    "sectionConfig" : "{\"UUID\":\"61be2086-d3cd-4d73-a1fa-bf3f8172cc0c\",\"columns\":[{\"UUID\":\"83560478-24a6-4f6c-a043-7ac951ef148f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"4144ff92-ac13-4e69-85a4-31e06dd2de92\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"e6b6ecd3-8193-457e-9986-812a8546b6d4\",\"columnName\":\"Column 3\",\"columnKey\":\"18313\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"d8341b01-83f1-4565-ad5e-8bdeb99bb399\",\"columnName\":\"Column 4\",\"columnKey\":\"9312f\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"47498b46-2d4a-4862-b255-49400fa1710f\",\"columnName\":\"Column 5\",\"columnKey\":\"53656\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"381d530c-c2cf-4d60-9c09-7c7bd3367a9b\",\"columnName\":\"Column 6\",\"columnKey\":\"16a9e\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}"
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : true,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Home",
+                        "textAlign" : "center",
+                        "textColor" : "rgb(255, 255, 255)",
+                        "textDecoration" : "{\"bold\":true}",
+                        "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}",
+                        "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"comm__namedPage\",\"attributes\":{\"name\":\"Home\"}}}}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "b2a4db83-cdca-4462-a45f-88df8deb7398",
+                      "type" : "component"
+                    } ],
+                    "id" : "83560478-24a6-4f6c-a043-7ac951ef148f",
+                    "name" : "col1",
+                    "title" : "Column 1",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Technology",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(255, 255, 255)",
+                        "textDecoration" : "{\"bold\":true}",
+                        "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "205c4eef-0b8a-4ccb-8d94-09f6efa85fcd",
+                      "type" : "component"
+                    } ],
+                    "id" : "4144ff92-ac13-4e69-85a4-31e06dd2de92",
+                    "name" : "col2",
+                    "title" : "Column 2",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "dxpStyle" : {
+                          "margin" : {
+                            "bottom" : "",
+                            "left" : "",
+                            "right" : "",
+                            "top" : ""
+                          }
+                        },
+                        "isLinkable" : true,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Products",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(255, 255, 255)",
+                        "textDecoration" : "{\"bold\":true}",
+                        "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}",
+                        "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__webPage\",\"attributes\":{}}}}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "ca38e735-074e-4d72-9524-34fda89e3a82",
+                      "type" : "component"
+                    } ],
+                    "id" : "e6b6ecd3-8193-457e-9986-812a8546b6d4",
+                    "name" : "18313",
+                    "title" : "Column 3",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Services",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(255, 255, 255)",
+                        "textDecoration" : "{\"bold\":true}",
+                        "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "04f982d7-04fc-4928-a805-b92b18bdb46d",
+                      "type" : "component"
+                    } ],
+                    "id" : "d8341b01-83f1-4565-ad5e-8bdeb99bb399",
+                    "name" : "9312f",
+                    "title" : "Column 4",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Company",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(255, 255, 255)",
+                        "textDecoration" : "{\"bold\":true}",
+                        "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "296be05c-2064-45c8-9b70-17fbce8f6ff5",
+                      "type" : "component"
+                    } ],
+                    "id" : "47498b46-2d4a-4862-b255-49400fa1710f",
+                    "name" : "53656",
+                    "title" : "Column 5",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Resources",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(255, 255, 255)",
+                        "textDecoration" : "{\"bold\":true}",
+                        "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "a7bfcec1-e3dd-42b6-8b80-ecc3019dc983",
+                      "type" : "component"
+                    } ],
+                    "id" : "381d530c-c2cf-4d60-9c09-7c7bd3367a9b",
+                    "name" : "16a9e",
+                    "title" : "Column 6",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_layout:columns",
+                  "id" : "61be2086-d3cd-4d73-a1fa-bf3f8172cc0c",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "columnGutterWidth" : "0rem",
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "30px",
+                        "top" : "20px"
+                      }
+                    },
+                    "sectionConfig" : "{\"UUID\":\"91ecd5fd-e777-4ed4-ae6e-b8562d065e61\",\"columns\":[{\"UUID\":\"d033c5a2-c5f0-4cf9-aae0-0b0f5066f7f5\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"816d9b2c-b2f0-4e6b-ba81-90006866ece6\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"3ff2cfae-40ac-42ee-bcf1-c0739338b862\",\"columnName\":\"Column 3\",\"columnKey\":\"75b8e\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"4c9b11b2-0ecf-488c-b738-2916664638a0\",\"columnName\":\"Column 4\",\"columnKey\":\"9e788\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"f37206ba-6fa1-41aa-b49a-c17e22794840\",\"columnName\":\"Column 5\",\"columnKey\":\"d5973\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"8789ac78-c185-40f3-8f52-05d67d9bf0fa\",\"columnName\":\"Column 6\",\"columnKey\":\"14c55\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}"
+                  },
+                  "children" : [ {
+                    "id" : "d033c5a2-c5f0-4cf9-aae0-0b0f5066f7f5",
+                    "name" : "col1",
+                    "title" : "Column 1",
+                    "type" : "region"
+                  }, {
+                    "id" : "816d9b2c-b2f0-4e6b-ba81-90006866ece6",
+                    "name" : "col2",
+                    "title" : "Column 2",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : true,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "PBS-Mini",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
+                        "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHFIAZ\"},\"state\":{\"recordName\":\"PBS-Mini Vertical-Wheel Bioreactor\"}}}}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "1378aa26-4f35-428d-8091-393b75abd9d0",
+                      "type" : "component"
+                    } ],
+                    "id" : "3ff2cfae-40ac-42ee-bcf1-c0739338b862",
+                    "name" : "75b8e",
+                    "title" : "Column 3",
+                    "type" : "region"
+                  }, {
+                    "id" : "4c9b11b2-0ecf-488c-b738-2916664638a0",
+                    "name" : "9e788",
+                    "title" : "Column 4",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Leadership",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "6f336d22-0873-42a4-8ae1-cab6c4fd2fe0",
+                      "type" : "component"
+                    } ],
+                    "id" : "f37206ba-6fa1-41aa-b49a-c17e22794840",
+                    "name" : "d5973",
+                    "title" : "Column 5",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Publications",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "112879c2-d66a-4250-a279-ff72d0c08166",
+                      "type" : "component"
+                    } ],
+                    "id" : "8789ac78-c185-40f3-8f52-05d67d9bf0fa",
+                    "name" : "14c55",
+                    "title" : "Column 6",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_layout:columns",
+                  "id" : "91ecd5fd-e777-4ed4-ae6e-b8562d065e61",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "columnGutterWidth" : "0rem",
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "30px",
+                        "top" : "10px"
+                      }
+                    },
+                    "sectionConfig" : "{\"UUID\":\"e620390f-7e00-44bf-9202-c24deefe3fe2\",\"columns\":[{\"UUID\":\"a2bbb2c9-577a-43a0-b97a-7cb833578320\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"7972f873-3f9a-4812-ad48-e1e91fcfa4f3\",\"columnName\":\"Column 2\",\"columnKey\":\"80168\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"52ed0999-f244-46d7-a074-1fc4cd7b97c5\",\"columnName\":\"Column 3\",\"columnKey\":\"f8e4b\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"09510fe8-04d4-4337-a3c3-480fdeec9b2a\",\"columnName\":\"Column 4\",\"columnKey\":\"ef2e6\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"23d256c3-2fdb-42c1-90ff-8f145e57b1a9\",\"columnName\":\"Column 5\",\"columnKey\":\"5f0d0\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"5bfaf549-dcd0-4b71-945c-85e8ca32ec19\",\"columnName\":\"Column 6\",\"columnKey\":\"ec862\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}"
+                  },
+                  "children" : [ {
+                    "id" : "a2bbb2c9-577a-43a0-b97a-7cb833578320",
+                    "name" : "col1",
+                    "title" : "Column 1",
+                    "type" : "region"
+                  }, {
+                    "id" : "7972f873-3f9a-4812-ad48-e1e91fcfa4f3",
+                    "name" : "80168",
+                    "title" : "Column 2",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : true,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "PBS-3",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{\"bold\":false}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
+                        "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHKIAZ\"},\"state\":{\"recordName\":\"PBS-3 Vertical-Wheel Bioreactor\"}}}}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "1f5108a8-7190-46ae-b74a-ebe27e2b60c6",
+                      "type" : "component"
+                    } ],
+                    "id" : "52ed0999-f244-46d7-a074-1fc4cd7b97c5",
+                    "name" : "f8e4b",
+                    "title" : "Column 3",
+                    "type" : "region"
+                  }, {
+                    "id" : "09510fe8-04d4-4337-a3c3-480fdeec9b2a",
+                    "name" : "ef2e6",
+                    "title" : "Column 4",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Careers",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "53e41d7c-1d40-4b59-932e-bef6d62469f4",
+                      "type" : "component"
+                    } ],
+                    "id" : "23d256c3-2fdb-42c1-90ff-8f145e57b1a9",
+                    "name" : "5f0d0",
+                    "title" : "Column 5",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "Manuals",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "6ce531e5-2610-425c-9aa6-6daed9b43201",
+                      "type" : "component"
+                    } ],
+                    "id" : "5bfaf549-dcd0-4b71-945c-85e8ca32ec19",
+                    "name" : "ec862",
+                    "title" : "Column 6",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_layout:columns",
+                  "id" : "e620390f-7e00-44bf-9202-c24deefe3fe2",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "columnGutterWidth" : "0rem",
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "30px",
+                        "top" : "10px"
+                      }
+                    },
+                    "sectionConfig" : "{\"UUID\":\"ada09af5-1c92-48fd-8aa9-b2400a0f4a6a\",\"columns\":[{\"UUID\":\"05ffb2f0-d285-4e90-8e6d-fcdfa1b4b9d6\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"49ffa270-0577-44be-9d68-b47d7ddda1fd\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"86c2c87e-bec5-4375-8129-504b03adef24\",\"columnName\":\"Column 3\",\"columnKey\":\"f9da5\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"c8f04391-9360-433b-8128-c288f1455d9a\",\"columnName\":\"Column 4\",\"columnKey\":\"48ed6\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"7adc6769-12b7-4e5e-a310-97f568c8e866\",\"columnName\":\"Column 5\",\"columnKey\":\"08db2\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"df31898d-92b3-4147-8564-4b33bfd5dba8\",\"columnName\":\"Column 6\",\"columnKey\":\"3fa5f\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}"
+                  },
+                  "children" : [ {
+                    "id" : "05ffb2f0-d285-4e90-8e6d-fcdfa1b4b9d6",
+                    "name" : "col1",
+                    "title" : "Column 1",
+                    "type" : "region"
+                  }, {
+                    "id" : "49ffa270-0577-44be-9d68-b47d7ddda1fd",
+                    "name" : "col2",
+                    "title" : "Column 2",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : true,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "PBS-15",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
+                        "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHPIAZ\"},\"state\":{\"recordName\":\"PBS-15 Vertical-Wheel Bioreactor\"}}}}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "32fd80d3-c117-4804-b32d-b4df4db5ac73",
+                      "type" : "component"
+                    } ],
+                    "id" : "86c2c87e-bec5-4375-8129-504b03adef24",
+                    "name" : "f9da5",
+                    "title" : "Column 3",
+                    "type" : "region"
+                  }, {
+                    "id" : "c8f04391-9360-433b-8128-c288f1455d9a",
+                    "name" : "48ed6",
+                    "title" : "Column 4",
+                    "type" : "region"
+                  }, {
+                    "id" : "7adc6769-12b7-4e5e-a310-97f568c8e866",
+                    "name" : "08db2",
+                    "title" : "Column 5",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "FAQ",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "6d2b556b-a3e1-4489-9d0e-a119ba674101",
+                      "type" : "component"
+                    } ],
+                    "id" : "df31898d-92b3-4147-8564-4b33bfd5dba8",
+                    "name" : "3fa5f",
+                    "title" : "Column 6",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_layout:columns",
+                  "id" : "ada09af5-1c92-48fd-8aa9-b2400a0f4a6a",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "columnGutterWidth" : "0rem",
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "30px",
+                        "top" : "10px"
+                      }
+                    },
+                    "sectionConfig" : "{\"UUID\":\"356399a3-0936-4a34-b3f5-b4be72089123\",\"columns\":[{\"UUID\":\"c188cb26-80c8-45a0-8f8a-173f225238f3\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"d2f1776d-6d47-463c-939f-f9d80ae94be9\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"ca91503c-afb4-41a8-a853-4e8ec1e6e17d\",\"columnName\":\"Column 3\",\"columnKey\":\"7475c\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"5789e0f9-3942-4b20-ac15-44b4cfecf808\",\"columnName\":\"Column 4\",\"columnKey\":\"39978\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"8e3b1855-105e-42ce-858a-c35899363029\",\"columnName\":\"Column 5\",\"columnKey\":\"fa278\",\"columnWidth\":\"2\",\"seedComponents\":[]},{\"UUID\":\"dec6574a-da69-4e6e-afda-ab70ea43a1cc\",\"columnName\":\"Column 6\",\"columnKey\":\"f33fc\",\"columnWidth\":\"2\",\"seedComponents\":[]}]}"
+                  },
+                  "children" : [ {
+                    "id" : "c188cb26-80c8-45a0-8f8a-173f225238f3",
+                    "name" : "col1",
+                    "title" : "Column 1",
+                    "type" : "region"
+                  }, {
+                    "id" : "d2f1776d-6d47-463c-939f-f9d80ae94be9",
+                    "name" : "col2",
+                    "title" : "Column 2",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : true,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "PBS-80",
+                        "textAlign" : "left",
+                        "textColor" : "rgb(200, 204, 216)",
+                        "textDecoration" : "{}",
+                        "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
+                        "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__recordPage\",\"attributes\":{\"actionName\":\"view\",\"objectApiName\":\"Product2\",\"recordId\":\"01tHs00000A9aHLIAZ\"},\"state\":{\"recordName\":\"PBS-80 Vertical-Wheel Bioreactor\"}}}}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "fd2a1ce2-b00f-4150-b6f6-74424b5fc951",
+                      "type" : "component"
+                    } ],
+                    "id" : "ca91503c-afb4-41a8-a853-4e8ec1e6e17d",
+                    "name" : "7475c",
+                    "title" : "Column 3",
+                    "type" : "region"
+                  }, {
+                    "id" : "5789e0f9-3942-4b20-ac15-44b4cfecf808",
+                    "name" : "39978",
+                    "title" : "Column 4",
+                    "type" : "region"
+                  }, {
+                    "id" : "8e3b1855-105e-42ce-858a-c35899363029",
+                    "name" : "fa278",
+                    "title" : "Column 5",
+                    "type" : "region"
+                  }, {
+                    "id" : "dec6574a-da69-4e6e-afda-ab70ea43a1cc",
+                    "name" : "f33fc",
+                    "title" : "Column 6",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_layout:columns",
+                  "id" : "356399a3-0936-4a34-b3f5-b4be72089123",
+                  "type" : "component"
+                } ],
+                "id" : "365ecf67-b352-4a52-a38d-7afa3aa39fe6",
+                "name" : "col2",
+                "title" : "Column 2",
+                "type" : "region"
+              } ],
+              "definition" : "community_layout:section",
+              "id" : "d4f4304f-7197-4185-a45f-2af0b9412ae7",
+              "scopedBrandingSetId" : "Footer_Palette",
+              "type" : "component"
+            } ],
+            "id" : "ee5f6915-9c0b-416f-ae7a-f6ba833044f8",
+            "name" : "content",
+            "title" : "Content",
+            "type" : "region"
+          } ],
+          "definition" : "commerce_builder:layoutFooter",
+          "id" : "c481840f-652e-4a76-8e13-2ad93d968cf0",
+          "type" : "component"
+        } ],
+        "id" : "03e338c5-23d4-47c3-b7a1-6e00ee053f6e",
+        "name" : "footer",
+        "title" : "Footer",
+        "type" : "region"
+      } ],
+      "definition" : "commerce:layoutSite",
+      "id" : "3ce6b49b-7ab9-4f8c-a3ea-88ed2d819adf",
+      "type" : "component"
+    }
+  }
+}

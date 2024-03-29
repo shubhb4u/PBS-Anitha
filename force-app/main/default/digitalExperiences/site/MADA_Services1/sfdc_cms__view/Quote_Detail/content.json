@@ -1,0 +1,61 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Quote Detail",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"dd31df5e-1a38-4f86-af72-3048ad665bb1\",\"columns\":[{\"UUID\":\"15a8a583-8c98-4862-82d1-9f14184bb3c2\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:individualQuoteRecords",
+              "id" : "c19fdf5d-0899-4a0a-82f7-a7abf4efc057",
+              "type" : "component"
+            } ],
+            "id" : "15a8a583-8c98-4862-82d1-9f14184bb3c2",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "dd31df5e-1a38-4f86-af72-3048ad665bb1",
+          "type" : "component"
+        } ],
+        "id" : "38ba6879-728f-4e28-b352-149f772eeacb",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "{!Record._Object}: {!Record._Title}",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "031d70ce-3fce-43bb-a2c2-92c3bf11513e",
+          "type" : "component"
+        } ],
+        "id" : "43bf0dd3-e7bc-4b8e-8be5-8b9ae4acdc13",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "4e4931ed-eb7a-45bc-8894-1c2601f6638e",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "detail-0Q0"
+  }
+}

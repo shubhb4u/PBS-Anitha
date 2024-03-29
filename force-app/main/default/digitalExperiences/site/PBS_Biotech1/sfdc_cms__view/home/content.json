@@ -1,0 +1,1198 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "0rem",
+            "sectionConfig" : "{\"UUID\":\"af98e24e-8b92-438f-9f8e-989c0c2ba09b\",\"columns\":[{\"UUID\":\"bde418dd-1d6f-4af9-bb90-b1a7c80fbcee\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "columnGutterWidth" : "",
+                "sectionConfig" : "{\"UUID\":\"d7d47a5b-9fcc-4238-aa11-306ac065e962\",\"columns\":[{\"UUID\":\"e593efdb-e3df-4066-beb9-c918b18cf9f8\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div id=\"main\">\n<div class=\"video\">\n<video width=\"100%\" autoplay muted loop > \n    <source src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6333bf07e05f00408ea2fff5_loop2-transcode.mp4\">\n    </video>\n</div>\n<div class=\"text\">\n<h1>Unlock the Potential of<br>Cell Therapies</h1>\n</div>\n    <p class = \"paragraphtext\"> We offer scalable single-use bioreactors and process <br> development services to solve your cell product <br> manufacturing challenges. </p>\n</div>"
+                  },
+                  "customCssClasses" : "video-section1",
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "d099492f-c0ab-4b7f-bb6b-eb0757ffa75d",
+                  "type" : "component"
+                } ],
+                "id" : "e593efdb-e3df-4066-beb9-c918b18cf9f8",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "d7d47a5b-9fcc-4238-aa11-306ac065e962",
+              "type" : "component"
+            } ],
+            "id" : "bde418dd-1d6f-4af9-bb90-b1a7c80fbcee",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "af98e24e-8b92-438f-9f8e-989c0c2ba09b",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"99bb9517-02e4-4f82-a2df-7971fb6a56a3\",\"columns\":[{\"UUID\":\"0e8add00-86d8-4c5c-a021-c30ec810ca5f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "browseStep" : 3,
+                "categoryId" : "Enter a category ID",
+                "headerText" : "Recommended For You",
+                "pageSize" : 6
+              },
+              "definition" : "b2c_lite_commerce:topSellers",
+              "id" : "3aabb32d-4e99-4b95-95aa-ea533592e783",
+              "type" : "component"
+            } ],
+            "id" : "0e8add00-86d8-4c5c-a021-c30ec810ca5f",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "99bb9517-02e4-4f82-a2df-7971fb6a56a3",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "80px",
+                "left" : "160px",
+                "right" : "124px",
+                "top" : "20px"
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "1rem",
+            "sectionConfig" : "{\"UUID\":\"1e2a7263-760f-477b-910c-8b47841356ca\",\"columns\":[{\"UUID\":\"a13dadc6-b33e-4974-ba6f-7f332cf47b5c\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"46b28056-7fc0-45b4-99e9-fe8f5952b03d\",\"columnName\":\"Column 2\",\"columnKey\":\"4f64d\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "20px",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<h2 class=\"heading\">An Experienced Partner For Your <br>\n    Cell Therapy Journey</h2>"
+              },
+              "customCssClasses" : "",
+              "definition" : "community_builder:htmlEditor",
+              "id" : "cac980d9-09fe-4f7a-80f2-375c854cc7ee",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "columnGutterWidth" : "",
+                "sectionConfig" : "{\"UUID\":\"e52f398a-9b7b-444a-aeb7-f65c84ccc7cb\",\"columns\":[{\"UUID\":\"aac5be81-c4fd-4c3e-b3c9-f194c46cf7a3\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "20px",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "richTextValue" : "<h3 class = \"subheading\">Our products and services enable the scalable<br>\nmanufacturing of allogeneic therapies derived from cells<br>\nsuch as induced pluripotent stem cells, mesenchymal stem<br>\ncells, and CAR-T or NK cells. </h3>"
+                  },
+                  "customCssClasses" : "subheading",
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "7485dd44-7345-4e90-a4b2-a6fc63b4a3ce",
+                  "type" : "component"
+                } ],
+                "id" : "aac5be81-c4fd-4c3e-b3c9-f194c46cf7a3",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "e52f398a-9b7b-444a-aeb7-f65c84ccc7cb",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "columnGutterWidth" : "",
+                "sectionConfig" : "{\"UUID\":\"3cee507e-27b0-4aa5-8c14-db5d14b5e24b\",\"columns\":[{\"UUID\":\"2a186d2a-ec29-4c7a-8c35-a916a293796f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "",
+                        "left" : "20px",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "richTextValue" : "<h3 class = \"subheading\"> Whether you are just getting started or are ready to move <br> \n    into clinical trials and beyond, we can accelerate the <br> \n    commercialization of your therapeutic product.</h3>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "4a81c729-5432-418b-9d28-38e6f1a44aa5",
+                  "type" : "component"
+                } ],
+                "id" : "2a186d2a-ec29-4c7a-8c35-a916a293796f",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "3cee507e-27b0-4aa5-8c14-db5d14b5e24b",
+              "type" : "component"
+            } ],
+            "id" : "a13dadc6-b33e-4974-ba6f-7f332cf47b5c",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "50px",
+                    "right" : "",
+                    "top" : "30px"
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCLBWJDGUJ7BC43FQQE3F5WONTII?lastModifiedDate=Mon Mar 11 10:18:29 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCLBWJDGUJ7BC43FQQE3F5WONTII\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 60
+              },
+              "definition" : "dxp_base:image",
+              "id" : "0c2e21c1-f1bb-4f2d-a9eb-7bccdf1341af",
+              "type" : "component"
+            } ],
+            "id" : "46b28056-7fc0-45b4-99e9-fe8f5952b03d",
+            "name" : "4f64d",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "1e2a7263-760f-477b-910c-8b47841356ca",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"9be36459-a75a-4c90-942e-2c13eeb8451c\",\"columns\":[{\"UUID\":\"b03f215c-afee-463a-ac38-3e2a2d58f2a3\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "id" : "b03f215c-afee-463a-ac38-3e2a2d58f2a3",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "customCssClasses" : "video-section",
+          "definition" : "community_layout:section",
+          "id" : "9be36459-a75a-4c90-942e-2c13eeb8451c",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "",
+                "left" : "",
+                "right" : "",
+                "top" : "50px"
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "1.3rem",
+            "sectionConfig" : "{\"UUID\":\"8e97cd60-d69c-492e-a104-fd2e1dc787bc\",\"columns\":[{\"UUID\":\"531e7998-0449-46ed-8145-c8824310843e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"381e095f-cfed-466e-8f8e-301592143090\",\"columnName\":\"Column 2\",\"columnKey\":\"41c41\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "right",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "10px",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCMUU6NGG2SNGPLM74Z7QRTN4HVA?lastModifiedDate=Tue Mar 12 06:56:48 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCMUU6NGG2SNGPLM74Z7QRTN4HVA\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 80
+              },
+              "definition" : "dxp_base:image",
+              "id" : "97325160-57ae-4854-935a-152eb3c4b7c1",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "2%",
+                    "left" : "20%",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<h2 class = \"mainheading\"> Products</h2>\n<p class = \"bannertext\"> View our full line of Vertical-Wheel <sup>® </sup> bioreactors and contact <br>our Sales team for product inquiries and orders.</p>"
+              },
+              "customCssClasses" : "bannertext",
+              "definition" : "community_builder:htmlEditor",
+              "id" : "10def035-f754-40f1-b4ea-eabf1847d4d9",
+              "type" : "component"
+            } ],
+            "id" : "531e7998-0449-46ed-8145-c8824310843e",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "left",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "10px",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCZOKRVN6KNFDW3ADICMSQR6C2LQ?lastModifiedDate=Mon Mar 11 12:01:37 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCZOKRVN6KNFDW3ADICMSQR6C2LQ\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 80
+              },
+              "definition" : "dxp_base:image",
+              "id" : "606f07b5-f330-4e7f-8080-078641f0542e",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "2%",
+                    "left" : "2%",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<h2 class = \"mainheading\"> Services</h2>\n<p class = \"bannertext\"> See if our industry-leading BioLab team can help you solve <br> your process development and scale-up challenges. .</p"
+              },
+              "customCssClasses" : "bannertext",
+              "definition" : "community_builder:htmlEditor",
+              "id" : "3f7d18ad-0ccc-45e4-99aa-50f6d6deb0b3",
+              "type" : "component"
+            } ],
+            "id" : "381e095f-cfed-466e-8f8e-301592143090",
+            "name" : "41c41",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8e97cd60-d69c-492e-a104-fd2e1dc787bc",
+          "scopedBrandingSetId" : "Category_Colour",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "2rem",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "50px",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"8726599a-8fd4-40b1-99c6-5b0fd1418370\",\"columns\":[{\"UUID\":\"6d7f5644-3ed4-4f4d-a6d6-34416f9017b9\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"119aab95-791b-43a0-8d8f-35b6bd15d4e8\",\"columnName\":\"Column 2\",\"columnKey\":\"94620\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "right",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "10px",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MC2NIQQEDOSFBA3KSUSMMFTY7PHY?lastModifiedDate=Tue Mar 12 07:23:07 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MC2NIQQEDOSFBA3KSUSMMFTY7PHY\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 80
+              },
+              "definition" : "dxp_base:image",
+              "id" : "1d4c1e2d-543f-4cb0-9535-c6164e05a418",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "2%",
+                    "left" : "20%",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<h2 class = \"mainheading\"> Company</h2>\n<p class = \"bannertext\"> Learn about PBS Biotech's mission, commitment to quality, <br> leadership team, and career oppportunities.</p>"
+              },
+              "customCssClasses" : "bannertext",
+              "definition" : "community_builder:htmlEditor",
+              "id" : "88610e07-8491-464d-9d07-afab9d1c3b7e",
+              "type" : "component"
+            } ],
+            "id" : "6d7f5644-3ed4-4f4d-a6d6-34416f9017b9",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "left",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "10px",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCT32DIDTQXJAAHHRM655FAUFZM4?lastModifiedDate=Tue Mar 12 07:24:48 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCT32DIDTQXJAAHHRM655FAUFZM4\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 80
+              },
+              "definition" : "dxp_base:image",
+              "id" : "4de434dd-ff5c-46b3-a09f-5e794d955326",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "2px",
+                    "left" : "11px",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<h2 class = \"mainheading\"> Products</h2>\n<p class = \"bannertext\">Read recent publications, download manuals, and search <br> our troubleshooting and FAQ guides.</p>"
+              },
+              "customCssClasses" : "bannertext",
+              "definition" : "community_builder:htmlEditor",
+              "id" : "86403200-a1c4-4cc0-bd22-db0df15177eb",
+              "type" : "component"
+            } ],
+            "id" : "119aab95-791b-43a0-8d8f-35b6bd15d4e8",
+            "name" : "94620",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8726599a-8fd4-40b1-99c6-5b0fd1418370",
+          "scopedBrandingSetId" : "Category_Colour",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"06a306ca-64f6-4035-be76-56b87c5d6144\",\"columns\":[{\"UUID\":\"9bfd8392-0ac0-41a5-9c03-55996eadf74c\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "richTextValue" : "<div class=\"revs-bottom-content\">\n  <a\n    data-w-id=\"ff58570c-76b1-4a9e-e684-3b56a7badcc0\"\n    href=\"/product\"\n    class=\"revs-item w-inline-block\"\n    ><div class=\"revs-image-wrapper\">\n      <img\n        src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b327617b3dbc8ca20e1f_Mini%20closeup.jpg\"\n        \n        \n        alt=\"\"\n        srcset=\"\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b327617b3dbc8ca20e1f_Mini%20closeup-p-500.jpg  500w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b327617b3dbc8ca20e1f_Mini%20closeup-p-800.jpg  800w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b327617b3dbc8ca20e1f_Mini%20closeup.jpg       1075w\n        \"\n        \n        class=\"image\"\n        style=\"\n          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)\n            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);\n          transform-style: preserve-3d;\n        \"\n      />\n    </div>\n    <div class=\"revs-content-wrapper\">\n      <div class=\"content-wrap\">\n        <h3 class=\"home-page-links\">Products</h3>\n        <div\n          class=\"text-size-small text-color-blue margin-vertical margin-xsmall\"\n        >\n          View our full line of Vertical-Wheel<sup>®</sup> bioreactors and\n          contact our Sales team for product inquiries and orders.\n        </div>\n      </div>\n    </div></a\n  ><a\n    data-w-id=\"67e3bfdf-76c3-5d68-a6bd-30fa099e8fc6\"\n    href=\"/services\"\n    class=\"revs-item w-inline-block\"\n    ><div class=\"revs-image-wrapper\">\n      <img\n        src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services.jpg\"\n       \n        \n        srcset=\"\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services-p-500.jpg   500w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services-p-800.jpg   800w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services-p-1080.jpg 1080w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services-p-1600.jpg 1600w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services-p-2000.jpg 2000w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services-p-2600.jpg 2600w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6396ad3ed6a20c12485d65d4_Home%20-%20services-p-3200.jpg 3200w\n        \"\n        alt=\"\"\n        class=\"image\"\n        style=\"\n          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)\n            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);\n          transform-style: preserve-3d;\n        \"\n      />\n    </div>\n    <div class=\"revs-content-wrapper\">\n      <div class=\"content-wrap\">\n        <h3 class=\"home-page-links\">Services</h3>\n        <div\n          class=\"text-size-small text-color-blue margin-vertical margin-xsmall\"\n        >\n          See if our industry-leading BioLab team can help you solve your\n          process development and scale-up challenges.\n        </div>\n      </div>\n    </div></a\n  ><a\n    data-w-id=\"2f03dcd7-3e40-4bb4-2811-2c17f713a18a\"\n    href=\"/company\"\n    class=\"revs-item w-inline-block\"\n    ><div class=\"revs-image-wrapper\">\n      <img\n        src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f3369f8ad68b687878_Company%20arial%20view.jpg\"\n        \n        \n        srcset=\"\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f3369f8ad68b687878_Company%20arial%20view-p-500.jpg   500w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f3369f8ad68b687878_Company%20arial%20view-p-800.jpg   800w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f3369f8ad68b687878_Company%20arial%20view-p-1080.jpg 1080w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f3369f8ad68b687878_Company%20arial%20view-p-1600.jpg 1600w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f3369f8ad68b687878_Company%20arial%20view.jpg        1920w\n        \"\n        alt=\"\"\n      />\n    </div>\n    <div class=\"revs-content-wrapper\">\n      <div class=\"content-wrap\">\n        <h3 class=\"home-page-links\">Company</h3>\n        <div\n          class=\"text-size-small text-color-blue margin-vertical margin-xsmall\"\n        >\n          Learn about PBS Biotech's mission, commitment to quality, leadership\n          team, and career oppportunities.\n        </div>\n      </div>\n    </div></a\n  ><a\n    data-w-id=\"48908925-dc0f-b30b-3a96-b9c42f6a2fe8\"\n    href=\"/help-center\"\n    class=\"revs-item w-inline-block\"\n    ><div class=\"revs-image-wrapper\">\n      <img\n        src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f4617b3d7de2a224d3_PCBs%20resources.jpg\"\n        \n       \n        srcset=\"\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f4617b3d7de2a224d3_PCBs%20resources-p-500.jpg   500w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f4617b3d7de2a224d3_PCBs%20resources-p-800.jpg   800w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f4617b3d7de2a224d3_PCBs%20resources-p-1080.jpg 1080w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f4617b3d7de2a224d3_PCBs%20resources-p-1600.jpg 1600w,\n          https://assets-global.website-files.com/62cc627d7fe73059b1484e97/6316b4f4617b3d7de2a224d3_PCBs%20resources.jpg        1920w\n        \"\n        alt=\"Home - Resources\"\n        class=\"image\"\n        style=\"\n          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)\n            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);\n          transform-style: preserve-3d;\n        \"\n      />\n    </div>\n    <div class=\"revs-content-wrapper\">\n      <div class=\"content-wrap\">\n        <h3 class=\"home-page-links\">Resources</h3>\n        <div\n          class=\"text-size-small text-color-blue margin-vertical margin-xsmall\"\n        >\n          Read recent publications, download&nbsp;manuals, and search our\n          troubleshooting and FAQ guides.\n        </div>\n      </div>\n    </div></a\n  >\n</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "c60a2b2f-6d26-4afa-9bff-a477de96e820",
+              "type" : "component"
+            } ],
+            "id" : "9bfd8392-0ac0-41a5-9c03-55996eadf74c",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "06a306ca-64f6-4035-be76-56b87c5d6144",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"24dcb639-a1c8-4b66-b5c8-140ad6038a1b\",\"columns\":[{\"UUID\":\"8408bd42-ff06-4630-9dc7-6caf37e4d0c2\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "25%",
+                    "right" : "",
+                    "top" : "8%"
+                  }
+                },
+                "richTextValue" : "<h2 class = \"mainheading\"> Recent Publications of Vertical-Wheel Bioreactors</h2>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "36c0c25b-fe3c-4ea3-ac52-28ece9b193e8",
+              "type" : "component"
+            } ],
+            "id" : "8408bd42-ff06-4630-9dc7-6caf37e4d0c2",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "24dcb639-a1c8-4b66-b5c8-140ad6038a1b",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"45acd667-58a7-4ca2-85cf-03ec200d1edc\",\"columns\":[{\"UUID\":\"0fb8ea39-e5f2-4d5f-a309-7b86f6d6116c\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "80px",
+                    "right" : "80px",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<div class = \"home-publications-list\">\n<div class = \"home-publication-wrapper\"> 2023 Life Sciences Review - Top 10 C&amp;GT Companies of 2023\n    </div>\n    <div class = \"home-publication-title-text\"> Pioneering Scalable Solutions for Cell and Gene Therapy </div> \n    <div class = \"home-publications-topics\"> Keywords: scalable manufacturing solutions; Vertical-Wheel bioreactors; process development services \n    <a  href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/65247c99f7f5eb41b2fef558_Life%20Sciences%20Review%20-%20Editor%27s%20Choice%202023.pdf\" target=\"_blank\" class=\"download-image-wrapper w-inline-block\">\n        <img  width =\"31px\" src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730621f484eda_download-icon.svg\" class=\"home-publications-dl-image\" > </a>\n</div>\n    </div>\n\n<div class = \"home-publications-list\">\n<div class = \"home-publication-wrapper\">2023 Vallabhaneni et al. (FDA-CBER)\n    </div>\n    <div class = \"home-publication-title-text\"> Suspension Culture on Microcarriers and as Aggregates Enables Expansion and Differentiation of <br> Pluripotent Stem Cells</div> \n    <div class = \"home-publications-topics\"> Keywords: induced pluripotent stem cell (iPSC); aggregates; microcarrier; expansion; differentiation\n    <a  href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/65247c99f7f5eb41b2fef558_Life%20Sciences%20Review%20-%20Editor%27s%20Choice%202023.pdf\" target=\"_blank\" class=\"download-image-wrapper w-inline-block\">\n        <img  width =\"31px\" src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730621f484eda_download-icon.svg\" class=\"home-publications-dl-image\" > </a>\n</div>\n    </div>\n\n<div class = \"home-publications-list\">\n<div class = \"home-publication-wrapper\"> 2023 Cuesta-Gomez et al. (University of Alberta)\n    </div>\n    <div class = \"home-publication-title-text\"> Suspension Culture Improves iPSC Expansion and Pluripotency Phenotype </div> \n    <div class = \"home-publications-topics\">Keywords: induced pluripotent stem cell (iPSC); aggregates; expansion; pluripotency \n    <a  href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/65247c99f7f5eb41b2fef558_Life%20Sciences%20Review%20-%20Editor%27s%20Choice%202023.pdf\" target=\"_blank\" class=\"download-image-wrapper w-inline-block\">\n        <img  width =\"31px\" src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730621f484eda_download-icon.svg\" class=\"home-publications-dl-image\" > </a>\n</div>\n    </div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "75d08f18-0ec2-402b-8d04-8d277648a095",
+              "type" : "component"
+            } ],
+            "id" : "0fb8ea39-e5f2-4d5f-a309-7b86f6d6116c",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "45acd667-58a7-4ca2-85cf-03ec200d1edc",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"d2c16b89-b6c1-4198-a6d8-b7789a19edb7\",\"columns\":[{\"UUID\":\"7ebfe7c1-4697-40ff-9827-02dd789c3983\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "50px",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "size" : "large",
+                "stretch" : "standard",
+                "text" : "View More Publications",
+                "type" : "primary"
+              },
+              "customCssClasses" : "",
+              "definition" : "dxp_base:button",
+              "id" : "2ef9ed42-bae7-4fdc-8c7e-6497bb36d069",
+              "type" : "component"
+            } ],
+            "id" : "7ebfe7c1-4697-40ff-9827-02dd789c3983",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d2c16b89-b6c1-4198-a6d8-b7789a19edb7",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"d47a301d-3c70-4ad6-9f16-1b20ddb850be\",\"columns\":[{\"UUID\":\"20b186df-1aa1-40bf-ab40-36c6d5273d6b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "32%",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<h2 class = \"mainheading\"> PBS Biotech Partnerships in the News</h2>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "39bb1ebc-4fd1-47de-ac0b-6664d5968178",
+              "type" : "component"
+            } ],
+            "id" : "20b186df-1aa1-40bf-ab40-36c6d5273d6b",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d47a301d-3c70-4ad6-9f16-1b20ddb850be",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "0rem",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"1d3ed762-5fa9-45b8-a2ee-65ebf947934d\",\"columns\":[{\"UUID\":\"4cd8c827-d363-4837-8edc-210a76d59306\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "150px",
+                    "right" : "150px",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<div class=\"news-card-component\">\n    <a data-w-id=\"7283c4a7-9e72-565e-fe1f-86cc3d1f16ab\" href=\"https://bioinformant.com/pbs-biotech-and-denovomatrix-collaboration/\" target=\"_blank\" class=\"news-card-item w-inline-block\">\n        <div class=\"news-image-wrapper\">\n            <img src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/643596390f724d487f0396c0_denovoMATRIX-logo.png\" height=\"200\" alt=\"\" srcset=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/643596390f724d487f0396c0_denovoMATRIX-logo-p-500.png 500w, https://assets-global.website-files.com/62cc627d7fe73059b1484e97/643596390f724d487f0396c0_denovoMATRIX-logo.png 503w\" class=\"news-image\">\n        </div>\n        <div class=\"news-card-content-wrapper\">\n            <h3 class=\"newsheading\">denovoMATRIX Joins Forces with PBS Biotech</h3>\n            <div class=\"newsparagraph\">The leading supplier of biomimetic coating technologies has collaborated with PBS Biotech on a white paper...</div>\n        </div>\n    </a>\n    <a data-w-id=\"e8eb1cbe-77ca-a4fd-7ed5-3e43a641a9b2\" href=\"https://www.prnewswire.com/news-releases/pbs-biotech-raises-22m-to-expand-single-use-manufacturing-products-and-services-for-cell-therapy-clients-301715955.html\" target=\"_blank\" class=\"news-card-item w-inline-block\">\n        <div class=\"news-image-wrapper\">\n            <img src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/63bc4d535199cd8100c2acf2_ABO.png\" srcset=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/63bc4d535199cd8100c2acf2_ABO-p-500.png 500w, https://assets-global.website-files.com/62cc627d7fe73059b1484e97/63bc4d535199cd8100c2acf2_ABO-p-800.png 800w, https://assets-global.website-files.com/62cc627d7fe73059b1484e97/63bc4d535199cd8100c2acf2_ABO-p-1080.png 1080w, https://assets-global.website-files.com/62cc627d7fe73059b1484e97/63bc4d535199cd8100c2acf2_ABO-p-1600.png 1600w, https://assets-global.website-files.com/62cc627d7fe73059b1484e97/63bc4d535199cd8100c2acf2_ABO.png 1723w\" alt=\"\" class=\"news-image\">\n        </div>\n        <div class=\"news-card-content-wrapper\">\n            <div class=\"card-text-wrapper\">\n                <h3 class=\"newsheading\">PBS&nbsp;Biotech Raises $22M in Capital Funding</h3>\n                <div class=\"newsparagraph\">Financing was led by Avego Management with additional investment from BroadOak Capital...</div>\n            </div>\n        </div>\n    </a>\n    <a data-w-id=\"07ab15f7-2ee5-9536-a896-cf0602bef647\" href=\"https://www.stemcell.com/about-us/news/stemcell-pbs-biotech-partner-for-robust-scale-up-of-human-pluripotent-stem-cell-3d-cultures.html\" target=\"_blank\" class=\"news-card-item w-inline-block\">\n        <div class=\"news-image-wrapper\">\n            <img src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62f61c20c23d651c242da873_stemcell-logo.png\" height=\"200\" alt=\"Home - StemCell logo\" srcset=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62f61c20c23d651c242da873_stemcell-logo-p-500.png 500w, https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62f61c20c23d651c242da873_stemcell-logo.png 1100w\" class=\"news-image\">\n        </div>\n        <div class=\"news-card-content-wrapper\">\n            <div class=\"card-text-wrapper\">\n                <h3 class=\"newsheading\">STEMCELL Technologies Partners with PBS Biotech</h3>\n                <div class=\"newsparagraph\">The leading provider of growth media for human pluripotent stem cells will distribute the PBS Mini...</div>\n            </div>\n        </div>\n    </a>\n</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "383c147d-bc09-42b8-86c7-4d05e78ec3a3",
+              "type" : "component"
+            } ],
+            "id" : "4cd8c827-d363-4837-8edc-210a76d59306",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "1d3ed762-5fa9-45b8-a2ee-65ebf947934d",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"6cccf3e6-5f41-4941-9df5-e030ccfc94f1\",\"columns\":[{\"UUID\":\"bd7b7edc-cef3-4b6b-a87c-2e0c311d9e42\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "rgba(255, 255, 255, 0)",
+                "bannerAlignment" : "center",
+                "bannerLinkAssistiveText" : "",
+                "borderColor" : "",
+                "borderRadius" : 0,
+                "borderWidth" : 0,
+                "buttonDirection" : "horizontal",
+                "buttonGroupAlignment" : "center",
+                "buttonGroupHeight" : 50,
+                "buttonGroupSpacingHorizontal" : "space-evenly",
+                "buttonGroupSpacingVertical" : "space-evenly",
+                "buttonGroupWidth" : 50,
+                "contentPadding" : "none",
+                "contentPosition" : "center center",
+                "contentWidth" : 62,
+                "height" : 327,
+                "imageFit" : "cover",
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCMNTQ3EBDMZEDNFRPIBQKKORU34?lastModifiedDate=Thu Mar 14 06:29:54 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCMNTQ3EBDMZEDNFRPIBQKKORU34\",\"contentType\":null}}",
+                "imagePosition" : "center center",
+                "isBannerLink" : false,
+                "overlayColor" : "",
+                "showButtons" : false,
+                "showSecondaryButton" : false,
+                "singleButtonAlignment" : "center",
+                "width" : 94
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "x-large",
+                    "text" : "Upcoming Conferences",
+                    "textAlign" : "center",
+                    "textColor" : "rgb(255, 255, 255)",
+                    "textDecoration" : "{\"bold\":true}",
+                    "textDisplayInfo" : "{\"textStyle\":\"heading-xlarge\",\"headingTag\":\"h1\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "751395c8-95a3-49ef-8a73-ce7d68e57e7d",
+                  "type" : "component"
+                } ],
+                "id" : "8cb5e4e6-3771-4827-a53e-660fb80f26a1",
+                "name" : "contentRegion",
+                "title" : "contentRegion",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Learn More",
+                    "type" : "primary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "4eb7018f-a468-4557-b353-bc948aa2fc5b",
+                  "type" : "component"
+                } ],
+                "id" : "28fa5fa0-648f-4502-a795-92b13c0e1c9a",
+                "name" : "bannerPrimaryButton",
+                "title" : "bannerPrimaryButton",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Contact Us",
+                    "type" : "secondary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "7c068659-981f-444b-8b60-20d203302bdb",
+                  "type" : "component"
+                } ],
+                "id" : "ec76de6b-429d-4c81-b5e6-9026b3278ec5",
+                "name" : "bannerSecondaryButton",
+                "title" : "bannerSecondaryButton",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "dxp_page_layout:placeHolder",
+                  "id" : "d3ca4080-0f7f-4e2f-a05a-f6aa51915172",
+                  "type" : "component"
+                } ],
+                "id" : "b2791fed-c002-4888-a305-25569ca20c3f",
+                "name" : "placeholder",
+                "title" : "placeholder",
+                "type" : "region"
+              } ],
+              "customCssClasses" : "banner-none",
+              "definition" : "dxp_content_layout:banner",
+              "id" : "dee9daa6-6b74-4145-ad0f-e491832c9757",
+              "type" : "component"
+            } ],
+            "id" : "bd7b7edc-cef3-4b6b-a87c-2e0c311d9e42",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "6cccf3e6-5f41-4941-9df5-e030ccfc94f1",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "100px",
+                "left" : "120px",
+                "right" : "",
+                "top" : "60px"
+              }
+            },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"645cd795-a5c8-46fd-8c7c-bd7ef1e1f393\",\"columns\":[{\"UUID\":\"22978694-05fc-4602-a3b6-b5436e030221\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"4c29611e-d36b-420e-84ed-ccd302142b51\",\"columnName\":\"Column 2\",\"columnKey\":\"4e814\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "60px",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"\",\"altText\":\"\",\"contentKey\":\"MCPUVCQFLHQNCLDCQM64DRVDL4R4\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 70
+              },
+              "customCssClasses" : "innate-img",
+              "definition" : "dxp_base:image",
+              "id" : "4d91c50c-6b0b-4714-a5be-02dd4ca5568f",
+              "type" : "component"
+            } ],
+            "id" : "22978694-05fc-4602-a3b6-b5436e030221",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "80px",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "richTextValue" : "<a href=\"https://engconf.us/conferences/biotechnology/advancing-manufacture-of-cell-and-gene-therapies-viii/\" class=\"mesa-text\">\n   <div> May 7-11, 2024 </div>\n    <div>Baltimore, MD, USA </div>\n    <div>Booth </div>\n</a>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "6e619ea7-7098-4ae5-ba66-39d962d73d28",
+              "type" : "component"
+            } ],
+            "id" : "4c29611e-d36b-420e-84ed-ccd302142b51",
+            "name" : "4e814",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "645cd795-a5c8-46fd-8c7c-bd7ef1e1f393",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"2c31f499-33c7-49c1-b987-070193be0d87\",\"columns\":[{\"UUID\":\"2b239412-e6bc-4a94-9def-05222838e60d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "id" : "2b239412-e6bc-4a94-9def-05222838e60d",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "2c31f499-33c7-49c1-b987-070193be0d87",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"e4565ba1-69dd-4f51-ac98-f27793d2fa2e\",\"columns\":[{\"UUID\":\"67832d4c-d4f7-4476-ba61-a04de6d81ce7\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "bannerAlignment" : "center",
+                "bannerLinkAssistiveText" : "",
+                "borderColor" : "",
+                "borderRadius" : 0,
+                "borderWidth" : 0,
+                "buttonDirection" : "horizontal",
+                "buttonGroupAlignment" : "left",
+                "buttonGroupHeight" : 50,
+                "buttonGroupSpacingHorizontal" : "space-evenly",
+                "buttonGroupSpacingVertical" : "space-evenly",
+                "buttonGroupWidth" : 50,
+                "contentPadding" : "none",
+                "contentPosition" : "center left",
+                "contentWidth" : 40,
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "height" : 100,
+                "imageFit" : "cover",
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCQKVUQFQSVNF5JEA67DFBWV2B3A?lastModifiedDate=Wed Mar 13 11:36:53 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCQKVUQFQSVNF5JEA67DFBWV2B3A\",\"contentType\":null}}",
+                "imagePosition" : "top right",
+                "isBannerLink" : false,
+                "overlayColor" : "",
+                "showButtons" : true,
+                "showSecondaryButton" : false,
+                "singleButtonAlignment" : "left",
+                "width" : 70
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "15px",
+                        "left" : "50px",
+                        "right" : "",
+                        "top" : "20px"
+                      }
+                    },
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Step into the Spotlight with PBS Biotech.",
+                    "textAlign" : "left",
+                    "textColor" : "rgb(255, 255, 255)",
+                    "textDecoration" : "{\"bold\":true}",
+                    "textDisplayInfo" : "{\"textStyle\":\"heading-large\",\"headingTag\":\"h2\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "35344874-1b4e-44f9-8dfb-67318f3d32d0",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "20px",
+                        "left" : "50px",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Share your research and WIN up to $2,000 towards the next cell and gene therapy conference!  Enter now and secure your chance for a PBS Biotech Partnership Award.",
+                    "textAlign" : "left",
+                    "textColor" : "rgb(255, 255, 255)",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "43e9595b-717b-4a3d-bc27-37eacfa6c0b4",
+                  "type" : "component"
+                } ],
+                "id" : "484cb13f-38eb-4263-b2f9-c8726ba99c85",
+                "name" : "contentRegion",
+                "title" : "Content Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "right",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "50px",
+                        "right" : "",
+                        "top" : ""
+                      }
+                    },
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "More Info",
+                    "type" : "primary",
+                    "url" : "javascript:void(0)"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "843e76d6-ed27-443c-883c-9167b3a6cc53",
+                  "type" : "component"
+                } ],
+                "id" : "5783addb-d82c-43cf-9cb6-07e1eefbc985",
+                "name" : "bannerPrimaryButton",
+                "title" : "Primary Button Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Contact Us",
+                    "type" : "secondary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "5d1c774e-15eb-4efe-8939-3024c27c344d",
+                  "type" : "component"
+                } ],
+                "id" : "42c6f308-c9ef-4ec3-a443-9d4cfe856ef2",
+                "name" : "bannerSecondaryButton",
+                "title" : "bannerSecondaryButton",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "dxp_page_layout:placeHolder",
+                  "id" : "fbab8ab9-08d6-4fbe-b30d-31f12705af66",
+                  "type" : "component"
+                } ],
+                "id" : "7def4518-06d4-4fdd-867e-a9b189506b4a",
+                "name" : "placeholder",
+                "title" : "placeholder",
+                "type" : "region"
+              } ],
+              "customCssClasses" : "banner_image2",
+              "definition" : "dxp_content_layout:banner",
+              "id" : "43731610-80a3-40dd-8364-47746eaf312c",
+              "type" : "component"
+            } ],
+            "id" : "67832d4c-d4f7-4476-ba61-a04de6d81ce7",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "e4565ba1-69dd-4f51-ac98-f27793d2fa2e",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"909348c1-2e84-4009-bf2a-79aff46e5e8e\",\"columns\":[{\"UUID\":\"17cee34d-aacc-43a1-a573-0ca7221661a9\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "addEntryButtonText" : "+ Add Product",
+                "addEntryButtonTextHoverColor" : "rgb(0, 0, 0)",
+                "addToCartButtonBackgroundColor" : "rgb(247, 124, 0)",
+                "addToCartButtonBackgroundHoverColor" : "rgb(255, 255, 255)",
+                "addToCartButtonBorderColor" : "rgb(255, 255, 255)",
+                "addToCartButtonBorderRadius" : 4,
+                "addToCartButtonProcessingText" : "Adding...",
+                "addToCartButtonText" : "Add To Cart",
+                "addToCartButtonTextHoverColor" : "rgb(247, 124, 0)",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  },
+                  "padding" : {
+                    "bottom" : "20px",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "incrementValueGuideText" : "Sold in increments of {0}",
+                "maximumValueGuideText" : "Maximum quantity is {0}",
+                "minimumValueGuideText" : "Minimum quantity is {0}",
+                "numberOfLineItemsToAddEachTime" : "3",
+                "numberOfLineItemsToStart" : "5",
+                "searchInputPlaceHolderText" : "Enter Sku",
+                "skuLabelText" : "SKU# {0}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "rgba(242, 244, 245, 0)",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Quick Order",
+                    "textAlign" : "center",
+                    "textColor" : "rgb(247, 124, 0)",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-large\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "34939b6f-c944-4f36-8ace-a4440b3c188c",
+                  "type" : "component"
+                } ],
+                "id" : "589c9b9e-3198-4a27-b14e-42e750736ef4",
+                "name" : "header",
+                "title" : "header",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "",
+                        "left" : "",
+                        "right" : "",
+                        "top" : "15px"
+                      }
+                    },
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Product",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"textStyle\":\"heading-medium\",\"headingTag\":\"h3\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "81245b7a-562c-4064-9839-ab585087018e",
+                  "type" : "component"
+                } ],
+                "id" : "d5e46b98-b26f-4266-b2ca-5a7be7c9bf99",
+                "name" : "productHeader",
+                "title" : "productHeader",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Quantity",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "7768163c-590a-4b8c-8786-efc2beede01f",
+                  "type" : "component"
+                } ],
+                "id" : "7721e083-adf3-4ff6-9caa-4af89de9a624",
+                "name" : "quantityHeader",
+                "title" : "quantityHeader",
+                "type" : "region"
+              } ],
+              "customCssClasses" : "quickorder",
+              "definition" : "commerce_builder:quickOrder",
+              "id" : "125b82d4-9f87-4218-9b6f-2e4c99be309a",
+              "type" : "component"
+            } ],
+            "id" : "17cee34d-aacc-43a1-a573-0ca7221661a9",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "909348c1-2e84-4009-bf2a-79aff46e5e8e",
+          "scopedBrandingSetId" : "News_Pallete",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"da093d5b-7d25-4030-8ebf-52a10e4e93a1\",\"columns\":[{\"UUID\":\"6e122625-6668-4354-ba2c-85440107ac17\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "id" : "6e122625-6668-4354-ba2c-85440107ac17",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "da093d5b-7d25-4030-8ebf-52a10e4e93a1",
+          "type" : "component"
+        } ],
+        "id" : "2e9aa33a-d142-4791-851d-3a7661fd0351",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "05f1ce36-5abe-4b75-8245-a3d56cceab38",
+          "type" : "component"
+        } ],
+        "id" : "58c525eb-b639-424f-830a-f3623be57d06",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "4505654c-0e7f-4fdc-8500-0c43b1c1c26f",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  }
+}

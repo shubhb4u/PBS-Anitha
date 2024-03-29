@@ -1,0 +1,673 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Product",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"59b84e89-efd0-4fee-b1dc-b930ed15cb67\",\"columns\":[{\"UUID\":\"a27b0d3d-d64b-4e74-9f54-e8ec3da840af\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "divider" : "chevron",
+                "hideOnMobile" : false,
+                "maxDepthOnMobile" : "3",
+                "showHomeLink" : false,
+                "showLastItemAsLink" : false,
+                "textSize" : "small"
+              },
+              "definition" : "commerce_builder:breadcrumbs",
+              "id" : "b3397922-c73e-4a09-9d72-893f2b86d553",
+              "type" : "component"
+            } ],
+            "id" : "a27b0d3d-d64b-4e74-9f54-e8ec3da840af",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "59b84e89-efd0-4fee-b1dc-b930ed15cb67",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"2547c351-4260-4f8a-b9f6-59c754a92f8a\",\"columns\":[{\"UUID\":\"2915f806-b0fa-43af-94ab-0adc9c192da4\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"edeccf50-36c3-46a4-a50a-9fe9e25fa8df\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "carouselPageSize" : 1,
+                "carouselPosition" : "before",
+                "product" : "{!Product.Details}",
+                "showCarousel" : true
+              },
+              "definition" : "commerce_builder:productGallery",
+              "id" : "8f8331c3-9272-44ca-9517-990b61b8f946",
+              "type" : "component"
+            } ],
+            "id" : "2915f806-b0fa-43af-94ab-0adc9c192da4",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "identifierName" : "SKU#",
+                "product" : "{!Product.Details}",
+                "productDetailSummaryFieldMapping" : "[]"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "{!Product.Details.fields.Name}",
+                    "textAlign" : "left",
+                    "textColor" : "rgb(247, 124, 0)",
+                    "textDecoration" : "{\"bold\":true,\"italic\":false}",
+                    "textDisplayInfo" : "{\"textStyle\":\"heading-medium\",\"headingTag\":\"h1\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "d8d82f32-8683-418b-bae1-ffd83b09cf66",
+                  "type" : "component"
+                } ],
+                "id" : "ac73a63e-bc2a-4db2-8b9d-5890080782e1",
+                "name" : "heading",
+                "title" : "heading",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:heading",
+              "id" : "c3253f92-13a2-4a4f-8937-279351de1dc5",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "lastLowestPriceLabel" : "Last Lowest Price:",
+                "lastLowestPriceLabelSize" : "medium",
+                "pricingType" : "3_TIER",
+                "product" : "{!Product.Details}",
+                "productPricing" : "{!Product.Pricing}",
+                "productSellingModelPriceType" : "",
+                "productTax" : "{!Product.Tax}",
+                "productVariant" : "{!Product.SelectedVariant}",
+                "promotionalMessageTextSize" : "small",
+                "promotionalPricing" : "{!Product.PromotionalPricing}",
+                "selectedProductSellingModel" : "{!Product.SelectedProductSellingModel}",
+                "showTaxIndication" : true,
+                "slot1PriceLabel" : "",
+                "slot1PriceTextSize" : "large",
+                "slot2PriceLabel" : "",
+                "slot2PriceTextSize" : "medium",
+                "slot3PriceLabel" : "Final Price",
+                "slot3PriceTextSize" : "small",
+                "taxIncludedLabel" : "Tax Included",
+                "taxLabelSize" : "medium",
+                "unavailablePriceLabel" : "Price Unavailable"
+              },
+              "definition" : "commerce_builder:productPricingDetails",
+              "id" : "3501d3e1-845a-4a6f-81fc-dddc237383b9",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "backgroundColor" : "rgba(0,0,0,0)",
+                "borderRadius" : 0,
+                "discountRowLabel" : "Discount per Unit",
+                "productPricing" : "{!Product.Pricing}",
+                "quantityRowLabel" : "Quantity"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Tier Discounts",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-medium\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "8f3d2fc1-f01c-4f59-909b-c90929d07cdd",
+                  "type" : "component"
+                } ],
+                "id" : "c125e919-d25d-4d11-9e6d-39fb5d9555a4",
+                "name" : "title",
+                "title" : "title",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:pricingTiers",
+              "id" : "35975e6b-f656-47bf-b0bb-c60ad4e4a1f7",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "addToCartButtonBorderRadius" : 0,
+                "addToCartButtonProcessingText" : "Adding...",
+                "addToCartButtonText" : "Add To Cart",
+                "addToListButtonBorderRadius" : 0,
+                "addToListButtonText" : "Add To List",
+                "incrementValueGuideText" : "Increment quantity is {0}",
+                "maximumValueGuideText" : "Maximum quantity is {0}",
+                "minimumValueGuideText" : "Minimum quantity is {0}",
+                "outOfStockText" : "Out of Stock",
+                "product" : "{!Product.Details}",
+                "productInventory" : "{!Product.Inventory}",
+                "productVariant" : "{!Product.SelectedVariant}",
+                "quantitySelectorLabel" : "QTY",
+                "selectedProductSellingModel" : "{!Product.SelectedProductSellingModel}",
+                "showAddToListButton" : true
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Minimum Quantity is {!Product.Details.purchaseQuantityRule.minimumNumber} • Maximum Quantity is {!Product.Details.purchaseQuantityRule.maximumNumber} • Sold in increments of {!Product.Details.purchaseQuantityRule.incrementNumber}",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "4b25ab52-e8fb-49c8-9a1a-51d067fe65f5",
+                  "type" : "component"
+                } ],
+                "id" : "43f5e776-d520-4df8-8fc1-5d4bb0ead8b2",
+                "name" : "combinedPurchaseQuantityRuleInfo",
+                "title" : "combinedPurchaseQuantityRuleInfo",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:purchaseOptions",
+              "id" : "7177aac6-b92e-40d3-b444-466b89277fd3",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
+                "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextColor" : "rgb(0, 0, 0)",
+                "activeTabTextEmphasis" : "{\"bold\":true}",
+                "activeTabTextStyle" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
+                "borderColor" : "",
+                "borderRadius" : "",
+                "borderWeight" : "",
+                "enableOverflowMenu" : false,
+                "imageFit" : "cover",
+                "imagePosition" : "center center",
+                "overflowIconColor" : "rgb(116,116,116)",
+                "overflowIconStyle" : "down-arrow",
+                "overflowMenuLabel" : "More",
+                "tabAlignment" : "left",
+                "tabBorderColor" : "rgb(247, 124, 0)",
+                "tabBorderRadius" : "",
+                "tabBorderWeight" : "0px",
+                "tabHeight" : "50px",
+                "tabHoverBorderHighlightColor" : "rgba(0, 73, 137, 0)",
+                "tabHoverBorderHighlightWeight" : "2px",
+                "tabHoverTextColor" : "rgb(0, 0, 0)",
+                "tabLayout" : "horizontal",
+                "tabPadding" : "12px",
+                "tabTextColor" : "rgb(0, 0, 0)",
+                "tabTextEmphasis" : "{\"bold\":true}",
+                "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "tabsetConfig" : "{\"UUID\":\"452473f6-6344-4d45-b222-6ccfdfde24f7\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"21d4ca26-a1c5-434c-a01b-3149dcdc638c\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"d9206293-3fd0-4e26-97b8-ef3c7c68873c\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"4bae27cb-109a-4076-a3b8-5597cdaf0704\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"9dd46c8e-0066-4948-ba1e-7c9924728f34\",\"tabName\":\"Case Studies\",\"tabKey\":\"c2d39\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"2652f4a7-e6f5-4398-a4bd-7ce15b8322fa\",\"tabName\":\"User Resources\",\"tabKey\":\"936c3\",\"locked\":false,\"allowGuestUser\":false}]}",
+                "width" : "100%"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"product-highlights-wrapper\">\n  <div class=\"rich-text-block-2 w-richtext\">\n    <ul class=\"list\">\n        \n      <li>\n          \n        • &nbsp Universal base unit is compatible with either size of single-use vessels\n        (0.1L or 0.5L working volumes)\n              \n      </li>\n        \n      <li>• &nbsp Designed for use in incubator for temperature and gas control</li>\n      <li>\n        Removable caps on single-use vessels allow for sterile liquid handling\n        in biosafety hood\n      </li>\n      <li>\n        • &nbsp Product contact materials meet regulatory requirements for\n        first-in-human clinical trials\n      </li>\n    </ul>\n  </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "ddb68045-7880-4ef3-9648-49145f20dee4",
+                  "type" : "component"
+                } ],
+                "id" : "21d4ca26-a1c5-434c-a01b-3149dcdc638c",
+                "name" : "tab1",
+                "title" : "Highlights",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<table>\n<div class=\"section-catalague\">\n  <div class=\"page-padding\">\n    <div class=\"conferences-container w-container\">\n      <div class=\"catalague-component\">\n        <div class=\"rich-text w-richtext\">\n          <div class=\"w-embed\">\n            \n            <table id=\"mini\" cellspacing=\"0\">\n              <tbody>\n                <tr>\n                  <th>Product Type</th>\n                  <th>Product</th>\n                  <th>Product Number</th>\n                </tr>\n                <tr>\n                  <td class=\"base\" rowspan=\"1\">Base Unit</td>\n                  <td>\n                    PBS-Mini Vertical-Wheel Bioreactor Base Unit (120-240 V)\n                  </td>\n                  <td>FA-UNI-B-501</td>\n                </tr>\n                <tr>\n                  <td class=\"bags\" rowspan=\"4\">Single-Use Vessels</td>\n                  <td>\n                    PBS-0.1 Vertical-Wheel Single-Use Vessel with Bottom Port\n                    (pack of 1)\n                  </td>\n                  <td>FA-0.1-D-101</td>\n                </tr>\n                <tr>\n                  <td>PBS-0.1 Vertical-Wheel Single-Use Vessel (pack of 4)</td>\n                  <td>FA-0.1-D-001</td>\n                </tr>\n                <tr>\n                  <td>\n                    PBS-0.5 Vertical-Wheel Single-Use Vessel with Bottom Port\n                    (pack of 1)\n                  </td>\n                  <td>FA-0.5-D-101</td>\n                </tr>\n                <tr>\n                  <td>PBS-0.5 Vertical-Wheel Single-Use Vessel (pack of 4)</td>\n                  <td>FA-0.5-D-001</td>\n                </tr>\n                <tr>\n                  <td class=\"Accessories\" rowspan=\"2\">Accessories</td>\n                </tr>\n                <tr>\n                  <td>PBS-Mini Extended 4-Gang DC Power Distribution Cable</td>\n                  <td>IA-UNI-BA-112</td>\n                </tr>\n              </tbody>\n            </table>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n</table>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "4070cd0a-09a6-45bb-aecf-580d006d69f3",
+                  "type" : "component"
+                } ],
+                "id" : "d9206293-3fd0-4e26-97b8-ef3c7c68873c",
+                "name" : "tab2",
+                "title" : "Product Catalogue",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "fit" : "cover",
+                    "height" : 402,
+                    "imageInfo" : "{\"imageInfoV1\":{\"url\":\"\",\"altText\":\"\",\"contentKey\":\"MC6QAJ5UW5UFEYRIHQENQS3Y7RSI\",\"contentType\":null}}",
+                    "overlayColor" : "",
+                    "position" : "center center",
+                    "width" : 100
+                  },
+                  "definition" : "dxp_base:image",
+                  "id" : "a6ac3af2-968b-46cb-990e-85521a84fa4b",
+                  "type" : "component"
+                } ],
+                "id" : "4bae27cb-109a-4076-a3b8-5597cdaf0704",
+                "name" : "tab3",
+                "title" : "Technical Specifications",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"case-study-component\">\n  <div class=\"case-study-cms w-dyn-list\">\n    <div class=\"case-study-cms-list w-dyn-items\">\n      <div class=\"w-dyn-item\">\n        <div class=\"case-study-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"case-study-text\">\n              Defined Biomatrices Accelerate MSC Manufacturing Across Scales\n            </div>\n          </div>\n          <a\n            href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/6434a6a639b63b4b7a7ac231_2023%20Defined%20Biomatrices%20Accelerate%20MSC%20Manufacturing%20Across%20Scales.pdf\"\n            target=\"_blank\"\n            class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n      <div class=\"w-dyn-item\">\n        <div class=\"case-study-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"case-study-text\">\n              T Cell Expansion in PBS-Mini Using CellGenix Reagents\n            </div>\n          </div>\n          <a\n            href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63d42345104e46912d28bcb4_AppNote_CellGenix-TCM-in-PBS-Mini-Bioreactor.pdf\"\n            target=\"_blank\"\n            class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n      <div class=\"w-dyn-item\">\n        <div class=\"case-study-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"case-study-text\">\n              Overcoming Bioprocess Bottlenecks in the Large-Scale Expansion of\n              High-Quality hiPSC Aggregates in Vertical-Wheel Stirred Suspension\n              Bioreactors\n            </div>\n          </div>\n          <a\n            href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b68833b19e11c7b880dca7_2021%20Borys%20et%20al.%20-%20Overcoming%20Bioprocess%20Bottlenecks%20in%20Large-Scale%20Expansion.pdf\"\n            target=\"_blank\"\n            class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n      <div class=\"w-dyn-item\">\n        <div class=\"case-study-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"case-study-text\">\n              Transcriptome Profiling of Human Pluripotent Stem Cell-Derived\n              Cerebellar Organoids Reveals Faster Commitment Under Dynamic\n              Conditions\n            </div>\n          </div>\n          <a href=\"#\" class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n      <div class=\"w-dyn-item\">\n        <div class=\"case-study-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"case-study-text\">\n              Initial Power Measurements for a Family of Novel Bioreactors\n            </div>\n          </div>\n          <a\n            href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b684a592188ebf9a76f829_2022%20Croughan%20et%20al.%20-%20Initial%20Power%20Measurements%20for%20a%20Family%20of%20Novel%20Bioreactors.pdf\"\n            target=\"_blank\"\n            class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n      <div class=\"w-dyn-item\">\n        <div class=\"case-study-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"case-study-text\">\n              Cell Culture Process Scale-Up Challenges for Commercial-Scale\n              Manufacturing\n            </div>\n          </div>\n          <a\n            href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b6854da775aa713c8df9b9_2022%20Lee%20et%20al.%20-%20Cell%20Culture%20Process%20Scale-Up%20Challenges%20for%20Commercial-Scale%20Manufactruing.pdf\"\n            target=\"_blank\"\n            class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "6a998405-a58a-4517-aa35-cc8cf0d6346e",
+                  "type" : "component"
+                } ],
+                "id" : "9dd46c8e-0066-4948-ba1e-7c9924728f34",
+                "name" : "c2d39",
+                "title" : "Case Studies",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"resources-component\">\n  <div class=\"resources-wrapper\">\n  </div>\n  <div class=\"resources-cms-wrapper w-dyn-list\">\n    <div class=\"resources-cms-list w-dyn-items\">\n      <div class=\"w-dyn-item\">\n        <div class=\"resource-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"resouces-list-text\">PBS-Mini User Manual</div>\n          </div>\n          <a\n            href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/637d599d4e51f9249cc99fca_IC03504%20Rev%20B%20(Digital).pdf\"\n            target=\"_blank\"\n            class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n      <div class=\"w-dyn-item\">\n        <div class=\"resource-wrap\">\n          <div class=\"case-study-text-wrapper\">\n            <div class=\"resouces-list-text\">PBS-Mini Datasheet</div>\n          </div>\n          <a\n            href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63c9e3e59ae7592dee18bd73_PBS%20Mini%20Datasheet%20IC03422%20Rev%20B%20(Digital).pdf\"\n            target=\"_blank\"\n            class=\"product-link-wrapper w-inline-block\"\n            ><div class=\"heading-small text-color-yellow hover\">\n              Download\n            </div></a\n          >\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "8d2a573c-9259-4b8c-b817-927e43847c5a",
+                  "type" : "component"
+                } ],
+                "id" : "2652f4a7-e6f5-4398-a4bd-7ce15b8322fa",
+                "name" : "936c3",
+                "title" : "User Resources",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:tabs",
+              "id" : "452473f6-6344-4d45-b222-6ccfdfde24f7",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "borderColor" : "#ecebea",
+                "borderRadius" : 5,
+                "product" : "{!Product.Details}",
+                "productPricing" : "{!Product.Pricing}",
+                "selectedProductSellingModel" : "{!Product.SelectedProductSellingModel}",
+                "showBorder" : true
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "One-Time Purchase",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h4\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "303127ea-fbb3-4f58-8cf4-b4948180e621",
+                  "type" : "component"
+                } ],
+                "id" : "2bbdd469-70c8-464c-9a84-a2147295505d",
+                "name" : "lifeTimeLabel",
+                "title" : "lifeTimeLabel",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "Subscribe",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h4\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "25123e9b-0ed5-4354-a65a-6ff8c86bdb97",
+                  "type" : "component"
+                } ],
+                "id" : "babbb639-9c70-4f1f-92ad-fcd8cf271c99",
+                "name" : "subscriptionLabel",
+                "title" : "subscriptionLabel",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "lastLowestPriceLabel" : "Last Lowest Price:",
+                    "lastLowestPriceLabelSize" : "medium",
+                    "pricingType" : "3_TIER",
+                    "product" : "{!Product.Details}",
+                    "productPricing" : "{!Product.Pricing}",
+                    "productSellingModelPriceType" : "OneTimeSellingModelPrice",
+                    "productTax" : "{!Product.Tax}",
+                    "productVariant" : "{!Product.SelectedVariant}",
+                    "promotionalMessageTextSize" : "small",
+                    "promotionalPricing" : "{!Product.PromotionalPricing}",
+                    "selectedProductSellingModel" : "{!Product.SelectedProductSellingModel}",
+                    "showTaxIndication" : true,
+                    "slot1PriceLabel" : "",
+                    "slot1PriceTextSize" : "large",
+                    "slot2PriceLabel" : "",
+                    "slot2PriceTextSize" : "medium",
+                    "slot3PriceLabel" : "Final Price",
+                    "slot3PriceTextSize" : "small",
+                    "taxIncludedLabel" : "Tax Included",
+                    "taxLabelSize" : "medium",
+                    "unavailablePriceLabel" : "Price Unavailable"
+                  },
+                  "definition" : "commerce_builder:productPricingDetails",
+                  "id" : "12de840f-4e17-4695-a6ab-4d77b192c037",
+                  "type" : "component"
+                } ],
+                "id" : "a5d546f2-611f-4228-b8ee-a35e9c6db22d",
+                "name" : "lifeTimePrice",
+                "title" : "lifeTimePrice",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "lastLowestPriceLabel" : "Last Lowest Price:",
+                    "lastLowestPriceLabelSize" : "medium",
+                    "pricingType" : "3_TIER",
+                    "product" : "{!Product.Details}",
+                    "productPricing" : "{!Product.Pricing}",
+                    "productSellingModelPriceType" : "ActiveSellingModelPrice",
+                    "productTax" : "{!Product.Tax}",
+                    "productVariant" : "{!Product.SelectedVariant}",
+                    "promotionalMessageTextSize" : "small",
+                    "promotionalPricing" : "{!Product.PromotionalPricing}",
+                    "selectedProductSellingModel" : "{!Product.SelectedProductSellingModel}",
+                    "showTaxIndication" : true,
+                    "slot1PriceLabel" : "",
+                    "slot1PriceTextSize" : "large",
+                    "slot2PriceLabel" : "",
+                    "slot2PriceTextSize" : "medium",
+                    "slot3PriceLabel" : "Final Price",
+                    "slot3PriceTextSize" : "small",
+                    "taxIncludedLabel" : "Tax Included",
+                    "taxLabelSize" : "medium",
+                    "unavailablePriceLabel" : "Price Unavailable"
+                  },
+                  "definition" : "commerce_builder:productPricingDetails",
+                  "id" : "a6418c70-d26c-4bd6-9de8-fa9984db6083",
+                  "type" : "component"
+                } ],
+                "id" : "ac74388a-f96f-478b-9699-fc14d760a813",
+                "name" : "selectedSubscriptionPrice",
+                "title" : "selectedSubscriptionPrice",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "{!Product.ProductSellingModels.oneTimeDescription}",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h4\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "e90abfb9-6595-4641-b607-2b9e2ec647e0",
+                  "type" : "component"
+                } ],
+                "id" : "1579fb86-449b-49aa-abae-dbf0b9237520",
+                "name" : "oneTimeDescription",
+                "title" : "oneTimeDescription",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "{!Product.ProductSellingModels.subscribeDescription}",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h4\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "61e1ba22-8495-4dac-98ae-a94423ded35b",
+                  "type" : "component"
+                } ],
+                "id" : "4e06971a-e5d2-4430-bc02-ea3ce0c007fa",
+                "name" : "subscribeDescription",
+                "title" : "subscribeDescription",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:productSellingModelSelector",
+              "id" : "523aaea2-adb4-4835-8f5c-ff27e24169db",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "product" : "{!Product.Details}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Product options:",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"body-regular\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "b0deff80-52cc-4151-9917-3c65f3aea36f",
+                  "type" : "component"
+                } ],
+                "id" : "e740ead9-4489-48ca-824d-457bd93b18f8",
+                "name" : "heading",
+                "title" : "heading",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:variantSelector",
+              "id" : "284acde5-06c5-4016-bf98-875fc6fc03cf",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "currencyIsoCode" : "{!Product.Pricing.currencyIsoCode}",
+                "incrementValueGuideText" : "Increment quantity is {0}",
+                "lastLowestPriceLabel" : "Last Lowest Price:",
+                "lastLowestPriceLabelSize" : "medium",
+                "maximumValueGuideText" : "Maximum quantity is {0}",
+                "minimumValueGuideText" : "Minimum quantity is {0}",
+                "outOfStockText" : "Out of Stock",
+                "pricingType" : "3_TIER",
+                "product" : "{!Product.Details}",
+                "productId" : "{!Route.recordId}",
+                "promotionalMessageTextSize" : "small",
+                "quantitySelectorLabel" : "QTY",
+                "showAddAllToCartButton" : true,
+                "showProductDescription" : true,
+                "showProductImage" : true,
+                "showTaxIndication" : true,
+                "slot1PriceTextSize" : "large",
+                "slot2PriceTextSize" : "medium",
+                "slot3PriceTextSize" : "small",
+                "taxIncludedLabel" : "Tax Included",
+                "taxLabelSize" : "medium",
+                "unavailablePriceLabel" : "Price Unavailable"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "One-Time Purchase",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h4\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "5ddcccd8-fdfd-4508-aec3-34631e65ad0a",
+                  "type" : "component"
+                } ],
+                "id" : "b65fb6a5-9d20-4d86-b50e-5aeab48a3fe9",
+                "name" : "lifeTimeLabel",
+                "title" : "lifeTimeLabel",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "Subscribe",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h4\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "3958137a-9beb-49ae-a10e-5a2256fa94cd",
+                  "type" : "component"
+                } ],
+                "id" : "df40a6d2-506b-4248-90e9-d843d4abe2d3",
+                "name" : "subscriptionLabel",
+                "title" : "subscriptionLabel",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:productSet",
+              "id" : "c7d09f5c-28fa-4fb7-8b2c-c292919b0255",
+              "type" : "component"
+            } ],
+            "id" : "edeccf50-36c3-46a4-a50a-9fe9e25fa8df",
+            "name" : "col2",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "2547c351-4260-4f8a-b9f6-59c754a92f8a",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"930eb2a4-4a44-4c96-97c9-e2d42d5a2f67\",\"columns\":[{\"UUID\":\"e2c2d331-5868-4953-8f02-610f77234199\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "richTextValue" : "<div class=\"section-library\">\n  <div class=\"page-padding\">\n    <div class=\"conferences-container w-container\">\n      <div class=\"library-component\">\n        <div class=\"products-faq-component\">\n          <div class=\"faq-content-wrapper\">\n            <h2 class=\"product-resources-header margin-bottom margin-large\">\n              FAQ\n            </h2>\n            <div class=\"w-dyn-list\">\n              <div  class=\"w-dyn-items\">\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        How can I monitor process parameters during a cell\n                        culture run?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"width: 706px; height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        The 3L bioreactor’s software allows for customizable\n                        programming of process controls and real-time monitoring\n                        of parameters using various sensors. Feedback loops can\n                        be used to pause a run based on deviations from a set\n                        range.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What are recommended methods for sampling and\n                        harvesting?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Both sampling and harvesting of cells can be achieved by\n                        unscrewing the orange cap on top of the single-use\n                        vessel (one cap on 0.1L, two caps on 0.5L vessel) and\n                        using a pipette to withdraw media. It is recommended to\n                        perform these procedures under a biosafety hood.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What is the function of the power accessory cable?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        This accessory allows the power cables from four\n                        different Mini bases to be combined into one plug for a\n                        wall outlet.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        I have other questions regarding usage or\n                        troubleshooting of the PBS Mini.\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Please use the Products and/or Service quote form to\n                        submit any questions or inquiries related to a specific\n                        product(s).\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What data are available demonstrating the performance of\n                        Vertical-Wheel bioreactors?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Our Publications section lists numerous examples of cell\n                        culture performance data for various cell types\n                        generated by customers and collaborators as well as by\n                        our BioLab team.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "2c6b109e-b15b-48f0-947d-ec1b9db1612d",
+              "type" : "component"
+            } ],
+            "id" : "e2c2d331-5868-4953-8f02-610f77234199",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "930eb2a4-4a44-4c96-97c9-e2d42d5a2f67",
+          "type" : "component"
+        } ],
+        "id" : "d54eb72e-9673-4f10-a957-32e3b4c87157",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "{!Record._Object}: {!Record._Title}",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "afeb7295-7253-478f-9253-1b715e13e320",
+          "type" : "component"
+        } ],
+        "id" : "d5f7c785-ccb3-4695-bd3c-56f83e887d50",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "35890b1e-a884-4439-b6ce-84e67212f449",
+      "type" : "component"
+    },
+    "contentOperations" : {
+      "operations" : [ {
+        "targetId" : "452473f6-6344-4d45-b222-6ccfdfde24f7",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "5f23491d-cb7e-43e2-9dee-f9793ee232c0",
+          "description" : "",
+          "criteriaType" : "AnyCriterionMatches",
+          "expressionCriteria" : [ {
+            "resource" : "Product.Details.id",
+            "operator" : "Equal",
+            "value" : "01tHs00000A9aHFIAZ",
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "2c6b109e-b15b-48f0-947d-ec1b9db1612d",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "82330e2c-36d1-42b7-9a4c-362a49566f57",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "Product.Details.id",
+            "operator" : "Equal",
+            "value" : "01tHs00000A9aHFIAZ",
+            "criterionNumber" : 1
+          } ]
+        }
+      } ]
+    },
+    "dataProviders" : [ {
+      "definition" : "sfdc_cms__commerceProductDetailDataProvider",
+      "sfdcExpressionKey" : "Product",
+      "attributes" : {
+        "recordId" : "{!recordId}"
+      }
+    } ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "detail-01t"
+  }
+}

@@ -1,0 +1,19 @@
+/**
+ * @description       : 
+ * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @group             : 
+ * @last modified on  : 03-21-2024
+ * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+**/
+public with sharing class getProductDetails {
+
+    @AuraEnabled(cacheable=true)
+    public static Product2 getProductDetails(Id recordId) {
+        try {
+            return [SELECT ID,Name FROM Product2 WHERE Id = :recordId LIMIT 1];
+        } catch (Exception e) {
+            throw new AuraHandledException('Error fetching product details: ' + e.getMessage());
+        }
+    }
+
+}

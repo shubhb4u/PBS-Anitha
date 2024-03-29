@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Shop Now",
+  "contentBody" : {
+    "activeViewId" : "Shop_Now",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-shop-now",
+    "urlPrefix" : "shop-now"
+  }
+}

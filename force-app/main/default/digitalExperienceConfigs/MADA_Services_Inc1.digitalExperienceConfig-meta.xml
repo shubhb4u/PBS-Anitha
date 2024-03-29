@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>MADA Services Inc.</label>
+    <site>
+        <urlPathPrefix>MADAServicesInc</urlPathPrefix>
+    </site>
+    <space>site/MADA_Services_Inc1</space>
+</DigitalExperienceConfig>
