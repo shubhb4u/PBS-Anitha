@@ -11,6 +11,7 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
     @track contactId;
     @track quoteId;
     @track downloadPdfUrl  = '';
+    @track contentDist;
     // @track conDist =  [];
     // @track showDownloadButton;
 
@@ -67,56 +68,39 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
         });
     }
 
-    async handleDownloadQuotePdf(event) {
+
+    //Handler for downloading quote PDF - 
+    handleDownloadQuotePdf(event) {
+
         this.quoteId = event.target.dataset.quoteDownid;
         console.log('Quote id for download pdf is ->>', this.quoteId);
-        
-        
-            // Navigate to a URL
-            let url = await getDownloadLink({ quoId: this.quoteId });
-            this[NavigationMixin.Navigate]({
-                type: 'standard__webPage',
-                attributes: { url }
-            },
-            true // Replaces the current page in your browser history with the URL
-          );
-        
+    
+        if (this.quoteId) {
+            console.log('Quote Id for downloading quote is -->> ' + this.quoteId);
+            // Fetch quotes only if contactId is available
+            getDownloadLink({ quoId: this.quoteId })
+
+                .then(result => {
+                    this.downloadPdfUrl = result;
+                    console.log('contentDist link is  ->>>', result);
+                    this.navigateToDownloadPDF();
+                    
+                })
+                .catch(error => {
+                    console.error('Error fetching contentDist:', error);
+            });
+        }
     }
-    
 
-                    
+    navigateToDownloadPDF(){
 
-    // handleDownloadQuotePdf(event) {
-    //     this.quoteId = event.target.dataset.quoteDownid;
-    //     console.log('Quote id for download pdf is ->>', this.quoteId);
-    
-    //     if (this.quoteId) {
-    //         console.log('Quote Id for downloading quote is -->> ' + this.quoteId);
-    //         // Fetch quotes only if contactId is available
-    //         getDownloadLink({ quoId: this.quoteId })
-    //             .then(result => {
-    //                 console.log('Download link is  ->>>', result);
-    //                 this.downloadPdfUrl = result;
-    //                 const Durl = this.downloadPdfUrl+'';
-                    
-    //                 console.log('Download PDF URL:', Durl);
-    
-    //                 // Navigate to the constructed URL
-    //                 if (Durl) {
-    //                     this[NavigationMixin.Navigate]({
-    //                         type: 'standard__webPage',
-    //                         attributes: {
-    //                             url: Durl
-    //                         }
-    //                     });
-    //                 } else {
-    //                     console.error('Download PDF URL is null or empty.');
-    //                 }
-    //             })
-    //             .catch(error => {
-    //                 console.error('Error fetching download link:', error);
-    //             });
-    //     }
-    // }
-    
+        // Navigate to the constructed URL
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: this.downloadPdfUrl
+            }
+        });
+    }
+
 }
