@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 03-28-2024
+ * @last modified on  : 04-08-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class IndividualQuoteRecords {
@@ -24,14 +24,20 @@ public with sharing class IndividualQuoteRecords {
         if(quoteId!=null){
             system.debug('Inside If:');
         quo=[select id,ContactId,Status,Name,ExpirationDate,TotalPrice from Quote where Id = : quoteId limit 1];
-        quo.Status = 'Accepted';
-        update quo;
-        System.debug('qLidt:'+quo);
+        if(quo.ExpirationDate!=null && System.today()<=quo.ExpirationDate && quo.Status=='Approved'){
+            quo.Status = 'Accepted';
+            update quo;
+            System.debug('qLidt:'+quo);
+        }else if(quo.ExpirationDate!=null && System.today()>quo.ExpirationDate){
+            return 'expired';
+        }else if(quo.Status!='Approved'){
+            return 'not approved';
+        }
         }
         if(quo.status == 'Accepted' ){
             return 'success';
         }
-        else{
+       else{
             return 'failed';
         }
     }
@@ -40,7 +46,10 @@ public with sharing class IndividualQuoteRecords {
         List<CartItem> CartItems =new List<CartItem>();
         List<CartItem> CartItemsToAdd =new List<CartItem>();
         CartItems =[select id from CartItem where CartId =: cartId];
+        System.debug('CartItems size --0>>' + CartItems
+        .size());
         CartDeliveryGroup DGId=[select Id,CartId from CartDeliveryGroup where CartId =:cartId];
+        System.debug('CartDeliveryGroup size --0>>' + DGId);
         if(CartItems != null){
             delete CartItems;
         }
@@ -54,6 +63,7 @@ public with sharing class IndividualQuoteRecords {
                 item.CartId = cartId;
                 item.CartDeliveryGroupId = DGId.Id;
                 item.Product2Id = quoteline.Product2Id;
+
                 item.SalesPrice = quoteline.UnitPrice;
                 item.Quantity = quoteline.Quantity;
                 item.ListPrice = quoteline.ListPrice;
@@ -64,7 +74,7 @@ public with sharing class IndividualQuoteRecords {
                 item.TotalPriceAfterAllAdjustments = quoteline.UnitPrice;
                 item.TotalLineAmount = quoteline.UnitPrice;
                 item.TotalListPrice = quoteline.ListPrice;
-                item.TotalPrice = quoteline.UnitPrice;
+                item.TotalPrice = quoteline.TotalPrice;
                 item.UnitAdjustedPrice = quoteline.UnitPrice;
                 item.UnitAdjustmentAmount = 0;
                 item.NetUnitPrice = 0;

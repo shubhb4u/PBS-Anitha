@@ -1,8 +1,8 @@
-trigger ContentVersionTriggerPBS on ContentVersion (after insert, after Update) {
+trigger ContentVersionTriggerPBS on ContentVersion (after insert, after update) {
 
     if(Trigger.isAfter){
-        if(Trigger.isInsert || Trigger.isUpdate){
-            updatePDFLinkonQuote.updatePdfUrlonQuote(Trigger.new, Trigger.oldMap);
+        if(Trigger.isInsert || trigger.isUpdate){
+            updatePDFLinkonQuote.updatePdfUrlonQuote(Trigger.new);
         }
     }
 }

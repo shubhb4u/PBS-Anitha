@@ -218,6 +218,9 @@
         <relatedList>OrderItemSummaries</relatedList>
     </relatedLists>
     <relatedLists>
+        <relatedList>RelatedFileList</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>DeliverToName</fields>
         <fields>DeliverToStreet</fields>
         <fields>DeliverToCity</fields>

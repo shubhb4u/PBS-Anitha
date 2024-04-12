@@ -13,6 +13,9 @@ global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippin
             
             // Used to increase the cost by a multiple of the number of items in the cart (useful for testing but should not be done in the final code)
             Integer numberOfUniqueItems = [SELECT count() from cartItem WHERE CartId = :cartId WITH SECURITY_ENFORCED];
+             List<CartDeliveryGroup> deliveryGroups = [SELECT Id, DeliverToState, DeliverToCountry FROM CartDeliveryGroup WHERE CartId = :cartId WITH SECURITY_ENFORCED];            
+
+            
 
             // Following snippet of code fetches a static json response with 2 mocked sample shipping methods.
             // Another example that demonstrates how to call a live 3rd party HTTP Service to fetch the desired response is implemented
@@ -21,9 +24,9 @@ global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippin
             // Both implementations are just samples returning hardcoded Shipping options and MUST not be used in production systems.
             ShippingOptionsAndRatesFromExternalService[] shippingOptionsAndRatesFromExternalService = null;
             if(useHTTPService) {
-                shippingOptionsAndRatesFromExternalService = getShippingOptionsAndRatesFromExternalService(numberOfUniqueItems);
+                shippingOptionsAndRatesFromExternalService = getShippingOptionsAndRatesFromExternalService(numberOfUniqueItems,deliveryGroups);
             } else {
-                shippingOptionsAndRatesFromExternalService = getShippingOptionsAndRatesFromMockedService(numberOfUniqueItems);
+                shippingOptionsAndRatesFromExternalService = getShippingOptionsAndRatesFromMockedService(numberOfUniqueItems,deliveryGroups);
             }
 
             // On re-entry of the checkout flow delete all previous CartDeliveryGroupMethods for the given cartDeliveryGroupId
@@ -80,9 +83,9 @@ global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippin
         This method provides an alternative to retrieve Shipping Options if http call needs to be bypassed.
         This method uses a hardcoded sample response and MUST not be used in production systems.
      */
-    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromMockedService (Integer numberOfUniqueItems) {
+    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromMockedService (Integer numberOfUniqueItems,List<CartDeliveryGroup> deliveryGroups) {
         ShippingOptionsAndRatesFromExternalService[] shippingOptions = new List<ShippingOptionsAndRatesFromExternalService>();
-        String responseBody = getShippingOptionsResponse();
+        String responseBody = getShippingOptionsResponse(deliveryGroups);
         List<Object> results = (List<Object>) JSON.deserializeUntyped(responseBody);
         for (Object result: results) {
             Map<String, Object> subresult = (Map<String, Object>) result;
@@ -98,7 +101,7 @@ global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippin
         return shippingOptions;
     }
 
-    private String getShippingOptionsResponse() {
+    private String getShippingOptionsResponse(List<CartDeliveryGroup> deliveryGroups) {
         String name1 = 'Delivery Method 1';
         String name2 = 'Delivery Method 2';
         String serviceName1 = 'Test Carrier 1';
@@ -106,7 +109,7 @@ global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippin
         return '[{"status":"calculated","rate":{"name":"'+name1+'","serviceName":"'+serviceName1+'","serviceCode":"SNC9600","shipmentCost":11.99,"otherCost":5.99}},{"status":"calculated","rate":{"name":"'+name2+'","serviceName":"'+serviceName2+'","serviceCode":"SNC9600","shipmentCost":15.99,"otherCost":6.99}}]';
     }
 
-    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromExternalService (Integer numberOfUniqueItems) {
+    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromExternalService (Integer numberOfUniqueItems,List<CartDeliveryGroup> deliveryGroups) {
         final Integer successfulHttpRequest = 200;
 
         ShippingOptionsAndRatesFromExternalService[] shippingOptions = new List<ShippingOptionsAndRatesFromExternalService>();

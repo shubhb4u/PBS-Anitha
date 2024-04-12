@@ -11,6 +11,10 @@
         <label></label>
         <name>Business_Account</name>
     </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Manual_Tax_and_Exempt_cant_check_same</name>
+    </validationRules>
     <webLinks>
         <label></label>
         <name>Billing</name>

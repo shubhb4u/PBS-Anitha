@@ -133,6 +133,11 @@
           },
           "children" : [ {
             "children" : [ {
+              "attributes" : { },
+              "definition" : "c:order",
+              "id" : "a24a974e-4be9-4cd0-8f36-ba2072ca77a4",
+              "type" : "component"
+            }, {
               "attributes" : {
                 "bodyText" : "We will send an email with your confirmation number and receipt shortly.",
                 "buttonText" : "Continue Shopping",

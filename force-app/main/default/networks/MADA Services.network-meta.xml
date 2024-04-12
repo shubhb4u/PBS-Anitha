@@ -35,6 +35,8 @@
         <profile>Admin</profile>
         <profile>Customer Community Plus User</profile>
         <profile>Partner Community User Clone</profile>
+        <profile>Customer Community Login User</profile>
+        <profile>Customer Community Plus Login User</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>

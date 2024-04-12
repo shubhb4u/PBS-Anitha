@@ -2,7 +2,7 @@
  * @description       : Creates a quote based on the provided cart ID
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             :
- * @last modified on  : 03-28-2024
+ * @last modified on  : 04-05-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class RequestQuoteController {
@@ -21,7 +21,7 @@ public with sharing class RequestQuoteController {
                 // Create a new Quote record outside the loop
                 Quote newQuote = new Quote(
                     Status = 'Draft',
-                    Name = userName,
+                    Name = userName + ' ' + 'Quote',
                     Pricebook2Id =  pbId[0].id,
                     Email = 'quotetest@gmail.com',
                     ExpirationDate = requestQuoteBy,

@@ -81,7 +81,7 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
             getDownloadLink({ quoId: this.quoteId })
 
                 .then(result => {
-                    this.downloadPdfUrl = result;
+                    this.contentDist = result;
                     console.log('contentDist link is  ->>>', result);
                     this.navigateToDownloadPDF();
                     
@@ -98,7 +98,7 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
         this[NavigationMixin.Navigate]({
             type: 'standard__webPage',
             attributes: {
-                url: this.downloadPdfUrl
+                url: this.contentDist
             }
         });
     }

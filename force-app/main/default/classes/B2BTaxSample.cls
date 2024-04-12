@@ -12,41 +12,93 @@ global with sharing class B2BTaxSample implements sfdc_checkout.CartTaxCalculati
             // In the Spring '20 release, there should be one delivery group per cart.
             // In the future, when multiple delivery groups can be created,
             // this sample should be updated to loop through all delivery groups.
-
             // We need to get the ID of the delivery group in order to get the DeliverTo info.
             Id cartDeliveryGroupId = [SELECT CartDeliveryGroupId FROM CartItem WHERE CartId = :cartId WITH SECURITY_ENFORCED][0].CartDeliveryGroupId;
+
+            Id curCartAccountId = [SELECT Id, AccountId FROM WebCart WHERE Id=:cartId].AccountId;//custom code
+            System.debug('curCartAccountId--->'+curCartAccountId);
             CartDeliveryGroup deliveryGroup = [SELECT DeliverToState, DeliverToCountry FROM CartDeliveryGroup WHERE Id = :cartDeliveryGroupId WITH SECURITY_ENFORCED][0];
-            
+            System.debug('deliveryGroup--->'+deliveryGroup);            
             // Get all SKUs, the cart item IDs, and the total prices from the cart items.
             Map<String, Id> cartItemIdsBySKU = new Map<String, Id>();
+            System.debug('cartItemIdsBySKU--->'+cartItemIdsBySKU);
             Map<String, Decimal> cartItemTotalPriceBySKU = new Map<String, Decimal>();
-            for (CartItem cartItem : [SELECT Sku, TotalPrice, Type FROM CartItem WHERE CartId = :cartId WITH SECURITY_ENFORCED]) {
-                String cartItemSKU = '';
-                if (cartItem.Type == 'Product') {
-                    if (String.isBlank(cartItem.Sku)) {
-                        String errorMessage = 'The SKUs for all products in your cart must be defined.';
-                        return integrationStatusFailedWithCartValidationOutputError(
-                            integStatus,
-                            errorMessage,
-                            jobInfo,
-                            cartId
-                        );
+            //Custom code
+            //Map<Id, Account> accountMap = new Map<Id, Account>();
+            //System.debug('accountMap--->'+accountMap);
+            
+           /* for (Account acc : [SELECT Id, Name, Exempt__c FROM Account WHERE Id = :curCartAccountId]) {
+                accountMap.put(acc.Id, acc);
+                System.debug('acc--->'+acc);
+            }
+            System.debug('accountMap-->'+accountMap);*/
+            Account currAccId = [SELECT Id, Name, Exempt__c, Manual_Tax__c FROM Account WHERE Id = :curCartAccountId];
+                    System.debug('AccId--->'+currAccId);
+					System.debug('AccId--->'+currAccId.Exempt__c);
+            		System.debug('AccId--->'+currAccId.Manual_Tax__c);
+            // Check if the account is exempt from tax calculation
+            if(currAccId != null && currAccId.Exempt__c == true || currAccId.Manual_Tax__c == true) {
+                integStatus.status = sfdc_checkout.IntegrationStatus.Status.SUCCESS;
+                System.debug(' integStatus.status-->'+ integStatus.status);
+                return integStatus;
+            }else{
+                System.debug('cartId--->'+cartId);
+                for (CartItem cartItemL : [SELECT Sku,Id, Product2.id,Product2.Product_Exempt__c,Product2Id, TotalPrice, Type FROM CartItem WHERE CartId =:cartId WITH SECURITY_ENFORCED]) {
+                    System.debug('cartItem---->'+cartItemL);
+                    System.debug('cartItem---->'+cartItemL.Product2);
+                     System.debug('cartItem---->'+cartItemL.Product2.id);
+                    System.debug('Product2Id--->'+cartItemL.Product2.Product_Exempt__c);
+                    
+                    String cartItemSKU = '';
+                    // CartItem product =[SELECT from CartItem where Id =: cartItem.Id LIMIT 1];
+                    //System.debug('product---'+cartItem != null);
+                    //System.debug('product1---'+cartItem.Product2.Exempt_Product__c);
+                    // system.debug('inside if-->' +cartItem != null && cartItem.Product2.Exempt_Product__c == true && cartItem.Sku != null);
+                    
+                    if(cartItemL != null && cartItemL.Product2.Product_Exempt__c == true && cartItemL.Sku != null ){
+                        system.debug('inside if-->' +cartItemL != null && cartItemL.Product2.Product_Exempt__c == true);
+                        integStatus.status = sfdc_checkout.IntegrationStatus.Status.SUCCESS;
+                        return integStatus;
                     }
-                    cartItemSKU = cartItem.Sku;
+                    
+                    if (cartItemL.Type == 'Product') { 
+                        /* Product2 curProduct =[SELECT Id,Exempt_Product__c FROM Product2 WHERE Id =:cartItem.Product2Id];
+if(curProduct != null && curProduct.Exempt_Product__c == true){
+integStatus.status = sfdc_checkout.IntegrationStatus.Status.SUCCESS;
+return integStatus;
+}*/
+                        if (String.isBlank(cartItemL.Sku)) {
+                            String errorMessage = 'The SKUs for all products in your cart must be defined.';
+                            return integrationStatusFailedWithCartValidationOutputError(
+                                integStatus,
+                                errorMessage,
+                                jobInfo,
+                                cartId
+                            );
+                        }
+                        
+                        cartItemSKU = cartItemL.Sku;
+                        
+                    }
+                    
+                    else if (cartItemL.Type == 'Charge') {
+                        // This is an example for a Cart Item of type shipping charge.
+                        // For simplicity and testing purposes, we just assign some SKU to this charge so that the taxation external service returns some value.
+                        cartItemSKU = 'ChargeSKU';
+                    }
+                    cartItemIdsBySKU.put(cartItemSKU, cartItemL.Id);
+                    cartItemTotalPriceBySKU.put(cartItemSKU, cartItemL.TotalPrice);
                 }
-                else if (cartItem.Type == 'Charge') {
-                    // This is an example for a Cart Item of type shipping charge.
-                    // For simplicity and testing purposes, we just assign some SKU to this charge so that the taxation external service returns some value.
-                    cartItemSKU = 'ChargeSKU';
-                }
-                cartItemIdsBySKU.put(cartItemSKU, cartItem.Id);
-                cartItemTotalPriceBySKU.put(cartItemSKU, cartItem.TotalPrice);
-            }      
+                
+            }
+           
+            
+                  
             
             // Following snippet of code fetches a mocked static json response from getDataFromStaticResponse.
             // Another example that demonstrates how to call a live 3rd party HTTP Service to fetch the desired 
             // response is implemented in getDataFromExternalService method.
-
+            
             Map<String, TaxDataFromExternalService> rateAndAmountFromExternalServicePerSku = null;
             if(useHTTPService) {
                 rateAndAmountFromExternalServicePerSku = getTaxRatesAndAmountsFromExternalService(cartItemTotalPriceBySKU, deliveryGroup.DeliverToState, deliveryGroup.DeliverToCountry);
@@ -61,35 +113,35 @@ global with sharing class B2BTaxSample implements sfdc_checkout.CartTaxCalculati
             // For each cart item, insert a new tax line in the CartTax entity.
             // The total tax is automatically rolled up to TotalLineTaxAmount in the corresponding CartItem line.
             CartTax[] cartTaxestoInsert = new CartTax[]{};
-            for (String sku : cartItemIdsBySKU.keySet()) {
-                TaxDataFromExternalService rateAndAmountFromExternalService = rateAndAmountFromExternalServicePerSku.get(sku);
-                if (rateAndAmountFromExternalService == null){
-                    return integrationStatusFailedWithCartValidationOutputError(
-                        integStatus,
-                        'The product with sku ' + sku + ' could not be found in the external system',
-                        jobInfo,
-                        cartId
+                for (String sku : cartItemIdsBySKU.keySet()) {
+                    TaxDataFromExternalService rateAndAmountFromExternalService = rateAndAmountFromExternalServicePerSku.get(sku);
+                    if (rateAndAmountFromExternalService == null){
+                        return integrationStatusFailedWithCartValidationOutputError(
+                            integStatus,
+                            'The product with sku ' + sku + ' could not be found in the external system',
+                            jobInfo,
+                            cartId
+                        );
+                    }
+                    // If the sku was found in the external system, add a new CartTax line for that sku
+                    // The following fields from CartTax can be filled in:
+                    // Amount (required): Calculated tax amount.
+                    // CartItemId (required): ID of the cart item.
+                    // Description (optional): Description of CartTax.
+                    // Name (required): Name of the tax.
+                    // TaxCalculationDate (required): Calculation date for this tax line.
+                    // TaxRate (optional): The percentage value of the tax. Null if the tax is a flat amount.
+                    // TaxType (required): The type of tax, e.g. Actual or Estimated.
+                    CartTax tax = new CartTax( 
+                        Amount = rateAndAmountFromExternalService.getAmount(),
+                        CartItemId = cartItemIdsBySKU.get(sku),
+                        Name = rateAndAmountFromExternalService.getTaxName(),
+                        TaxCalculationDate = Date.today(),
+                        TaxRate = rateAndAmountFromExternalService.getRate(),
+                        TaxType = 'Actual'
                     );
+                    cartTaxestoInsert.add(tax);
                 }
-                // If the sku was found in the external system, add a new CartTax line for that sku
-                // The following fields from CartTax can be filled in:
-                // Amount (required): Calculated tax amount.
-                // CartItemId (required): ID of the cart item.
-                // Description (optional): Description of CartTax.
-                // Name (required): Name of the tax.
-                // TaxCalculationDate (required): Calculation date for this tax line.
-                // TaxRate (optional): The percentage value of the tax. Null if the tax is a flat amount.
-                // TaxType (required): The type of tax, e.g. Actual or Estimated.
-                CartTax tax = new CartTax( 
-                    Amount = rateAndAmountFromExternalService.getAmount(),
-                    CartItemId = cartItemIdsBySKU.get(sku),
-                    Name = rateAndAmountFromExternalService.getTaxName(),
-                    TaxCalculationDate = Date.today(),
-                    TaxRate = rateAndAmountFromExternalService.getRate(),
-                    TaxType = 'Actual'
-                );
-                cartTaxestoInsert.add(tax);
-            }
             insert(cartTaxestoInsert);
             integStatus.status = sfdc_checkout.IntegrationStatus.Status.SUCCESS;
         } catch(Exception e) {
@@ -106,14 +158,14 @@ global with sharing class B2BTaxSample implements sfdc_checkout.CartTaxCalculati
         }
         return integStatus;
     }
-
+    
     private Map<String, TaxDataFromExternalService> getDataFromStaticResponse(Map<String, Decimal> cartItemTotalAmountBySKU, String state, String country) {
         if (cartItemTotalAmountBySKU == null) {
             throw new ApplicationException('Input SKUs list is empty or undefined.');
         }
-
+        
         Decimal taxRate = 0.08;
-
+        
         Map<String, TaxDataFromExternalService> taxDataFromStaticServiceBySKU = new Map<String, TaxDataFromExternalService>();
         for (String sku : cartItemTotalAmountBySKU.keySet()) {
             taxDataFromStaticServiceBySKU.put(sku, new TaxDataFromExternalService(
@@ -139,12 +191,12 @@ global with sharing class B2BTaxSample implements sfdc_checkout.CartTaxCalculati
             }
             
             String requestURL = httpHost + '/get-tax-rates?state=' + encodedState
-                            + '&country=' + encodedCountry
-                            + '&amountsBySKU=' + JSON.serialize(encodedCartItemTotalAmountBySKU);
+                + '&country=' + encodedCountry
+                + '&amountsBySKU=' + JSON.serialize(encodedCartItemTotalAmountBySKU);
             request.setEndpoint(requestURL);
             request.setMethod('GET');
             HttpResponse response = http.send(request);
-        
+            
             // If the request is successful, parse the JSON response;
             // The response includes the tax amount, rate, and name for each SKU. It looks something like this:
             // {"SKU_1_september10-1568355297":{"taxAmount":2.8229012971048855,"taxRate":0.08,"taxName":"GST"},"SKU_0_september10-1568355296":{"taxAmount":5.0479003481482385,"taxRate":0.08,"taxName":"GST"}}
@@ -165,7 +217,7 @@ global with sharing class B2BTaxSample implements sfdc_checkout.CartTaxCalculati
             } else {
                 throw new CalloutException ('There was a problem with the request. Error: ' + response.getStatusCode());
             }
-    }
+        }
     
     // Structure to store the tax data retrieved from external service
     // This simplifies our ability to access it when storing it in Salesforce's CartTax entity
@@ -222,5 +274,5 @@ global with sharing class B2BTaxSample implements sfdc_checkout.CartTaxCalculati
             );
             insert(cartValidationError);
             return integrationStatus;
-    }
+        }
 }

@@ -49,13 +49,13 @@ global class CartOrchestrator extends CartExtension.CartCalculate {
         }
 
         if (runPromotions) {
-            /*
+            
             promotions(calculatorRequest);
 
             if (hasErrorLevelCartValidationOutput(cart.getCartValidationOutputs(), CartExtension.CartValidationOutputTypeEnum.PROMOTIONS)) {
                 return;
             }
-            */
+            
         }
 
         if (runInventory) {

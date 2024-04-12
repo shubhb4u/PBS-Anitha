@@ -1,0 +1,15 @@
+<template>
+
+    <div>
+        Purchase Order PDF : {orderSummaryNumber}
+        
+        <lightning-button label="Yes" value="Yes" title="Yes" onclick={handleYesButtonClick}></lightning-button> 
+        <lightning-button label="No" value="No" title="No" onclick={handleNoButtonClick}></lightning-button> <br>
+        <span if:true={CheckYes}>
+        <input type="file" accept=".pdf" onchange={handleFileUpload}/>
+        <lightning-button label="Submit" value="Submit" title="Submit" style="color: green;" onclick={handleSubmit}></lightning-button>
+    </span>
+        
+        
+</div>  
+</template>

@@ -48,7 +48,7 @@
             "children" : [ {
               "attributes" : {
                 "carouselPageSize" : 1,
-                "carouselPosition" : "before",
+                "carouselPosition" : "below",
                 "product" : "{!Product.Details}",
                 "showCarousel" : true
               },
@@ -200,6 +200,210 @@
               "attributes" : {
                 "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
                 "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextEmphasis" : "{\"bold\":true}",
+                "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "borderColor" : "",
+                "borderRadius" : "0px",
+                "borderWeight" : "0px",
+                "enableOverflowMenu" : false,
+                "imageFit" : "cover",
+                "imagePosition" : "center center",
+                "overflowIconColor" : "rgb(116,116,116)",
+                "overflowIconStyle" : "down-arrow",
+                "overflowMenuLabel" : "More",
+                "tabAlignment" : "left",
+                "tabBorderColor" : "",
+                "tabBorderRadius" : "0px",
+                "tabBorderWeight" : "0px",
+                "tabHoverBorderHighlightWeight" : "0px",
+                "tabLayout" : "horizontal",
+                "tabPadding" : "12px",
+                "tabTextEmphasis" : "{\"bold\":true}",
+                "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "tabsetConfig" : "{\"UUID\":\"1ce320e6-8642-4f6a-8036-16ecc29345d2\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"f044ded7-85a1-4e0d-8e0a-d7d04b58ff7e\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"c8e3fb12-5974-4cca-b900-07438469453c\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"c0eec52d-e5b8-4417-ab0f-e2548bf5c46f\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"d556d836-ef01-486e-a753-e5dc56d858c8\",\"tabName\":\"Case Studies\",\"tabKey\":\"8dfc8\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"7eeb3d9e-a924-4b1d-a5f8-e36de3b1959b\",\"tabName\":\"User Resources\",\"tabKey\":\"f6e5f\",\"locked\":false,\"allowGuestUser\":false}]}",
+                "width" : "100%"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"product-highlights-wrapper\">\n  <div class=\"rich-text-block-2 w-richtext\">\n    <ul class=\"list\">\n        \n      <li>\n          \n        • &nbsp Continue scale up of process development or clinical stage production\n              \n      </li>\n        \n      <li>• &nbsp Touchscreen interface for intuitive process customization, control, and reporting</li>\n      <li>\n        • &nbsp Adjustable height harvest valve (AHHV) allows for rapid medium exchange, sampling, and harvesting\n      </li>\n      <li>\n        • &nbsp Configurations available for use with single-use or reusable DO and pH sensors\n      </li>\n         <li>\n        • &nbsp Installation and operations qualification protocols available for sale\n      </li>\n    </ul>\n  </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "6ca6bc22-dbb7-4013-a8d2-ddf0c56b4d24",
+                  "type" : "component"
+                } ],
+                "id" : "f044ded7-85a1-4e0d-8e0a-d7d04b58ff7e",
+                "name" : "tab1",
+                "title" : "Highlights",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"catalague-component\"><div class=\"rich-text w-richtext\"><div class=\"w-embed\"><table id=\"mini\">\n    <tbody><tr>\n      <th>Product Type</th>\n      <th>Product Name</th>\n      <th>Product Number</th>\n    </tr>\n    <tr>\n      <td class=\"bioreactors\" rowspan=\"3\">Bioreactors</td>\n      <td>PBS-80 Vertical-Wheel Bioreactor (120 V)\n      </td><td>IA-80-B-511 </td>\n      </tr><tr><td>\n     PBS-80 Vertical-Wheel Bioreactor (240 V) \n      </td><td> IA-80-B-512 </td>\n      </tr><tr><td>\n     PBS-80 Vertical-Wheel Bioreactors, Redundant Single-Use Sensors (120 &amp; 240 V)\n      </td><td> Future Products</td>\n      </tr>\n      <tr>\n      <td class=\"single\" rowspan=\"3\">Single-Use Vessels</td>\n      <td>PBS-80 Vertical-Wheel Single-Use Vessel (Floored Wheel) [Legacy Product]   \n      </td><td>IA-80-D-504-L</td></tr>\n      <tr><td>\n   PBS-80 Vertical-Wheel Single-Use Vessel (Floored Wheel) \n     </td><td>IA-80-D-511-L</td></tr>\n     <tr><td>\n     PBS-80 Vertical-Wheel Single-Use Vessels, Redundant Single-Use Sensors (Floored &amp; Floorless Wheels)   \n     </td><td>Future Products </td>\n     </tr> \n     <tr>\n      <td class=\"Accessories\" rowspan=\"3\">Accessories</td>\n      <td>PBS Autoclavable Probe Connector  \n      </td>\n       <td>IA-UNI-DA-001 </td>\n       </tr>\n       <tr>\n       <td>\n     Reusable DO Sensor, 12mm OD x 220mm L with Right-Angle\n      </td><td> IC00468</td>\n      </tr><tr><td>\n    Reusable pH Sensor, 12mm OD x 225mm L  \n      </td>\n    <td> IC00469 </td>\n    </tr><tr>\n      <td>\n      Software\n      </td>\n      <td>\n      PBS-80 Vertical-Wheel Bioreactor Software 3.0 (21 CFR Part 11 cGMP Upgrade) \n      </td>\n      <td>IA-80-SW-001   </td>\n    </tr>\n    <tr>\n    <td class=\"Qualification\">Qualification Packages</td>\n    <td>PBS-80 Vertical-Wheel Bioreactor IQ/OQ Protocol &amp; Configuration Sheet </td>\n    <td>Future Products</td>\n    </tr>\n  </tbody></table>\n</div></div></div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "a98b5606-6884-4cff-a80f-f8d61fdba3c3",
+                  "type" : "component"
+                } ],
+                "id" : "c8e3fb12-5974-4cca-b900-07438469453c",
+                "name" : "tab2",
+                "title" : "Product Catalogue",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "fit" : "cover",
+                    "height" : 409,
+                    "imageInfo" : "{\"imageInfoV1\":{\"url\":\"\",\"altText\":\"\",\"contentKey\":\"MCBMCBBE3OVVFXZFKLM4R3T3AXEI\",\"contentType\":null}}",
+                    "overlayColor" : "",
+                    "position" : "center center",
+                    "width" : 100
+                  },
+                  "definition" : "dxp_base:image",
+                  "id" : "66ae2e40-868b-4e6f-b967-1e704a3f57ad",
+                  "type" : "component"
+                } ],
+                "id" : "c0eec52d-e5b8-4417-ab0f-e2548bf5c46f",
+                "name" : "tab3",
+                "title" : "Technical Specifications",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"case-study-component\">\n    <div class=\"case-study-cms w-dyn-list\">\n        <div class=\"case-study-cms-list w-dyn-items\">\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Defined Biomatrices Accelerate MSC Manufacturing Across Scales\n                        </div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/6434a6a639b63b4b7a7ac231_2023%20Defined%20Biomatrices%20Accelerate%20MSC%20Manufacturing%20Across%20Scales.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Cell Culture Process Scale-Up Challenges for Commercial-Scale\n                            Manufacturing</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b6854da775aa713c8df9b9_2022%20Lee%20et%20al.%20-%20Cell%20Culture%20Process%20Scale-Up%20Challenges%20for%20Commercial-Scale%20Manufactruing.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div  class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Overcoming Bioprocess Bottlenecks in the Large-Scale Expansion of\n                            High-Quality hiPSC Aggregates in Vertical-Wheel Stirred Suspension Bioreactors</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b68833b19e11c7b880dca7_2021%20Borys%20et%20al.%20-%20Overcoming%20Bioprocess%20Bottlenecks%20in%20Large-Scale%20Expansion.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "59dd4e0d-831e-4dff-bd2a-6c8d83ce5678",
+                  "type" : "component"
+                } ],
+                "id" : "d556d836-ef01-486e-a753-e5dc56d858c8",
+                "name" : "8dfc8",
+                "title" : "Case Studies",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"resources-component\">\n    <div class=\"resources-wrapper\">\n </div>\n    <div class=\"resources-cms-wrapper w-dyn-list\">\n        <div class=\"resources-cms-list w-dyn-items\">\n            <div class=\"w-dyn-item\">\n                <div class=\"resource-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"resouces-list-text\">PBS-15 and PBS-80 Single-Use Bioreactors User Manual (Software\n                            v3) [P/Ns: IA-15-B-501 &amp; -502; IA-80-B-511 &amp; -512]</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63bc44b078495ece665d2e5b_IC03771%20Rev%20D%20(digital).pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"resource-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"resouces-list-text\">PBS-80 Datasheet</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63c9e4030b591a8f69108e31_80L%20Datasheet_print%20v.221007.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "473c5752-a271-495d-a9f0-171b5d0bddca",
+                  "type" : "component"
+                } ],
+                "id" : "7eeb3d9e-a924-4b1d-a5f8-e36de3b1959b",
+                "name" : "f6e5f",
+                "title" : "User Resources",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:tabs",
+              "id" : "1ce320e6-8642-4f6a-8036-16ecc29345d2",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
+                "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextEmphasis" : "{\"bold\":true}",
+                "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "borderColor" : "",
+                "borderRadius" : "0px",
+                "borderWeight" : "0px",
+                "enableOverflowMenu" : false,
+                "imageFit" : "cover",
+                "imagePosition" : "center center",
+                "overflowIconColor" : "rgb(116,116,116)",
+                "overflowIconStyle" : "down-arrow",
+                "overflowMenuLabel" : "More",
+                "tabAlignment" : "left",
+                "tabBorderColor" : "",
+                "tabBorderRadius" : "0px",
+                "tabBorderWeight" : "0px",
+                "tabHoverBorderHighlightWeight" : "0px",
+                "tabLayout" : "horizontal",
+                "tabPadding" : "12px",
+                "tabTextEmphasis" : "{\"bold\":true}",
+                "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "tabsetConfig" : "{\"UUID\":\"fe41ed7a-0aca-4d9d-a3ba-b2152ad5cfbd\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"6ab3f8b5-5bbc-46b9-bdc8-162654ada587\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"4c6fcf80-ec02-401f-9e13-d92b474d9b41\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"20c99581-2a73-4b2e-a3bd-2201b2602cad\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"4e01493f-35d4-4af1-89b7-de6689115f72\",\"tabName\":\"Case Studies\",\"tabKey\":\"f6551\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"fded7e01-791f-4655-8f08-d8d7ad2aac54\",\"tabName\":\"User Resources\",\"tabKey\":\"1135d\",\"locked\":false,\"allowGuestUser\":false}]}",
+                "width" : "100%"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"product-highlights-wrapper\">\n  <div class=\"rich-text-block-2 w-richtext\">\n    <ul class=\"list\">\n        \n      <li>\n          \n        • &nbsp Continue scale up of process development or clinical stage production\n              \n      </li>\n        \n      <li>• &nbsp Touchscreen interface for intuitive process customization, control, and reporting</li>\n      <li>\n        • &nbsp Adjustable height harvest valve (AHHV) allows for rapid medium exchange, sampling, and harvesting\n      </li>\n      <li>\n        • &nbsp Configurations available for use with single-use or reusable DO and pH sensors\n      </li>\n         <li>\n        • &nbsp Installation and operations qualification protocols available for sale\n      </li>\n    </ul>\n  </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "b8f64df0-15ba-4b50-aa6e-cf05689b71c7",
+                  "type" : "component"
+                } ],
+                "id" : "6ab3f8b5-5bbc-46b9-bdc8-162654ada587",
+                "name" : "tab1",
+                "title" : "Highlights",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"catalague-component\"><div class=\"rich-text w-richtext\"><div class=\"w-embed\"><table id=\"mini\">\n  <tbody><tr>\n    <th>Product Type</th>\n    <th>Product Name</th>\n    <th>Product Number</th>\n  </tr>\n  <tr>\n    <td class=\"bioreactors\" rowspan=\"3\">Bioreactors</td>\n    <td>PBS-15 Vertical-Wheel Bioreactor (120 V)\n    </td>\n    <td>IA-15-B-501</td>\n    </tr><tr><td>\n   PBS-15 Vertical-Wheel Bioreactor (240 V)\n    </td><td>IA-15-B-502 </td></tr>\n    <tr><td>\n   PBS-15 Vertical-Wheel Bioreactors, Single-Use Sensors (120 &amp; 240 V)\n    </td>\n    <td> IA-15-B-701 </td>\n    </tr>\n    <tr>\n    <td class=\"single\" rowspan=\"3\">Single-Use Vessels</td>\n    <td>PBS-15 Vertical-Wheel Single-Use Vessel (Floored Wheel) </td>  \n    <td>IA-15-D-504-L</td>\n    </tr><tr><td>\n  PBS-15 Vertical-Wheel Single-Use Vessel (Floorless Wheel)\n  </td><td> IA-15-D-506-L </td>\n  </tr><tr><td>\n   PBS-15 Vertical-Wheel Single-Use Vessels, Single-Use Sensors (Floored Wheel)   \n </td><td> IA-15-D-704-L </td>\n </tr>\n   <tr>\n    <td class=\"Accessories\" rowspan=\"3\">Accessories</td>\n    <td>PBS Autoclavable Probe Connector  \n    </td>\n     <td>IA-UNI-DA-001 </td>\n     </tr><tr><td>\n    Reusable DO Sensor, 12mm OD x 220mm L with Right-Angle\n    </td><td>IC00468  </td>\n    </tr><tr><td>\n  Reusable pH Sensor, 12mm OD x 225mm L\n    </td>\n   <td>IC00469 </td>\n   </tr>\n  <tr>\n    <td class=\"software\">\n    Software\n    </td>\n    <td>\n    PBS-15 Vertical-Wheel Bioreactor Software 3.0 (21 CFR Part 11 cGMP Upgrade) \n    </td>\n    <td>IA-15-SW-001 </td>\n  </tr>\n  <tr>\n  <td rowspan=\"2\">Qualification Packages</td>\n  <td>\n  PBS-15 Vertical-Wheel Bioreactor IQ/OQ Protocols \n </td>\n   <td>IA-15-BQ-004 </td>\n</tr><tr>  \n <td>\n  PBS-15 Vertical-Wheel Bioreactor IQ/OQ Configuration Sheet </td>\n  <td>IA-15-BQ-005 </td>\n</tr>\n</tbody></table>\n</div></div></div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "e5fdf0be-54a5-4d99-9774-c0af7eeefb1d",
+                  "type" : "component"
+                } ],
+                "id" : "4c6fcf80-ec02-401f-9e13-d92b474d9b41",
+                "name" : "tab2",
+                "title" : "Product Catalogue",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "fit" : "cover",
+                    "height" : 405,
+                    "imageInfo" : "{\"imageInfoV1\":{\"url\":\"\",\"altText\":\"\",\"contentKey\":\"MCM4DS73WZPRCAVPJ2CN43YXAKFE\",\"contentType\":null}}",
+                    "overlayColor" : "",
+                    "position" : "center center",
+                    "width" : 100
+                  },
+                  "definition" : "dxp_base:image",
+                  "id" : "4cd7ada1-72e1-4ba7-aa25-b4e287202c4e",
+                  "type" : "component"
+                } ],
+                "id" : "20c99581-2a73-4b2e-a3bd-2201b2602cad",
+                "name" : "tab3",
+                "title" : "Technical Specifications",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"case-study-component\">\n    <div class=\"case-study-cms w-dyn-list\">\n        <div class=\"case-study-cms-list w-dyn-items\">\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Defined Biomatrices Accelerate MSC Manufacturing Across Scales\n                        </div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/6434a6a639b63b4b7a7ac231_2023%20Defined%20Biomatrices%20Accelerate%20MSC%20Manufacturing%20Across%20Scales.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Cell Culture Process Scale-Up Challenges for Commercial-Scale\n                            Manufacturing</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b6854da775aa713c8df9b9_2022%20Lee%20et%20al.%20-%20Cell%20Culture%20Process%20Scale-Up%20Challenges%20for%20Commercial-Scale%20Manufactruing.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Overcoming Bioprocess Bottlenecks in the Large-Scale Expansion of\n                            High-Quality hiPSC Aggregates in Vertical-Wheel Stirred Suspension Bioreactors</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b68833b19e11c7b880dca7_2021%20Borys%20et%20al.%20-%20Overcoming%20Bioprocess%20Bottlenecks%20in%20Large-Scale%20Expansion.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "bd3d81fa-23d9-4ef6-8349-f69c596e2ecb",
+                  "type" : "component"
+                } ],
+                "id" : "4e01493f-35d4-4af1-89b7-de6689115f72",
+                "name" : "f6551",
+                "title" : "Case Studies",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"resources-component\">\n    <div class=\"resources-wrapper\">\n    </div>\n    <div class=\"resources-cms-wrapper w-dyn-list\">\n        <div class=\"resources-cms-list w-dyn-items\">\n            <div class=\"w-dyn-item\">\n                <div class=\"resource-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"resouces-list-text\">PBS-15 and PBS-80 Single-Use Bioreactors User Manual (Software\n                            v3) [P/Ns: IA-15-B-501 &amp; -502; IA-80-B-511 &amp; -512]</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63bc44b078495ece665d2e5b_IC03771%20Rev%20D%20(digital).pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"resource-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"resouces-list-text\">PBS-15 Datasheet</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63c9e3f520944109b97e435b_15L%20Datasheet_print%20v.221007.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "977672e0-87b3-4365-a469-9a4d9118eb81",
+                  "type" : "component"
+                } ],
+                "id" : "fded7e01-791f-4655-8f08-d8d7ad2aac54",
+                "name" : "1135d",
+                "title" : "User Resources",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:tabs",
+              "id" : "fe41ed7a-0aca-4d9d-a3ba-b2152ad5cfbd",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
+                "activeTabBorderHighlightWeight" : "2px",
                 "activeTabTextColor" : "rgb(0, 0, 0)",
                 "activeTabTextEmphasis" : "{\"bold\":true}",
                 "activeTabTextStyle" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
@@ -231,7 +435,7 @@
               "children" : [ {
                 "children" : [ {
                   "attributes" : {
-                    "richTextValue" : "<div class=\"product-highlights-wrapper\">\n  <div class=\"rich-text-block-2 w-richtext\">\n    <ul class=\"list\">\n        \n      <li>\n          \n        • &nbsp Universal base unit is compatible with either size of single-use vessels\n        (0.1L or 0.5L working volumes)\n              \n      </li>\n        \n      <li>• &nbsp Designed for use in incubator for temperature and gas control</li>\n      <li>\n        Removable caps on single-use vessels allow for sterile liquid handling\n        in biosafety hood\n      </li>\n      <li>\n        • &nbsp Product contact materials meet regulatory requirements for\n        first-in-human clinical trials\n      </li>\n    </ul>\n  </div>\n</div>"
+                    "richTextValue" : "<div class=\"product-highlights-wrapper\">\n  <div class=\"rich-text-block-2 w-richtext\">\n    <ul class=\"list\">\n        \n      <li>\n          \n        • &nbsp Universal base unit is compatible with either size of single-use vessels\n        (0.1L or 0.5L working volumes)\n              \n      </li>\n        \n      <li>• &nbsp Designed for use in incubator for temperature and gas control</li>\n      <li>\n        • &nbsp Removable caps on single-use vessels allow for sterile liquid handling\n        in biosafety hood\n      </li>\n      <li>\n        • &nbsp Product contact materials meet regulatory requirements for\n        first-in-human clinical trials\n      </li>\n    </ul>\n  </div>\n</div>"
                   },
                   "definition" : "community_builder:htmlEditor",
                   "id" : "ddb68045-7880-4ef3-9648-49145f20dee4",
@@ -244,7 +448,7 @@
               }, {
                 "children" : [ {
                   "attributes" : {
-                    "richTextValue" : "<table>\n<div class=\"section-catalague\">\n  <div class=\"page-padding\">\n    <div class=\"conferences-container w-container\">\n      <div class=\"catalague-component\">\n        <div class=\"rich-text w-richtext\">\n          <div class=\"w-embed\">\n            \n            <table id=\"mini\" cellspacing=\"0\">\n              <tbody>\n                <tr>\n                  <th>Product Type</th>\n                  <th>Product</th>\n                  <th>Product Number</th>\n                </tr>\n                <tr>\n                  <td class=\"base\" rowspan=\"1\">Base Unit</td>\n                  <td>\n                    PBS-Mini Vertical-Wheel Bioreactor Base Unit (120-240 V)\n                  </td>\n                  <td>FA-UNI-B-501</td>\n                </tr>\n                <tr>\n                  <td class=\"bags\" rowspan=\"4\">Single-Use Vessels</td>\n                  <td>\n                    PBS-0.1 Vertical-Wheel Single-Use Vessel with Bottom Port\n                    (pack of 1)\n                  </td>\n                  <td>FA-0.1-D-101</td>\n                </tr>\n                <tr>\n                  <td>PBS-0.1 Vertical-Wheel Single-Use Vessel (pack of 4)</td>\n                  <td>FA-0.1-D-001</td>\n                </tr>\n                <tr>\n                  <td>\n                    PBS-0.5 Vertical-Wheel Single-Use Vessel with Bottom Port\n                    (pack of 1)\n                  </td>\n                  <td>FA-0.5-D-101</td>\n                </tr>\n                <tr>\n                  <td>PBS-0.5 Vertical-Wheel Single-Use Vessel (pack of 4)</td>\n                  <td>FA-0.5-D-001</td>\n                </tr>\n                <tr>\n                  <td class=\"Accessories\" rowspan=\"2\">Accessories</td>\n                </tr>\n                <tr>\n                  <td>PBS-Mini Extended 4-Gang DC Power Distribution Cable</td>\n                  <td>IA-UNI-BA-112</td>\n                </tr>\n              </tbody>\n            </table>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n</table>"
+                    "richTextValue" : "<div class=\"catalague-component\"><div class=\"rich-text w-richtext\"><div class=\"w-embed\">\n\n<table id=\"mini\" cellspacing=\"0\">\n    <tbody><tr>\n        <th>Product Type</th>\n        <th>Product</th>\n        <th>Product Number</th>\n    </tr>\n    <tr>\n        <td class=\"base\" rowspan=\"1\">Base Unit</td>\n        <td>PBS-Mini Vertical-Wheel Bioreactor Base Unit (120-240 V)\n        </td>\n        <td>FA-UNI-B-501 </td>\n    </tr>\n    <tr>\n        <td class=\"bags\" rowspan=\"4\">Single-Use Vessels</td>\n        <td>PBS-0.1 Vertical-Wheel Single-Use Vessel with Bottom Port (pack of 1)\n            </td>\n            <td>FA-0.1-D-101</td>\n    </tr>\n    <tr>\n             <td>\n            PBS-0.1 Vertical-Wheel Single-Use Vessel (pack of 4)\n        </td>\n             <td> FA-0.1-D-001</td>\n    </tr>\n    <tr>\n        <td> PBS-0.5 Vertical-Wheel Single-Use Vessel with Bottom Port (pack of 1)</td>\n           <td>FA-0.5-D-101</td>\n        </tr>\n        <tr>\n            <td>\n            PBS-0.5 Vertical-Wheel Single-Use Vessel (pack of 4)\n        </td>\n        <td>FA-0.5-D-001</td>\n    </tr>\n    <tr>\n        <td class=\"Accessories\" rowspan=\"2\">Accessories</td>\n    </tr><tr>\n\n        <td>PBS-Mini Extended 4-Gang DC Power Distribution Cable\n        </td>\n        <td>IA-UNI-BA-112 </td>\n    </tr>\n\n</tbody></table></div></div></div>"
                   },
                   "definition" : "community_builder:htmlEditor",
                   "id" : "4070cd0a-09a6-45bb-aecf-580d006d69f3",
@@ -302,6 +506,111 @@
               } ],
               "definition" : "dxp_layout:tabs",
               "id" : "452473f6-6344-4d45-b222-6ccfdfde24f7",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
+                "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextEmphasis" : "{\"bold\":true}",
+                "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "borderColor" : "",
+                "borderRadius" : "0px",
+                "borderWeight" : "0px",
+                "dxpStyle" : {
+                  "isVisible" : true
+                },
+                "enableOverflowMenu" : false,
+                "imageFit" : "cover",
+                "imagePosition" : "center center",
+                "overflowIconColor" : "rgb(116,116,116)",
+                "overflowIconStyle" : "down-arrow",
+                "overflowMenuLabel" : "More",
+                "tabAlignment" : "left",
+                "tabBorderColor" : "rgb(247, 124, 0)",
+                "tabBorderRadius" : "0px",
+                "tabBorderWeight" : "0px",
+                "tabHoverBorderHighlightWeight" : "0px",
+                "tabLayout" : "horizontal",
+                "tabPadding" : "12px",
+                "tabTextEmphasis" : "{\"bold\":true}",
+                "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "tabsetConfig" : "{\"UUID\":\"571081dd-d57c-496d-af2b-54013df61f18\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"cf38919f-9e3a-444d-a2d6-4cf598dfa1b1\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"b1033c65-8e76-4a33-9076-25643f758de5\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"cf928124-c24e-4655-a324-ac3d5f67d55f\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"1f191077-4b41-4cc1-9e57-acf2228a75d8\",\"tabName\":\"Case Studies\",\"tabKey\":\"2247f\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"1d0d3b94-8c9c-4ccd-a72a-e103ad4b9d38\",\"tabName\":\"User Resuorces\",\"tabKey\":\"f4b0a\",\"locked\":false,\"allowGuestUser\":false}]}",
+                "width" : "100%"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"product-highlights-wrapper\">\n    <div class=\"rich-text-block-2 w-richtext\">\n      <ul class=\"list\">\n          \n        <li>\n            \n          • &nbsp Single-use vessels and software qualified for use in clinical trials, including first-in-human studies\n                \n        </li>\n          \n        <li>• &nbsp Touchscreen interface for intuitive process customization, control, and reporting</li>\n        \n        <li>\n          • &nbsp Configurations available for use with single-use or reusable DO and pH sensors\n        </li>\n          <li>\n              • &nbsp Installation and operations qualification protocols available for sale\n          </li>\n      </ul>\n    </div>\n  </div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "77d8c7c6-d0c3-4cb5-83e8-d2c9f2e6818b",
+                  "type" : "component"
+                } ],
+                "id" : "cf38919f-9e3a-444d-a2d6-4cf598dfa1b1",
+                "name" : "tab1",
+                "title" : "Highlights",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"catalague-component\"><div class=\"rich-text w-richtext\"><div class=\"w-embed\"><table id=\"mini\">\n  <tbody><tr>\n    <th>Product Type</th>\n    <th>Product Name</th>\n    <th>Product Number</th>\n  </tr>\n  <tr>\n    <td rowspan=\"4\">Bioreactors</td>\n    <td>PBS-3 Vertical-Wheel Bioreactor (120 V) \n   </td>\n   <td>\n   IA-3-B-501\n   </td>\n   </tr>\n   <tr>\n   <td>\n    PBS-3 Vertical-Wheel Bioreactor (240 V)\n    </td>\n    <td> IA-3-B-502</td>\n    </tr>\n    <tr>\n    <td>\n    PBS-3 Vertical-Wheel Bioreactor, Single-Use Sensors (120 V)\n    </td>\n    <td> IA-3-B-701</td>\n    </tr>\n    <tr>\n    <td>\n     PBS-3 Vertical-Wheel Bioreactor, Single-Use Sensors (240 V)\n    </td>\n    <td>IA-3-B-702</td>\n    </tr>\n    <tr>\n    <td rowspan=\"4\">Single-Use Vessels</td>\n    <td>PBS-3 Vertical-Wheel Single-Use Vessel (Floored Wheel)  \n    </td><td>FA-3-D-504 </td>\n    </tr><tr><td>\n  PBS-3 Vertical-Wheel Single-Use Vessel (Floorless Wheel) \n   </td><td>FA-3-D-506 </td>\n   </tr><tr><td>\n   PBS-3 Vertical-Wheel Single-Use Vessel, Single-Use Sensors (Floored Wheel)  \n   </td>\n   <td>FA-3-D-704-L </td>\n   </tr><tr>\n   <td>\n   PBS-3 Vertical-Wheel Single-Use Vessel, Single-Use Sensors (Floorless Wheel)\n    </td>\n    <td>FA-3-D-706-L </td>\n  </tr>\n   <tr>\n    <td rowspan=\"8\">Accessories</td>\n    <td>PBS-3 Reusable Thermal Well \n </td><td>IA-3-BA-006 </td>\n </tr><tr><td>\n    PBS-3 Dip Tube Assembly \n    </td><td>IA-3-BA-007 </td>\n    </tr>\n    <tr><td>\n    PBS Autoclavable Pouch, 4\" x 15\" (pack of 2) \n    </td>\n    <td>IA-UNI-DA-003 </td>\n    </tr>\n    <tr><td>\n    PBS Single-Syringe Sampling Line, 20mL \n    </td><td> IA-UNI-DA-006 </td>\n    </tr><tr><td>\n    PBS Autoclavable Pouch, 8\" x 18\" (pack of 2) \n    </td><td>IA-UNI-DA-007 </td>\n    </tr>\n    <tr><td>\n    Reusable DO Sensor, 12mm OD x 220mm L with Right-Angle \n    </td>\n    <td>IC00468 </td>\n    </tr>\n    <tr><td>\n    Reusable pH Sensor, 12mm OD x 225mm L\n    </td>\n    <td>IC00469 </td>\n    </tr>\n     <tr><td>\n    60 Micron Plastic (PE) Retention Filters (pack of 5)\n    </td>\n    <td>IC01036 </td>\n    </tr>\n  <tr>\n    <td rowspan=\"1\">\n    Software\n    </td>\n    <td>\n    PBS-3 Vertical-Wheel Bioreactor Software 3.0 (21 CFR Part 11 cGMP Upgrade) \n    </td>\n     <td>IA-3-SW-001 </td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">Qualification Packages</td>\n <td>\nPBS-3 Vertical-Wheel Bioreactor IQ/OQ Protocols \n </td>\n   <td>IA-3-BQ-004 </td>\n</tr><tr>  \n <td>\nPBS-3 Vertical-Wheel Bioreactor IQ/OQ Configuration Sheet </td>\n  <td>IA-3-BQ-005 </td>\n</tr>\n\n</tbody></table>\n</div></div></div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "4a283b07-f39d-4357-b1f8-a00f01dccbbb",
+                  "type" : "component"
+                } ],
+                "id" : "b1033c65-8e76-4a33-9076-25643f758de5",
+                "name" : "tab2",
+                "title" : "Product Catalogue",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "fit" : "cover",
+                    "height" : 499,
+                    "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCKXVOT6W47JFBNDJOHYCUW7H4NQ?lastModifiedDate=Mon Apr 08 05:53:21 GMT 2024\",\"altText\":\"\",\"contentKey\":\"MCKXVOT6W47JFBNDJOHYCUW7H4NQ\",\"contentType\":null}}",
+                    "overlayColor" : "",
+                    "position" : "center center",
+                    "width" : 100
+                  },
+                  "definition" : "dxp_base:image",
+                  "id" : "194566ea-be45-4392-9a89-161785fdfeec",
+                  "type" : "component"
+                } ],
+                "id" : "cf928124-c24e-4655-a324-ac3d5f67d55f",
+                "name" : "tab3",
+                "title" : "Technical Specifications",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"case-study-component\">\n    <div class=\"case-study-cms w-dyn-list\">\n        <div class=\"case-study-cms-list w-dyn-items\">\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Defined Biomatrices Accelerate MSC Manufacturing Across Scales\n                        </div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/6434a6a639b63b4b7a7ac231_2023%20Defined%20Biomatrices%20Accelerate%20MSC%20Manufacturing%20Across%20Scales.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Overcoming Bioprocess Bottlenecks in the Large-Scale Expansion of\n                            High-Quality hiPSC Aggregates in Vertical-Wheel Stirred Suspension Bioreactors</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b68833b19e11c7b880dca7_2021%20Borys%20et%20al.%20-%20Overcoming%20Bioprocess%20Bottlenecks%20in%20Large-Scale%20Expansion.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Initial Power Measurements for a Family of Novel Bioreactors</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b684a592188ebf9a76f829_2022%20Croughan%20et%20al.%20-%20Initial%20Power%20Measurements%20for%20a%20Family%20of%20Novel%20Bioreactors.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"case-study-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"case-study-text\">Cell Culture Process Scale-Up Challenges for Commercial-Scale\n                            Manufacturing</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63b6854da775aa713c8df9b9_2022%20Lee%20et%20al.%20-%20Cell%20Culture%20Process%20Scale-Up%20Challenges%20for%20Commercial-Scale%20Manufactruing.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "e83fe78d-b539-4754-be12-0326e46099f2",
+                  "type" : "component"
+                } ],
+                "id" : "1f191077-4b41-4cc1-9e57-acf2228a75d8",
+                "name" : "2247f",
+                "title" : "Case Studies",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "richTextValue" : "<div class=\"resources-component\">\n    <div class=\"resources-wrapper\">\n    </div>\n    <div class=\"resources-cms-wrapper w-dyn-list\">\n        <div class=\"resources-cms-list w-dyn-items\">\n            <div  class=\"w-dyn-item\">\n                <div class=\"resource-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"resouces-list-text\">PBS-3 Single-Use Bioreactor User Manual (Single-Use Sensors, v4\n                            Software) [P/Ns: IA-3-B-711 &amp; -712]</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/660c1858a87bd3c38ebc587f_IC03946%20Rev%20A_digital.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"resource-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"resouces-list-text\">PBS-3 Single-Use Bioreactor User Manual (Reusable Sensors, v4\n                            Software) [P/Ns: IA-3-B-511 &amp; -512]</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/660ba621707daf20c0c112ef_IC03945%20Rev%20A_digital.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n            <div class=\"w-dyn-item\">\n                <div class=\"resource-wrap\">\n                    <div class=\"case-study-text-wrapper\">\n                        <div class=\"resouces-list-text\">PBS-3 Datasheet</div>\n                    </div><a\n                        href=\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63c9e3ee8032c7a5b43f7e40_3L%20Datasheet_print%20v.221007.pdf\"\n                        target=\"_blank\" class=\"product-link-wrapper w-inline-block\">\n                        <div class=\"heading-small text-color-yellow hover\">Download</div>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "986eddc5-22a4-429a-8fa3-3ff1a1ac70d7",
+                  "type" : "component"
+                } ],
+                "id" : "1d0d3b94-8c9c-4ccd-a72a-e103ad4b9d38",
+                "name" : "f4b0a",
+                "title" : "User Resuorces",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:tabs",
+              "id" : "571081dd-d57c-496d-af2b-54013df61f18",
               "type" : "component"
             }, {
               "attributes" : {
@@ -587,7 +896,7 @@
           "children" : [ {
             "children" : [ {
               "attributes" : {
-                "richTextValue" : "<div class=\"section-library\">\n  <div class=\"page-padding\">\n    <div class=\"conferences-container w-container\">\n      <div class=\"library-component\">\n        <div class=\"products-faq-component\">\n          <div class=\"faq-content-wrapper\">\n            <h2 class=\"product-resources-header margin-bottom margin-large\">\n              FAQ\n            </h2>\n            <div class=\"w-dyn-list\">\n              <div  class=\"w-dyn-items\">\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        How can I monitor process parameters during a cell\n                        culture run?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"width: 706px; height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        The 3L bioreactor’s software allows for customizable\n                        programming of process controls and real-time monitoring\n                        of parameters using various sensors. Feedback loops can\n                        be used to pause a run based on deviations from a set\n                        range.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What are recommended methods for sampling and\n                        harvesting?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Both sampling and harvesting of cells can be achieved by\n                        unscrewing the orange cap on top of the single-use\n                        vessel (one cap on 0.1L, two caps on 0.5L vessel) and\n                        using a pipette to withdraw media. It is recommended to\n                        perform these procedures under a biosafety hood.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What is the function of the power accessory cable?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        This accessory allows the power cables from four\n                        different Mini bases to be combined into one plug for a\n                        wall outlet.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        I have other questions regarding usage or\n                        troubleshooting of the PBS Mini.\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Please use the Products and/or Service quote form to\n                        submit any questions or inquiries related to a specific\n                        product(s).\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What data are available demonstrating the performance of\n                        Vertical-Wheel bioreactors?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Our Publications section lists numerous examples of cell\n                        culture performance data for various cell types\n                        generated by customers and collaborators as well as by\n                        our BioLab team.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                "richTextValue" : "<div class=\"section-library\">\n  <div class=\"page-padding\">\n    <div class=\"conferences-container w-container\">\n      <div class=\"library-component\">\n        <div class=\"products-faq-component\">\n          <div class=\"faq-content-wrapper\">\n            <h2 class=\"product-resources-header margin-bottom margin-large\">\n              FAQ\n            </h2>\n            <div class=\"w-dyn-list\">\n              <div  class=\"w-dyn-items\">\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        How can I monitor process parameters during a cell\n                        culture run?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"width: 706px; height: 0px;\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        The 3L bioreactor’s software allows for customizable\n                        programming of process controls and real-time monitoring\n                        of parameters using various sensors. Feedback loops can\n                        be used to pause a run based on deviations from a set\n                        range.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What are recommended methods for sampling and\n                        harvesting?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Both sampling and harvesting of cells can be achieved by\n                        unscrewing the orange cap on top of the single-use\n                        vessel (one cap on 0.1L, two caps on 0.5L vessel) and\n                        using a pipette to withdraw media. It is recommended to\n                        perform these procedures under a biosafety hood.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What is the function of the power accessory cable?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        This accessory allows the power cables from four\n                        different Mini bases to be combined into one plug for a\n                        wall outlet.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        I have other questions regarding usage or\n                        troubleshooting of the PBS Mini.\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Please use the Products and/or Service quote form to\n                        submit any questions or inquiries related to a specific\n                        product(s).\n                      </p>\n                    </div>\n                  </div>\n                </div>\n                <div  class=\"w-dyn-item\">\n                  <div\n                    data-w-id=\"2e0c66ad-efa6-366a-fe09-74dc162eff99\"\n                    class=\"faq-wrapper\"\n                  >\n                    <div class=\"faq-question-bar\">\n                      <div\n                        class=\"faq-question text-weight-light margin-right margin-xxsmall\"\n                      >\n                        What data are available demonstrating the performance of\n                        Vertical-Wheel bioreactors?\n                      </div>\n                      <div\n                        style=\"\n                          transform-style: preserve-3d;\n                          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)\n                            rotateX(0deg) rotateY(0deg) rotateZ(180deg)\n                            skew(0deg, 0deg);\n                        \"\n                        class=\"faq-circle\"\n                      >\n                        <img\n                          src=\"https://assets-global.website-files.com/62cc627d7fe73059b1484e97/62cc627d7fe730298c484ee4_faq-icon.svg\"\n                          \n                          alt=\"faq icon\"\n                          class=\"faq-arrow\"\n                        />\n                      </div>\n                    </div>\n                    <div style=\"height: 0px\" class=\"faq-content\">\n                      <p\n                        class=\"faq-answer text-color-blue margin-bottom margin-custom2\"\n                      >\n                        Our Publications section lists numerous examples of cell\n                        culture performance data for various cell types\n                        generated by customers and collaborators as well as by\n                        our BioLab team.\n                      </p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
               },
               "definition" : "community_builder:htmlEditor",
               "id" : "2c6b109e-b15b-48f0-947d-ec1b9db1612d",
@@ -600,6 +909,30 @@
           } ],
           "definition" : "community_layout:section",
           "id" : "930eb2a4-4a44-4c96-97c9-e2d42d5a2f67",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"0040ad77-3f8f-439c-895e-f3b567509610\",\"columns\":[{\"UUID\":\"083bb77f-0ff9-41ff-8197-56d6c26c5567\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:fAQ",
+              "id" : "730e8bbd-fe1f-4a5f-9e95-c84bb6e6115d",
+              "type" : "component"
+            } ],
+            "id" : "083bb77f-0ff9-41ff-8197-56d6c26c5567",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "0040ad77-3f8f-439c-895e-f3b567509610",
           "type" : "component"
         } ],
         "id" : "d54eb72e-9673-4f10-a957-32e3b4c87157",
@@ -644,17 +977,77 @@
           } ]
         }
       }, {
-        "targetId" : "2c6b109e-b15b-48f0-947d-ec1b9db1612d",
+        "targetId" : "571081dd-d57c-496d-af2b-54013df61f18",
         "isHiddenOnOperationSuccess" : false,
         "isActive" : true,
         "rule" : {
-          "name" : "82330e2c-36d1-42b7-9a4c-362a49566f57",
+          "name" : "6d33bd56-ad37-4109-a71e-e2941c967c20",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "Product.Details.id",
+            "operator" : "Equal",
+            "value" : "01tHs00000A9aHKIAZ",
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "fe41ed7a-0aca-4d9d-a3ba-b2152ad5cfbd",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "6d6e52b1-2b4b-4cc8-a71e-957b95f2d205",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "Product.Details.id",
+            "operator" : "Equal",
+            "value" : "01tHs00000A9aHPIAZ",
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "0040ad77-3f8f-439c-895e-f3b567509610",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "35241e31-894d-4db9-a41e-6133efee5157",
           "description" : "",
           "criteriaType" : "AllCriteriaMatch",
           "expressionCriteria" : [ {
             "resource" : "Product.Details.id",
             "operator" : "Equal",
             "value" : "01tHs00000A9aHFIAZ",
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "2c6b109e-b15b-48f0-947d-ec1b9db1612d",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "976e846c-9484-4c40-b158-8f1507224686",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "Product.Details.id",
+            "operator" : "Equal",
+            "value" : "01tHs00000A9aHFIAZ",
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "1ce320e6-8642-4f6a-8036-16ecc29345d2",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "c4089dcb-9871-4523-919d-dc01bfcb2564",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "Product.Details.id",
+            "operator" : "Equal",
+            "value" : "01tHs00000A9aHLIAZ",
             "criterionNumber" : 1
           } ]
         }

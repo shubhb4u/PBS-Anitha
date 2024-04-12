@@ -111,6 +111,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AccountController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>B2BCheckInventorySample</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -131,7 +135,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CartCalcShipping</apexClass>
+        <apexClass>CartCalculateSample</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -211,6 +215,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PdfUploaderController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PriceStoreExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -255,7 +263,19 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>generateQuotePdfDocument</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>generateQuotePdfDocumentTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>getProductDetails</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>updatePDFLinkonQuote</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -293,6 +313,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Company__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.CustomerPriority__c</field>
         <readable>true</readable>
@@ -313,6 +338,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Exempt__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Fax</field>
         <readable>true</readable>
@@ -326,6 +361,11 @@
         <editable>true</editable>
         <field>Account.Jigsaw</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Manual_Tax__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -456,6 +496,11 @@
         <editable>true</editable>
         <field>Account.Site</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Status__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -5618,6 +5663,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Product2.Product_Exempt__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Product2.QuantityUnitOfMeasure</field>
         <readable>true</readable>
@@ -5984,6 +6034,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ProductAttribute.Power_Cords__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ProductTransfer.CanUpdateIsReceived</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6160,6 +6215,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Quote.GrandTotal</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.PBS_Pdf_Download__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13829,11 +13889,23 @@
     </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Account_Creation</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Generate_Quote_PDF</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Purchase_Order</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Send_Confirmation_Email_to_Owner</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>send_email_account_owner</flow>
     </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
@@ -14325,6 +14397,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ProductMedia-Product Media Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProductSellingModel-Product Selling Model Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ProductTransfer-Product Transfer Layout</layout>

@@ -14,9 +14,12 @@ export default class NewQuoteRequest extends LightningElement {
     @track CartId;
     @track requestQuoteBy;
     @track reasonForQuote;
+    @track requestQuoteByError;
+    @track reasonForQuoteError;
     @track contactId;
     @track userName;
     @track showSuccessMessage;
+
 
     @wire(CartSummaryAdapter)
     setCartSummary({ data, error }) {
@@ -56,6 +59,17 @@ export default class NewQuoteRequest extends LightningElement {
     }
 
     handleCreateQuote() {
+        this.requestQuoteByError = '';
+        this.reasonForQuoteError = '';
+        if (!this.requestQuoteBy || !this.reasonForQuote) {
+            if(!this.requestQuoteBy){
+                this.requestQuoteByError = 'This field is required and can not be empty';
+            }
+            if(!this.reasonForQuote){
+                this.reasonForQuoteError = 'This field is required and can not be empty';
+            }
+            return;
+        }
         if (this.CartId) {
             console.log('this.contactId', this.contactId);
             createQuote({ cartId: this.CartId, requestQuoteBy: this.requestQuoteBy, reasonForQuote: this.reasonForQuote, contactId: this.contactId, userName: this.userName })

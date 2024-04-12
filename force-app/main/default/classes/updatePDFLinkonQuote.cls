@@ -42,7 +42,7 @@ public with sharing class updatePDFLinkonQuote {
 
     // ***************************************************************************************************************************
     
-    public static void updatePdfUrlonQuote(List<ContentVersion> conVerList, Map<id,ContentVersion> oldMap){
+    public static void updatePdfUrlonQuote(List<ContentVersion> conVerList){
 
         Set<Id> conVerIds  =  new Set<Id>();
         for(ContentVersion conVer : conVerList){

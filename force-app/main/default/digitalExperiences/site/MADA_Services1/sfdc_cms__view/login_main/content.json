@@ -46,7 +46,7 @@
                 "loginButtonLabel" : "Log In",
                 "passwordLabel" : "Password",
                 "selfRegisterLabel" : "Not a member?",
-                "selfRegisterUrl" : "/SelfRegister",
+                "selfRegisterUrl" : "/self-register",
                 "startUrl" : "",
                 "usernameLabel" : "Username"
               },

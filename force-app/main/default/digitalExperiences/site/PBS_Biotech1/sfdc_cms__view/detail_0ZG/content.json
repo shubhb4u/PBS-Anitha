@@ -66,22 +66,6 @@
                     "title" : "categoryHeader",
                     "type" : "region"
                   }, {
-                    "children" : [ {
-                      "attributes" : {
-                        "backgroundColor" : "",
-                        "isLinkable" : false,
-                        "linkAssistiveText" : "",
-                        "paddingHorizontal" : "none",
-                        "paddingVertical" : "none",
-                        "text" : "{!Search.Results.description}",
-                        "textAlign" : "left",
-                        "textDecoration" : "{}",
-                        "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-xlarge\"}"
-                      },
-                      "definition" : "dxp_base:textBlock",
-                      "id" : "b200ef1d-3067-4537-a38c-0414a28ce46a",
-                      "type" : "component"
-                    } ],
                     "id" : "5528aeb3-e9f4-4783-882d-31e6955f1bbf",
                     "name" : "searchHeader",
                     "title" : "searchHeader",
@@ -93,22 +77,6 @@
                         "sortRules" : "{!Search.SortRules.rules}"
                       },
                       "children" : [ {
-                        "children" : [ {
-                          "attributes" : {
-                            "backgroundColor" : "",
-                            "isLinkable" : false,
-                            "linkAssistiveText" : "",
-                            "paddingHorizontal" : "small",
-                            "paddingVertical" : "none",
-                            "text" : "{!Label.B2B_Search_Results.sortBy}",
-                            "textAlign" : "right",
-                            "textDecoration" : "{}",
-                            "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
-                          },
-                          "definition" : "dxp_base:textBlock",
-                          "id" : "e46e05a6-ad3e-4859-9922-e74af5bfdf57",
-                          "type" : "component"
-                        } ],
                         "id" : "68d7be97-d3a4-4b2c-b15c-651107c11b5a",
                         "name" : "sortMenuLabel",
                         "title" : "sortMenuLabel",
@@ -123,14 +91,6 @@
                     "title" : "sortingMenu",
                     "type" : "region"
                   }, {
-                    "children" : [ {
-                      "attributes" : {
-                        "searchResults" : "{!Search.Results}"
-                      },
-                      "definition" : "commerce_builder:searchFilters",
-                      "id" : "9e4e7da8-8a6d-44e6-a27c-e77a88ecdc14",
-                      "type" : "component"
-                    } ],
                     "id" : "054bfe74-6980-4787-803c-60b9d8352dc2",
                     "name" : "searchFilters",
                     "title" : "searchFilters",

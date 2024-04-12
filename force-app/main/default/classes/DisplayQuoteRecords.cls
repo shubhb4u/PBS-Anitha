@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 03-23-2024
+ * @last modified on  : 04-08-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class DisplayQuoteRecords {
@@ -11,7 +11,7 @@ public with sharing class DisplayQuoteRecords {
     @AuraEnabled
     public static List<Quote> DisplayQuoteRecs(string contactId) {
         if(ContactId!=null){
-        List<Quote> qLidt=[select id,ContactId,Status,Name,ExpirationDate,TotalPrice,PBS_Pdf_Download__c from Quote where ContactId = : ContactId];
+        List<Quote> qLidt=[select id,ContactId,Status,Name,ExpirationDate,TotalPrice,PBS_Pdf_Download__c,QuoteNumber from Quote where ContactId = : ContactId];
         System.debug('qLidt:'+qLidt);
         return qLidt;
         }else{
@@ -19,6 +19,7 @@ public with sharing class DisplayQuoteRecords {
            return qLidt1; 
         }
     }
+        
 
     @AuraEnabled
     public static String getDownloadLink(String quoId) {

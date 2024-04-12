@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Create Salesforce Account">
+        <lightning-record-edit-form object-api-name="Account">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input-field field-name="Name" required></lightning-input-field>
+                    <lightning-input-field field-name="Industry" required></lightning-input-field>
+                    <lightning-input-field field-name="Company__c" required></lightning-input-field>
+                    <lightning-input-field field-name="Email__c" required></lightning-input-field>
+                    <lightning-input-field field-name="BillingAddress" required></lightning-input-field>
+                  
+                    
+                </div>
+                <!-- Add more input fields for other account details -->
+            </div>
+            <div class="slds-m-top_medium">
+                <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

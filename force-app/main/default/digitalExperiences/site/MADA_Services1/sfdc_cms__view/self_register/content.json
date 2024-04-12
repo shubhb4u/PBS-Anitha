@@ -23,24 +23,6 @@
               "definition" : "dxp_content_layout:siteLogo",
               "id" : "c2c88dd0-2787-44c8-8f0f-98384adfb83e",
               "type" : "component"
-            }, {
-              "attributes" : {
-                "cancelLinkLabel" : "Already have an account?",
-                "confirmPasswordLabel" : "Confirm Password",
-                "emailLabel" : "Email",
-                "firstnameLabel" : "First Name",
-                "includePasswordField" : true,
-                "lastnameLabel" : "Last Name",
-                "passwordLabel" : "Create Password",
-                "phoneNumberLabel" : "Phone Number",
-                "phoneNumberRequired" : true,
-                "regConfirmUrl" : "./CheckPasswordResetEmail",
-                "showPhoneNumberField" : true,
-                "submitButtonLabel" : "Sign Up"
-              },
-              "definition" : "commerce_builder:selfRegister",
-              "id" : "0c01bbea-3c14-4bf0-98a6-e8d51e867144",
-              "type" : "component"
             } ],
             "id" : "eedf003c-c464-48ff-a059-fbb418998601",
             "name" : "col1",
@@ -49,6 +31,30 @@
           } ],
           "definition" : "community_layout:section",
           "id" : "b75e3c26-edd8-4852-aef1-e3f20dd48cb8",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"2b7cf982-e65c-4471-a50c-ed71b939b03a\",\"columns\":[{\"UUID\":\"37888b4a-b10a-4d75-acf5-a0a2f5edd91e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:application",
+              "id" : "a28407eb-eb76-4754-9d01-5e3c74009921",
+              "type" : "component"
+            } ],
+            "id" : "37888b4a-b10a-4d75-acf5-a0a2f5edd91e",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "2b7cf982-e65c-4471-a50c-ed71b939b03a",
           "type" : "component"
         } ],
         "id" : "735ff2d7-1c91-4e4c-850f-87e2a7eb3833",

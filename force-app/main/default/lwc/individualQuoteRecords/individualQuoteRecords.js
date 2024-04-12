@@ -8,6 +8,8 @@ export default class IndividualQuoteRecords extends LightningElement {
     //@track queryParams = {};
     @track quoteId;
     @track showSuccessMessage=false;
+    @track showExpiredErrorMessage=false;
+    @track ShowApprovedErrorMessage = false;
     @track statusAccepted=false;
     @track quote;
     @track CartId;
@@ -61,12 +63,21 @@ export default class IndividualQuoteRecords extends LightningElement {
     acceptQuote(){
         AcceptQuote({ quoteId: this.quoteId })
         .then(result => {
+            console.log('Result: ',result);
             if(result== 'success'){
                 this.showSuccessMessage=true;
                 if(this.CartId !=null){
                     this.ClearCartandAddCartItemsToStore();
                 }
                 console.log('Quote Accepted succesfully ->>>');
+            }
+            else if(result == 'expired'){
+                this.showExpiredErrorMessage = true;
+                console.log('the quote is expired');
+            }
+            else if(result == 'not approved'){
+                this.ShowApprovedErrorMessage = true;
+                console.log('only approved quotes can be accepted');
             }
             else{
                 console.log('Quote Accept failed ->>>');

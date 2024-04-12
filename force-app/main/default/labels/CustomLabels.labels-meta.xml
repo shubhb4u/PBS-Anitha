@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>QuoteTemplateId_PBS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuoteTemplateId PBS</shortDescription>
+        <value>0EHHs000002o2E4</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Template_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quote Template Name</shortDescription>
+        <value>Quote Template PBS</value>
+    </labels>
+</CustomLabels>
