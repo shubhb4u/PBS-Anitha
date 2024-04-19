@@ -55,6 +55,13 @@
               "definition" : "commerce_builder:productGallery",
               "id" : "690f00c4-34e2-4b73-a1e0-dcf28c5d3551",
               "type" : "component"
+            }, {
+              "attributes" : {
+                "productId" : "{!recordId}"
+              },
+              "definition" : "c:productRecommendation_PBS",
+              "id" : "6209ca71-002c-4af9-940b-8d4d9903a9ba",
+              "type" : "component"
             } ],
             "id" : "fbbf32ab-f6ec-4cd1-baed-12699eb9a7c6",
             "name" : "col1",

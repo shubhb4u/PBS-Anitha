@@ -21,8 +21,12 @@
     <tabs>standard-Order</tabs>
     <tabs>standard-OrderSummary</tabs>
     <tabs>standard-CommerceSetup</tabs>
+    <tabs>B2B_Customer__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>B2B_Customer__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

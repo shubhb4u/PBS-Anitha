@@ -402,7 +402,7 @@
                     "columnGutterWidth" : "0rem",
                     "dxpStyle" : {
                       "padding" : {
-                        "bottom" : "",
+                        "bottom" : "5px",
                         "left" : "",
                         "right" : "30px",
                         "top" : "20px"
@@ -501,7 +501,7 @@
                     "columnGutterWidth" : "0rem",
                     "dxpStyle" : {
                       "padding" : {
-                        "bottom" : "",
+                        "bottom" : "5px",
                         "left" : "",
                         "right" : "30px",
                         "top" : "10px"
@@ -600,7 +600,7 @@
                     "columnGutterWidth" : "0rem",
                     "dxpStyle" : {
                       "padding" : {
-                        "bottom" : "",
+                        "bottom" : "5px",
                         "left" : "",
                         "right" : "30px",
                         "top" : "10px"
@@ -682,7 +682,7 @@
                     "columnGutterWidth" : "0rem",
                     "dxpStyle" : {
                       "padding" : {
-                        "bottom" : "",
+                        "bottom" : "5px",
                         "left" : "",
                         "right" : "30px",
                         "top" : "10px"

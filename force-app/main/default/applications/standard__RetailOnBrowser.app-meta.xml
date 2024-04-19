@@ -14,8 +14,12 @@
     <tabs>standard-AssessmentTaskOrder</tabs>
     <tabs>standard-RetailRexOnDesktop</tabs>
     <tabs>standard-RetailExecution</tabs>
+    <tabs>B2B_Customer__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>B2B_Customer__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-ActionPlanTemplate</tab>
         </mappings>

@@ -7,4 +7,5 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <tabs>standard-Chatter</tabs>
     <tabs>standard-Sites</tabs>
+    <tabs>B2B_Customer__c</tabs>
 </CustomApplication>

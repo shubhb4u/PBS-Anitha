@@ -17,10 +17,12 @@
             "children" : [ {
               "attributes" : {
                 "divider" : "chevron",
+                "dividerColor" : "rgb(247, 124, 0)",
                 "hideOnMobile" : false,
                 "maxDepthOnMobile" : "3",
                 "showHomeLink" : false,
                 "showLastItemAsLink" : false,
+                "textColor" : "rgb(35, 59, 92)",
                 "textSize" : "small"
               },
               "definition" : "commerce_builder:breadcrumbs",
@@ -49,6 +51,7 @@
               "attributes" : {
                 "carouselPageSize" : 1,
                 "carouselPosition" : "below",
+                "imageBorderColor" : "rgb(118, 113, 107)",
                 "product" : "{!Product.Details}",
                 "showCarousel" : true
               },
@@ -77,9 +80,9 @@
                     "paddingVertical" : "none",
                     "text" : "{!Product.Details.fields.Name}",
                     "textAlign" : "left",
-                    "textColor" : "rgb(247, 124, 0)",
+                    "textColor" : "rgb(35, 59, 92)",
                     "textDecoration" : "{\"bold\":true,\"italic\":false}",
-                    "textDisplayInfo" : "{\"textStyle\":\"heading-medium\",\"headingTag\":\"h1\"}"
+                    "textDisplayInfo" : "{\"textStyle\":\"heading-large\",\"headingTag\":\"h1\"}"
                   },
                   "definition" : "dxp_base:textBlock",
                   "id" : "d8d82f32-8683-418b-bae1-ffd83b09cf66",
@@ -95,7 +98,33 @@
               "type" : "component"
             }, {
               "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : true,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "COC Certificate",
+                "textAlign" : "left",
+                "textColor" : "rgb(247, 124, 0)",
+                "textDecoration" : "{\"bold\":true,\"italic\":false,\"underline\":true}",
+                "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
+                "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__webPage\",\"attributes\":{\"url\":\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63c9e3ee8032c7a5b43f7e40_3L%20Datasheet_print%20v.221007.pdf\"}}}}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "4d5b8b5c-d5e5-4907-96b8-00fa9ea0b594",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
                 "lastLowestPriceLabel" : "Last Lowest Price:",
+                "lastLowestPriceLabelColor" : "rgb(35, 59, 92)",
                 "lastLowestPriceLabelSize" : "medium",
                 "pricingType" : "3_TIER",
                 "product" : "{!Product.Details}",
@@ -103,17 +132,22 @@
                 "productSellingModelPriceType" : "",
                 "productTax" : "{!Product.Tax}",
                 "productVariant" : "{!Product.SelectedVariant}",
+                "promotionalMessageTextColor" : "rgb(35, 59, 92)",
                 "promotionalMessageTextSize" : "small",
                 "promotionalPricing" : "{!Product.PromotionalPricing}",
                 "selectedProductSellingModel" : "{!Product.SelectedProductSellingModel}",
                 "showTaxIndication" : true,
                 "slot1PriceLabel" : "",
+                "slot1PriceTextColor" : "rgb(35, 59, 92)",
                 "slot1PriceTextSize" : "large",
                 "slot2PriceLabel" : "",
+                "slot2PriceTextColor" : "rgb(35, 59, 92)",
                 "slot2PriceTextSize" : "medium",
                 "slot3PriceLabel" : "Final Price",
+                "slot3PriceTextColor" : "rgb(35, 59, 92)",
                 "slot3PriceTextSize" : "small",
                 "taxIncludedLabel" : "Tax Included",
+                "taxLabelColor" : "rgb(35, 59, 92)",
                 "taxLabelSize" : "medium",
                 "unavailablePriceLabel" : "Price Unavailable"
               },
@@ -123,10 +157,14 @@
             }, {
               "attributes" : {
                 "backgroundColor" : "rgba(0,0,0,0)",
+                "borderColor" : "rgb(35, 59, 92)",
                 "borderRadius" : 0,
                 "discountRowLabel" : "Discount per Unit",
+                "labelTextColor" : "rgb(35, 59, 92)",
                 "productPricing" : "{!Product.Pricing}",
-                "quantityRowLabel" : "Quantity"
+                "quantityRowLabel" : "Quantity",
+                "rowTitleTextColor" : "rgb(35, 59, 92)",
+                "textColor" : "rgb(35, 59, 92)"
               },
               "children" : [ {
                 "children" : [ {
@@ -138,6 +176,7 @@
                     "paddingVertical" : "none",
                     "text" : "Tier Discounts",
                     "textAlign" : "left",
+                    "textColor" : "rgb(35, 59, 92)",
                     "textDecoration" : "{}",
                     "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-medium\"}"
                   },
@@ -158,8 +197,12 @@
                 "addToCartButtonBorderRadius" : 0,
                 "addToCartButtonProcessingText" : "Adding...",
                 "addToCartButtonText" : "Add To Cart",
+                "addToCartButtonTextColor" : "rgb(35, 59, 91)",
+                "addToCartButtonTextHoverColor" : "rgb(35, 59, 91)",
                 "addToListButtonBorderRadius" : 0,
                 "addToListButtonText" : "Add To List",
+                "addToListButtonTextColor" : "rgb(35, 59, 91)",
+                "addToListButtonTextHoverColor" : "rgb(35, 59, 91)",
                 "incrementValueGuideText" : "Increment quantity is {0}",
                 "maximumValueGuideText" : "Maximum quantity is {0}",
                 "minimumValueGuideText" : "Minimum quantity is {0}",
@@ -200,6 +243,7 @@
               "attributes" : {
                 "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
                 "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextColor" : "rgb(247, 124, 0)",
                 "activeTabTextEmphasis" : "{\"bold\":true}",
                 "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
                 "borderColor" : "",
@@ -218,6 +262,7 @@
                 "tabHoverBorderHighlightWeight" : "0px",
                 "tabLayout" : "horizontal",
                 "tabPadding" : "12px",
+                "tabTextColor" : "rgb(35, 59, 92)",
                 "tabTextEmphasis" : "{\"bold\":true}",
                 "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
                 "tabsetConfig" : "{\"UUID\":\"1ce320e6-8642-4f6a-8036-16ecc29345d2\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"f044ded7-85a1-4e0d-8e0a-d7d04b58ff7e\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"c8e3fb12-5974-4cca-b900-07438469453c\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"c0eec52d-e5b8-4417-ab0f-e2548bf5c46f\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"d556d836-ef01-486e-a753-e5dc56d858c8\",\"tabName\":\"Case Studies\",\"tabKey\":\"8dfc8\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"7eeb3d9e-a924-4b1d-a5f8-e36de3b1959b\",\"tabName\":\"User Resources\",\"tabKey\":\"f6e5f\",\"locked\":false,\"allowGuestUser\":false}]}",
@@ -302,6 +347,7 @@
               "attributes" : {
                 "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
                 "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextColor" : "rgb(247, 124, 0)",
                 "activeTabTextEmphasis" : "{\"bold\":true}",
                 "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
                 "borderColor" : "",
@@ -320,6 +366,7 @@
                 "tabHoverBorderHighlightWeight" : "0px",
                 "tabLayout" : "horizontal",
                 "tabPadding" : "12px",
+                "tabTextColor" : "rgb(35, 59, 91)",
                 "tabTextEmphasis" : "{\"bold\":true}",
                 "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
                 "tabsetConfig" : "{\"UUID\":\"fe41ed7a-0aca-4d9d-a3ba-b2152ad5cfbd\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"6ab3f8b5-5bbc-46b9-bdc8-162654ada587\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"4c6fcf80-ec02-401f-9e13-d92b474d9b41\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"20c99581-2a73-4b2e-a3bd-2201b2602cad\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"4e01493f-35d4-4af1-89b7-de6689115f72\",\"tabName\":\"Case Studies\",\"tabKey\":\"f6551\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"fded7e01-791f-4655-8f08-d8d7ad2aac54\",\"tabName\":\"User Resources\",\"tabKey\":\"1135d\",\"locked\":false,\"allowGuestUser\":false}]}",
@@ -404,7 +451,7 @@
               "attributes" : {
                 "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
                 "activeTabBorderHighlightWeight" : "2px",
-                "activeTabTextColor" : "rgb(0, 0, 0)",
+                "activeTabTextColor" : "rgb(247, 124, 0)",
                 "activeTabTextEmphasis" : "{\"bold\":true}",
                 "activeTabTextStyle" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
                 "borderColor" : "",
@@ -426,7 +473,7 @@
                 "tabHoverTextColor" : "rgb(0, 0, 0)",
                 "tabLayout" : "horizontal",
                 "tabPadding" : "12px",
-                "tabTextColor" : "rgb(0, 0, 0)",
+                "tabTextColor" : "rgb(35, 59, 91)",
                 "tabTextEmphasis" : "{\"bold\":true}",
                 "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
                 "tabsetConfig" : "{\"UUID\":\"452473f6-6344-4d45-b222-6ccfdfde24f7\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"21d4ca26-a1c5-434c-a01b-3149dcdc638c\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"d9206293-3fd0-4e26-97b8-ef3c7c68873c\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"4bae27cb-109a-4076-a3b8-5597cdaf0704\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"9dd46c8e-0066-4948-ba1e-7c9924728f34\",\"tabName\":\"Case Studies\",\"tabKey\":\"c2d39\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"2652f4a7-e6f5-4398-a4bd-7ce15b8322fa\",\"tabName\":\"User Resources\",\"tabKey\":\"936c3\",\"locked\":false,\"allowGuestUser\":false}]}",
@@ -511,6 +558,7 @@
               "attributes" : {
                 "activeTabBorderHighlightColor" : "rgb(247, 124, 0)",
                 "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextColor" : "rgb(247, 124, 0)",
                 "activeTabTextEmphasis" : "{\"bold\":true}",
                 "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
                 "borderColor" : "",
@@ -532,6 +580,7 @@
                 "tabHoverBorderHighlightWeight" : "0px",
                 "tabLayout" : "horizontal",
                 "tabPadding" : "12px",
+                "tabTextColor" : "rgb(35, 59, 91)",
                 "tabTextEmphasis" : "{\"bold\":true}",
                 "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
                 "tabsetConfig" : "{\"UUID\":\"571081dd-d57c-496d-af2b-54013df61f18\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"cf38919f-9e3a-444d-a2d6-4cf598dfa1b1\",\"tabName\":\"Highlights\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"b1033c65-8e76-4a33-9076-25643f758de5\",\"tabName\":\"Product Catalogue\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"cf928124-c24e-4655-a324-ac3d5f67d55f\",\"tabName\":\"Technical Specifications\",\"tabKey\":\"tab3\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"1f191077-4b41-4cc1-9e57-acf2228a75d8\",\"tabName\":\"Case Studies\",\"tabKey\":\"2247f\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"1d0d3b94-8c9c-4ccd-a72a-e103ad4b9d38\",\"tabName\":\"User Resuorces\",\"tabKey\":\"f4b0a\",\"locked\":false,\"allowGuestUser\":false}]}",
@@ -874,6 +923,23 @@
               } ],
               "definition" : "commerce_builder:productSet",
               "id" : "c7d09f5c-28fa-4fb7-8b2c-c292919b0255",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : true,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "COC Certificate",
+                "textAlign" : "left",
+                "textColor" : "rgb(247, 124, 0)",
+                "textDecoration" : "{\"bold\":true,\"underline\":true}",
+                "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}",
+                "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__webPage\",\"attributes\":{\"url\":\"https://assets-global.website-files.com/62cc627d7fe730df74484ebd/63bc44b078495ece665d2e5b_IC03771%20Rev%20D%20%28digital%29.pdf\"}}}}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "920f7ebb-4ade-4722-9b92-01bd228dfc46",
               "type" : "component"
             } ],
             "id" : "edeccf50-36c3-46a4-a50a-9fe9e25fa8df",

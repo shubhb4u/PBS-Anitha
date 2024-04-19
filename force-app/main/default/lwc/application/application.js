@@ -1,36 +1,40 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import createAccount from '@salesforce/apex/AccountController.createAccount';
 
 export default class AccountForm extends LightningElement {
+    @track name = '';
+    @track email = '';
+    @track phone = '';
+ 
+    handleNameChange(event) {
+        this.name = event.target.value;
+    }
+ 
+    handleEmailChange(event) {
+        this.email = event.target.value;
+    }
+ 
+    handlePhoneChange(event) {
+        this.phone = event.target.value;
+    }
+ 
     handleSubmit() {
-        const fields = this.template.querySelectorAll('lightning-input-field');
-        console.log('fields:'+fields);
-        let accountData = {};
-        fields.forEach(field => {
-            console.log('field:'+field);
-            console.log('field.value:'+field.value);
-            console.log('field.fieldName:'+field.fieldName);
-            accountData[field.fieldName] = field.value;
-        });
-
-       console.log('accountdata:'+accountData);
-        console.log('Billing City:'+accountData.BillingAddress.BillingCity);
-        console.log('Billing State Code:'+accountData.BillingAddress.BillingStateCode);
-        console.log('Billing Street:'+accountData.BillingAddress.BillingStreet);
-        console.log('Billing Zip:'+accountData.BillingAddress.BillingPostalCode);
-        console.log('Billing Country Code:'+accountData.BillingAddress.BillingCountryCode);
-
-
-       
-        
-        createAccount({ accountData })
+        const signUpData = {
+            Name: this.name,
+            Email__c: this.email,
+            Phone__c: this.phone
+        };
+ 
+        createAccount({ accountData: signUpData })
             .then(result => {
-                // Handle success
-                console.log('Account created successfully:', result);
+                console.log('Record created: ', result);
+                // Optionally, reset form fields after successful submission
+                this.name = '';
+                this.email = '';
+                this.phone = '';
             })
             .catch(error => {
-                // Handle error
-                console.error('Error creating account:', error);
+                console.error('Error creating record: ', error);
             });
     }
 }

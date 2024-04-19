@@ -9,8 +9,12 @@
     <tabs>standard-DecisionTable</tabs>
     <tabs>standard-ExpressionSetTemplate</tabs>
     <tabs>standard-ExpressionSet</tabs>
+    <tabs>B2B_Customer__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>B2B_Customer__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-DecisionTable</tab>
         </mappings>

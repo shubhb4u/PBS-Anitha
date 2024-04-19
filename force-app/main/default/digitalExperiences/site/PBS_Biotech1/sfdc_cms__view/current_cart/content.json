@@ -628,6 +628,13 @@
               "definition" : "commerce_builder:checkoutButton",
               "id" : "3a77ff34-4009-4ed8-a446-e2bcb30d817e",
               "type" : "component"
+            }, {
+              "attributes" : {
+                "effectiveAccountId" : "{!CurrentUser.effectiveAccountId}"
+              },
+              "definition" : "c:newQuoteRequest",
+              "id" : "fde78de5-98cf-42e3-a13b-07ac0483c4cb",
+              "type" : "component"
             } ],
             "id" : "9fe219a6-c64a-41d3-bd73-6c9fcb751261",
             "name" : "col2",

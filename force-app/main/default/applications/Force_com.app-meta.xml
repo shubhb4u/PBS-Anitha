@@ -8,4 +8,5 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Force.com</label>
     <tabs>standard-Chatter</tabs>
+    <tabs>B2B_Customer__c</tabs>
 </CustomApplication>

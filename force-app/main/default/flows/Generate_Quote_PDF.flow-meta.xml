@@ -26,12 +26,33 @@
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Amount_0</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>(1 AND 2 ) OR ( 3 AND 4 )</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.TotalPrice</leftValueReference>
-                <operator>GreaterThan</operator>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
                 <rightValue>
-                    <numberValue>0.0</numberValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>RecordIsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -73,8 +94,30 @@
         <connector>
             <targetReference>Quote_Amount</targetReference>
         </connector>
+        <filterLogic>(1 AND 2) OR 3</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Draft</stringValue>
+            </value>
+        </filters>
         <object>Quote</object>
-        <recordTriggerType>Create</recordTriggerType>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Obsolete</status>

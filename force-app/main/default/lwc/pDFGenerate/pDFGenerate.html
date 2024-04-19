@@ -1,0 +1,79 @@
+<template>
+    <div if:true={isLoading} class="slds-spinner_container">
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    <center>
+        <div class="card">
+            <div style="border: none;">
+                <lightning-card class="Component">
+                    <form>
+                        <div class="slds-box slds-theme_default" style="font-size: 1rem;
+                            font-weight: 400;
+                            font-family: Open Sans,Helvetica,sans-serif;">
+                            <lightning-layout style="margin-top:10px; display: flex; justify-content: center; align-items: center;">
+                                <lightning-formatted-text value="Upload Order Summary PDF" style="font-size: 18px;font-weight: bold;color:rgb(4 98 173);"></lightning-formatted-text>
+                            </lightning-layout>
+                            <lightning-layout style="margin-top:30px;">
+                                <lightning-layout-item class="label" style="margin: auto;width:25%;text-align:right;">
+                                </lightning-layout-item>
+                                <lightning-layout-item padding="horizontal-large" style="width:75%; padding-right:0px">
+                                    <lightning-formatted-text value="PDF files only." ></lightning-formatted-text><br />
+                                </lightning-layout-item>
+                            </lightning-layout>
+                            <lightning-layout style="margin-top:10px;">
+                                <lightning-layout-item class="label" style="margin: auto;width:25%;text-align:right;">
+                                    <lightning-formatted-text value="Order Summary Number:" ></lightning-formatted-text>
+                                </lightning-layout-item>
+                                <lightning-layout-item padding="horizontal-large" style="width:75%; padding-right:0px">
+                                    <lightning-input name="orderSummaryNumber" type="text" onchange={handleOrderSummaryNumberChange}></lightning-input>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                            <lightning-layout style="margin-top:10px;">
+                                <lightning-layout-item class="label" style="margin: auto;width:25%;text-align:right;">
+                                    <lightning-formatted-text value="" ></lightning-formatted-text>
+                                </lightning-layout-item>
+                                <lightning-layout-item padding="horizontal-large" style="width:75%; padding-right:0px">
+                                    <label style="display: inline-block;position: relative;height: 30px;width: 100px;border:1px solid rgb(65, 65, 65)" for="inputFile">
+                                        <div style="position: absolute;left: 0;top: 0;bottom: 0;border-radius: 5%;
+                                            width: 100%;display: flex;
+                                            align-items: center;justify-content: center;background: rgb(244, 242, 242);
+                                            border: #bebebe;" >
+                                        Choose PDF
+                                        </div>        
+                                        <lightning-input 
+                                            variant="label-hidden" accept=".pdf" style="position: absolute;left: 0;opacity: 0;top: 0;bottom: 0;width: 100%;"
+                                            name="file1" type="file" label="Attachment" 
+                                            onchange={handleFileUpload}></lightning-input>
+                                    </label>
+                                    <span if:false={fileData}>
+                                        No file chosen
+                                    </span>
+                                    <span if:true={fileData}>
+                                        {fileData.filename}
+                                    </span>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                            <lightning-layout>
+                                <lightning-layout-item class="label" style="margin: auto;width:25%;text-align:right;">
+                                    <lightning-formatted-text value="" ></lightning-formatted-text>
+                                </lightning-layout-item>
+                                <lightning-layout-item padding="horizontal-large" style="width:75%; padding-right:0px">
+                                    <div class="error" style="font-weight: 400;color: #ff3860;">{FilesizeErrorMessage}</div>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                            <lightning-layout style="margin-top:10px;">
+                                <lightning-layout-item class="label" style="margin: auto;width:25%;text-align:right;">
+                                    <lightning-formatted-text value="" ></lightning-formatted-text>
+                                </lightning-layout-item>
+                                <lightning-layout-item padding="horizontal-large" style="width:75%; padding-right:0px; margin-top: 15px;">
+                                    <lightning-button class="sendButton" variant="brand" label="Submit" title="Submit" onclick={handleSubmit} style="float:right;justify-content: flex-end;"></lightning-button>
+                                    <lightning-button label="Cancel" onclick={closeAction} style="float:right; margin-right:15px"></lightning-button>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </div>
+                    </form>
+                </lightning-card>
+            </div>
+        </div>
+    </center>
+</template>

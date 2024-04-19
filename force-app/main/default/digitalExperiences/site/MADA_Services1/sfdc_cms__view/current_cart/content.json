@@ -831,6 +831,24 @@
       "attributes" : { }
     } ],
     "themeLayoutType" : "Inner",
-    "viewType" : "current-cart"
+    "viewType" : "current-cart",
+    "contentOperations" : {
+      "operations" : [ {
+        "targetId" : "5978c401-6212-4740-b48e-862f2b40456d",
+        "isHiddenOnOperationSuccess" : true,
+        "isActive" : true,
+        "rule" : {
+          "name" : "950a2580-0fc0-4469-a9b1-45cf5aa36383",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : true,
+            "criterionNumber" : 1
+          } ]
+        }
+      } ]
+    }
   }
 }

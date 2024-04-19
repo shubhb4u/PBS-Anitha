@@ -1,59 +1,47 @@
-// This must implement the sfdc_checkout.CartShippingCharges interface
-// in order to be processed by the checkout flow for the "Shipping" integration
 global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippingCharges {
-    // You MUST change this to be your service or you must launch your own Heroku Service
-    // and add the host in Setup | Security | Remote site settings.
     private static String httpHost = 'https://example.com';
     private static Boolean useHTTPService = false;
+    
     global sfdc_checkout.IntegrationStatus startCartProcessAsync(sfdc_checkout.IntegrationInfo jobInfo, Id cartId) {
         sfdc_checkout.IntegrationStatus integStatus = new sfdc_checkout.IntegrationStatus();
         try {
-            // We need to get the ID of the cart delivery group in order to create the order delivery groups.
-            Id cartDeliveryGroupId = [SELECT Id FROM CartDeliveryGroup WHERE CartId = :cartId WITH SECURITY_ENFORCED][0].Id;
+            // Fetch the delivery groups outside the loop
+            List<CartDeliveryGroup> deliveryGroups = [SELECT Id, DeliverToState, DeliverToCountry, DeliverToStateCode, TotalAmount FROM CartDeliveryGroup WHERE CartId = :cartId WITH SECURITY_ENFORCED];
             
-            // Used to increase the cost by a multiple of the number of items in the cart (useful for testing but should not be done in the final code)
-            Integer numberOfUniqueItems = [SELECT count() from cartItem WHERE CartId = :cartId WITH SECURITY_ENFORCED];
-             List<CartDeliveryGroup> deliveryGroups = [SELECT Id, DeliverToState, DeliverToCountry FROM CartDeliveryGroup WHERE CartId = :cartId WITH SECURITY_ENFORCED];            
-
-            
-
-            // Following snippet of code fetches a static json response with 2 mocked sample shipping methods.
-            // Another example that demonstrates how to call a live 3rd party HTTP Service to fetch the desired response is implemented
-            // in getShippingOptionsAndRatesFromExternalService method.
-
-            // Both implementations are just samples returning hardcoded Shipping options and MUST not be used in production systems.
-            ShippingOptionsAndRatesFromExternalService[] shippingOptionsAndRatesFromExternalService = null;
-            if(useHTTPService) {
-                shippingOptionsAndRatesFromExternalService = getShippingOptionsAndRatesFromExternalService(numberOfUniqueItems,deliveryGroups);
-            } else {
-                shippingOptionsAndRatesFromExternalService = getShippingOptionsAndRatesFromMockedService(numberOfUniqueItems,deliveryGroups);
-            }
-
-            // On re-entry of the checkout flow delete all previous CartDeliveryGroupMethods for the given cartDeliveryGroupId
-            delete [SELECT Id FROM CartDeliveryGroupMethod WHERE CartDeliveryGroupId = :cartDeliveryGroupId WITH SECURITY_ENFORCED];
-
-            // Create orderDeliveryMethods given your shipping options or fetch existing ones. 2 should be returned.
-            List<Id> orderDeliveryMethodIds = getOrderDeliveryMethods(shippingOptionsAndRatesFromExternalService);
-
-            // Create a CartDeliveryGroupMethod record for every shipping option returned from the external service
-            Integer i = 0;
-            for (Id orderDeliveryMethodId: orderDeliveryMethodIds) {
-               populateCartDeliveryGroupMethodWithShippingOptions(shippingOptionsAndRatesFromExternalService[i],
-                                                                  cartDeliveryGroupId,
-                                                                  orderDeliveryMethodId,
-                                                                  cartId);
-                i+=1;
+            // Fetch the shipping cost rules outside the loop
+            Map<String, List<Shipping_Cost_Rules__mdt>> shippingCostMap = new Map<String, List<Shipping_Cost_Rules__mdt>>();
+            for (Shipping_Cost_Rules__mdt rule : [SELECT Id, Max_Order_Value__c, min__c, Min_Order_Value__c, Shipping_Cost__c, State__c FROM Shipping_Cost_Rules__mdt]) {
+                if (!shippingCostMap.containsKey(rule.State__c)) {
+                    shippingCostMap.put(rule.State__c, new List<Shipping_Cost_Rules__mdt>());
+                }
+                shippingCostMap.get(rule.State__c).add(rule);
             }
             
-            // If everything works well, the charge is added to the cart and our integration has been successfully completed.
+            for (CartDeliveryGroup deliveryGroup : deliveryGroups) {
+                Id cartDeliveryGroupId = deliveryGroup.Id;
+                Decimal amount = deliveryGroup.TotalAmount;
+                List<Shipping_Cost_Rules__mdt> shippingCostList = shippingCostMap.get(deliveryGroup.DeliverToStateCode);
+                
+                ShippingOptionsAndRatesFromExternalService[] shippingOptions = null;
+                if (useHTTPService) {
+                    shippingOptions = getShippingOptionsAndRatesFromExternalService();
+                } else {
+                    shippingOptions = getShippingOptionsAndRatesFromMockedService(deliveryGroup, shippingCostList);
+                }
+                
+                delete [SELECT Id FROM CartDeliveryGroupMethod WHERE CartDeliveryGroupId = :cartDeliveryGroupId WITH SECURITY_ENFORCED];
+                
+                List<Id> orderDeliveryMethodIds = getOrderDeliveryMethods(shippingOptions);
+                
+                Integer i = 0;
+                for (Id orderDeliveryMethodId : orderDeliveryMethodIds) {
+                    populateCartDeliveryGroupMethodWithShippingOptions(shippingOptions[i], cartDeliveryGroupId, orderDeliveryMethodId, cartId);
+                    i += 1;
+                }
+            }
+            
             integStatus.status = sfdc_checkout.IntegrationStatus.Status.SUCCESS;
-
-        // For testing purposes, this example treats exceptions as user errors, which means they are displayed to the buyer user.
-        // In production you probably want this to be an admin-type error. In that case, throw the exception here
-        // and make sure that a notification system is in place to let the admin know that the error occurred.
-        // See the readme section about error handling for details about how to create that notification.
         } catch (DmlException de) {
-            // Catch any exceptions thrown when trying to insert the shipping charge to the CartItems
             Integer numErrors = de.getNumDml();
             String errorMessage = 'There were ' + numErrors + ' errors when trying to insert the charge in the CartItem: ';
             for(Integer errorIdx = 0; errorIdx < numErrors; errorIdx++) {
@@ -61,55 +49,56 @@ global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippin
                 errorMessage += 'Message = ' + de.getDmlMessage(errorIdx);
                 errorMessage += ' , ';
             }
-
-            return integrationStatusFailedWithCartValidationOutputError(
-                integStatus,
-                errorMessage,
-                jobInfo,
-                cartId
-            );
+            
+            return integrationStatusFailedWithCartValidationOutputError(integStatus, errorMessage, jobInfo, cartId);
         } catch(Exception e) {
-            return integrationStatusFailedWithCartValidationOutputError(
-                integStatus,
-                'An exception of type ' + e.getTypeName() + ' has occurred: ' + e.getMessage(),
-                jobInfo,
-                cartId
-            );
+            return integrationStatusFailedWithCartValidationOutputError(integStatus, 'An exception of type ' + e.getTypeName() + ' has occurred: ' + e.getMessage(), jobInfo, cartId);
         }
         return integStatus;
     }
-
-    /**
-        This method provides an alternative to retrieve Shipping Options if http call needs to be bypassed.
-        This method uses a hardcoded sample response and MUST not be used in production systems.
-     */
-    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromMockedService (Integer numberOfUniqueItems,List<CartDeliveryGroup> deliveryGroups) {
+    
+    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromMockedService(CartDeliveryGroup deliveryGroup, List<Shipping_Cost_Rules__mdt> shippingCostList) {
         ShippingOptionsAndRatesFromExternalService[] shippingOptions = new List<ShippingOptionsAndRatesFromExternalService>();
-        String responseBody = getShippingOptionsResponse(deliveryGroups);
-        List<Object> results = (List<Object>) JSON.deserializeUntyped(responseBody);
-        for (Object result: results) {
-            Map<String, Object> subresult = (Map<String, Object>) result;
-            Map<String, Object> providerAndRate = (Map<String, Object>) subresult.get('rate');
-            shippingOptions.add( new ShippingOptionsAndRatesFromExternalService(
-                (String) providerAndRate.get('name'),
-                (String) providerAndRate.get('serviceCode'),
-                (Decimal) providerAndRate.get('shipmentCost') * numberOfUniqueItems,
-                (Decimal) providerAndRate.get('otherCost'),
-                (String) providerAndRate.get('serviceName')
-            ));
+        String responseBody = getShippingOptionsResponse(deliveryGroup, shippingCostList);
+        
+        // Ensure shippingCostList is not null and has at least one element before accessing its first element.
+        if (shippingCostList != null && !shippingCostList.isEmpty()) {
+            List<Object> results = (List<Object>) JSON.deserializeUntyped(responseBody);
+            for (Object result : results) {
+                Map<String, Object> subresult = (Map<String, Object>) result;
+                Map<String, Object> providerAndRate = (Map<String, Object>) subresult.get('rate');
+                shippingOptions.add(new ShippingOptionsAndRatesFromExternalService(
+                    (String) providerAndRate.get('name'),
+                    (String) providerAndRate.get('serviceCode'),
+                    (Decimal) providerAndRate.get('shipmentCost'),
+                    (Decimal) providerAndRate.get('otherCost'),
+                    (String) providerAndRate.get('serviceName')
+                ));
+            }
         }
+        
         return shippingOptions;
     }
-
-    private String getShippingOptionsResponse(List<CartDeliveryGroup> deliveryGroups) {
-        String name1 = 'Delivery Method 1';
-        String name2 = 'Delivery Method 2';
+    
+    private String getShippingOptionsResponse(CartDeliveryGroup deliveryGroup, List<Shipping_Cost_Rules__mdt> shippingCostList) {
+        // Ensure shippingCostList is not null and has at least one element before accessing its first element.
+        if (shippingCostList != null && !shippingCostList.isEmpty()) {
+            String name1 = 'FedEx Ground';
+        String name2 = 'Overnight shipping';
+            String name3='1 day shipping';
         String serviceName1 = 'Test Carrier 1';
         String serviceName2 = 'Test Carrier 2';
-        return '[{"status":"calculated","rate":{"name":"'+name1+'","serviceName":"'+serviceName1+'","serviceCode":"SNC9600","shipmentCost":11.99,"otherCost":5.99}},{"status":"calculated","rate":{"name":"'+name2+'","serviceName":"'+serviceName2+'","serviceCode":"SNC9600","shipmentCost":15.99,"otherCost":6.99}}]';
+            return '[{"status":"calculated","rate":{"name":"Ground","serviceName":"Test Carrier 1","serviceCode":"SNC9600","shipmentCost":' + shippingCostList[0].Shipping_Cost__c + ',"otherCost":5.99}},{"status":"calculated","rate":{"name":"'+name1+'","serviceName":"'+serviceName2+'","serviceCode":"SNC9600","shipmentCost":11.99,"otherCost":6.99}},{"status":"calculated","rate":{"name":"'+name2+'","serviceName":"'+serviceName2+'","serviceCode":"SNC9600","shipmentCost":18.19,"otherCost":6.99}},{"status":"calculated","rate":{"name":"'+name3+'","serviceName":"'+serviceName2+'","serviceCode":"SNC9600","shipmentCost":25.99,"otherCost":6.99}}]';
+               // return '[{"status":"calculated","rate":{"name":"'+name1+'","serviceName":"'+serviceName1+'","serviceCode":"SNC9600","shipmentCost":"'+stateTaxRates.get(deliveryGroups[0].DeliverToStateCode)+'","otherCost":5.99}},{"status":"calculated","rate":{"name":"'+name2+'","serviceName":"'+serviceName2+'","serviceCode":"SNC9600","shipmentCost":15.99,"otherCost":6.99}}]';
+
+        } else {
+            // Handle the case when shippingCostList is empty.
+            // You might want to return a default response or throw an exception here.
+            return '[]';
+        }
     }
 
-    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromExternalService (Integer numberOfUniqueItems,List<CartDeliveryGroup> deliveryGroups) {
+    private ShippingOptionsAndRatesFromExternalService[] getShippingOptionsAndRatesFromExternalService () {
         final Integer successfulHttpRequest = 200;
 
         ShippingOptionsAndRatesFromExternalService[] shippingOptions = new List<ShippingOptionsAndRatesFromExternalService>();
@@ -132,7 +121,7 @@ global with sharing class B2BDeliverySample implements sfdc_checkout.CartShippin
                 shippingOptions.add( new ShippingOptionsAndRatesFromExternalService(
                     (String) providerAndRate.get('name'),
                     (String) providerAndRate.get('serviceCode'),
-                    (Decimal) providerAndRate.get('shipmentCost') * numberOfUniqueItems, // Multiply so shipping costs can change; remove when using a real shipping provider
+                    (Decimal) providerAndRate.get('shipmentCost'), // Multiply so shipping costs can change; remove when using a real shipping provider
                     (Decimal) providerAndRate.get('otherCost'),
                     (String) providerAndRate.get('serviceName')
                 ));

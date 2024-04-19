@@ -46,7 +46,7 @@
       "type" : "component"
     },
     "dataProviders" : [ ],
-    "themeLayoutType" : "External",
+    "themeLayoutType" : "Inner",
     "viewType" : "payment-processing"
   }
 }

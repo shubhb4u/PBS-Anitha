@@ -238,6 +238,28 @@
                   "id" : "b8435cae-cbf6-4138-a682-eef155dcd672",
                   "type" : "component"
                 }, {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Select Shipping Method",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\":true}",
+                    "textDisplayInfo" : "{}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "0b85592f-668e-44d3-bbe0-4244f4140897",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "richTextValue" : "<form action=\"/action_page.php\">\n \n  <select name=\"deliveryoptions\" id=\"deliveryoptions\" style=\"width: 622px; height: 35px;\">\n    <option value=\"fedexground\">FedEx Ground</option>\n    <option value=\"Fedexsameday\" disabled>FedEx SameDay</option>\n    <option value=\"FedEx2day\"disabled>FedEx 2Day®</option>\n    \n  </select>\n</form>"
+                  },
+                  "definition" : "community_builder:htmlEditor",
+                  "id" : "dc1bba91-d408-4505-9f27-c7d7f25f96f8",
+                  "type" : "component"
+                }, {
                   "attributes" : { },
                   "children" : [ {
                     "children" : [ {

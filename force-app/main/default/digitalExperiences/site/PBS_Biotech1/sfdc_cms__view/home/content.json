@@ -211,25 +211,6 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
-            "maxContentWidth" : "",
-            "sectionColumnGutterWidth" : "",
-            "sectionConfig" : "{\"UUID\":\"9be36459-a75a-4c90-942e-2c13eeb8451c\",\"columns\":[{\"UUID\":\"b03f215c-afee-463a-ac38-3e2a2d58f2a3\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
-          },
-          "children" : [ {
-            "id" : "b03f215c-afee-463a-ac38-3e2a2d58f2a3",
-            "name" : "col1",
-            "title" : "Column 1",
-            "type" : "region"
-          } ],
-          "customCssClasses" : "video-section",
-          "definition" : "community_layout:section",
-          "id" : "9be36459-a75a-4c90-942e-2c13eeb8451c",
-          "type" : "component"
-        }, {
-          "attributes" : {
-            "backgroundImageConfig" : "",
-            "backgroundImageOverlay" : "rgba(0,0,0,0)",
-            "componentSpacerSize" : "",
             "dxpStyle" : {
               "padding" : {
                 "bottom" : "",
@@ -841,24 +822,6 @@
             "componentSpacerSize" : "",
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
-            "sectionConfig" : "{\"UUID\":\"2c31f499-33c7-49c1-b987-070193be0d87\",\"columns\":[{\"UUID\":\"2b239412-e6bc-4a94-9def-05222838e60d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
-          },
-          "children" : [ {
-            "id" : "2b239412-e6bc-4a94-9def-05222838e60d",
-            "name" : "col1",
-            "title" : "Column 1",
-            "type" : "region"
-          } ],
-          "definition" : "community_layout:section",
-          "id" : "2c31f499-33c7-49c1-b987-070193be0d87",
-          "type" : "component"
-        }, {
-          "attributes" : {
-            "backgroundImageConfig" : "",
-            "backgroundImageOverlay" : "rgba(0,0,0,0)",
-            "componentSpacerSize" : "",
-            "maxContentWidth" : "",
-            "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"e4565ba1-69dd-4f51-ac98-f27793d2fa2e\",\"columns\":[{\"UUID\":\"67832d4c-d4f7-4476-ba61-a04de6d81ce7\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
           },
           "children" : [ {
@@ -878,7 +841,7 @@
                 "buttonGroupWidth" : 50,
                 "contentPadding" : "none",
                 "contentPosition" : "center left",
-                "contentWidth" : 40,
+                "contentWidth" : 50,
                 "dxpStyle" : {
                   "margin" : {
                     "bottom" : "",
@@ -941,7 +904,7 @@
                     "text" : "Share your research and WIN up to $2,000 towards the next cell and gene therapy conference!  Enter now and secure your chance for a PBS Biotech Partnership Award.",
                     "textAlign" : "left",
                     "textColor" : "rgb(255, 255, 255)",
-                    "textDecoration" : "{}",
+                    "textDecoration" : "{\"bold\":false}",
                     "textDisplayInfo" : "{\"textStyle\":\"heading-small\",\"headingTag\":\"h4\"}"
                   },
                   "definition" : "dxp_base:textBlock",

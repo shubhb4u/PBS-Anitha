@@ -3,8 +3,8 @@
     <actionCalls>
         <name>acc</name>
         <label>acc</label>
-        <locationX>176</locationX>
-        <locationY>431</locationY>
+        <locationX>308</locationX>
+        <locationY>384</locationY>
         <actionName>Account.New_Account_Creation</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -43,8 +43,8 @@
     <recordUpdates>
         <name>Update_Status</name>
         <label>Update Status</label>
-        <locationX>176</locationX>
-        <locationY>323</locationY>
+        <locationX>308</locationX>
+        <locationY>276</locationY>
         <connector>
             <targetReference>acc</targetReference>
         </connector>
@@ -59,11 +59,18 @@
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
-        <connector>
-            <targetReference>Update_Status</targetReference>
-        </connector>
         <object>Account</object>
         <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>Scheduled</name>
+            <connector>
+                <targetReference>Update_Status</targetReference>
+            </connector>
+            <label>Scheduled</label>
+            <offsetNumber>0</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>

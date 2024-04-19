@@ -1,22 +1,38 @@
 Public class generateQuotePdfDocument{
     
-    @InvocableMethod
-    public static void CreateQuote(List<id> quoteIds)  
+     @InvocableMethod
+     public static void CreateQuote(List<id> quoteIds)  
+     { 
+    
+         createQuoteFutureMethod(quoteIds);
+         System.debug('quoteIds are -->>' + quoteIds);
+     }
+
+    /*public static void CreateQuoteonInsert(List<quote> insertedQuotes)  
     { 
     
-        createQuoteFutureMethod(quoteIds);
-        System.debug('quoteIds are -->>' + quoteIds);
-    }
+        List<Id> quoteIds = new List<Id>();
+        if(!insertedQuotes.isEmpty()){
+            for(Quote qu :  insertedQuotes){
+                quoteIds.add(qu.id);
+            }
+            System.debug('quoteIds are -->>' + quoteIds);
+        }
+        
+        if(!quoteIds.isEmpty()){
+            System.debug('createQuoteFutureMethod  called');
+            createQuoteFutureMethod(quoteIds);
+        }
+        
+    }*/
     
     @future(callout=true)
     public static void createQuoteFutureMethod (List<Id> quoteIds) {
 
         System.debug('quoteIds are -->>' + quoteIds);
 
-
         //Initialize the quote url
         String quoteUrl = '/quote/quoteTemplateDataViewer.apexp?';
-        System.debug('quoteUrl is -->>' + quoteUrl);
         
         //Get the Quote Template Id from Custom Settings
         String quoteTemplateId = Label.QuoteTemplateId_PBS;
@@ -59,7 +75,6 @@ Public class generateQuotePdfDocument{
             Database.insert(lstQuoteDoc);
             System.debug('lstQuoteDoc are -->>' + lstQuoteDoc);
 
-            
         }
         
     }

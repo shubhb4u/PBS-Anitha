@@ -12,12 +12,14 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
     @track quoteId;
     @track downloadPdfUrl  = '';
     @track contentDist;
+    
     // @track conDist =  [];
     // @track showDownloadButton;
 
     connectedCallback() {
         console.log('Welcome to DisplayQuotezre:');
         console.log('contactId:', this.contactId);
+
     }
 
     @wire(getRecord, { recordId: USER_ID, fields: [CONTACT_ID] })
@@ -41,6 +43,11 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
                 .then(result => {
                     console.log('DisplayQuoteRecords resultes ->>>', result);
                     this.Quotes = result;
+
+                    //Adding a property to our quotes to hide/display download button -  
+                    this.Quotes.forEach((el) => {
+                        el.showButton = el.Status === 'Approved' || el.Status === 'Accepted';
+                    })
                 })
                 .catch(error => {
                     console.error('Error fetching quotes:', error);
@@ -52,7 +59,6 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
     handleViewCode(event) {
         const quoteId = event.target.dataset.quoteId;
         const quoteName = event.target.dataset.quoteName; // Retrieve quote name dynamically
-        
 
         // Construct the URL with dynamic parameters
         const url = `/quote/${quoteId}/${quoteName}`;
@@ -74,7 +80,6 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
 
         this.quoteId = event.target.dataset.quoteDownid;
         console.log('Quote id for download pdf is ->>', this.quoteId);
-    
         if (this.quoteId) {
             console.log('Quote Id for downloading quote is -->> ' + this.quoteId);
             // Fetch quotes only if contactId is available
@@ -84,7 +89,6 @@ export default class DisplayQuoteRecords extends NavigationMixin(LightningElemen
                     this.contentDist = result;
                     console.log('contentDist link is  ->>>', result);
                     this.navigateToDownloadPDF();
-                    
                 })
                 .catch(error => {
                     console.error('Error fetching contentDist:', error);

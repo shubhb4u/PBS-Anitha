@@ -19,7 +19,23 @@
                         <button class="slds-button slds-button_brand" onclick={handleViewCode} data-quote-id={quote.Id}
                         data-quote-name={quote.Name}>View Quote</button>
 
-                        <button class="slds-button slds-button_brand" onclick={handleDownloadQuotePdf} data-quote-downid={quote.Id}>Download Quote</button>
+                        <!-- Disable the button if Quote status is not "Approved" -->
+                       
+                        <template if:true={quote.showButton}>
+                            <button class="slds-button slds-button_brand" 
+                                onclick={handleDownloadQuotePdf} 
+                                data-quote-downid={quote.Id}>Download Quote
+                            </button>
+                        </template>
+                        <template if:false={quote.showButton}>
+                            <button class="slds-button slds-button_brand" 
+                                disabled
+                                data-quote-downid={quote.Id}>Download Quote
+                            </button>
+                            <p class="slds-p-horizontal_small" style="color: red; font-size:small;">
+                                Only approved quotes can be downloaded.
+                            </p>
+                        </template>
                     </div>
                 </div>
             </template>

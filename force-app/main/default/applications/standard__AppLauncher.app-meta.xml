@@ -7,4 +7,5 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <tabs>standard-AppLauncher</tabs>
     <tabs>standard-Quote</tabs>
+    <tabs>B2B_Customer__c</tabs>
 </CustomApplication>

@@ -183,6 +183,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CustomerApplicationFormController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CustomerController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DisplayQuoteRecords</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -272,6 +280,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>getProductDetails</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>recsController_PBS</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -13908,6 +13920,9 @@
         <flow>send_email_account_owner</flow>
     </flowAccesses>
     <layoutAssignments>
+        <layout>B2B_Customer__c-B2B Customer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>BackgroundOperation-Background Operation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -14011,6 +14026,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuoteLineItem-Quote Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Shipping_Cost_Rules__mdt-Shipping Cost Rules Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>TaxGeoConfig-Tax Geo Configuration Layout</layout>
@@ -14153,6 +14171,10 @@
         <recordType>SBQQ__ConfigurationAttribute__c.SBQQ__Global_Attribute</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>B2B_Customer__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>Hidden</visibility>
