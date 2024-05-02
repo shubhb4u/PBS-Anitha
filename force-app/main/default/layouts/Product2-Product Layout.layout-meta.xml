@@ -31,6 +31,10 @@
                 <behavior>Edit</behavior>
                 <field>Product_Exempt__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Inventory_Available__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -92,6 +96,13 @@
         <relatedList>RelatedProductCategories</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>PurchaseQuantityRule</fields>
+        <fields>Minimum</fields>
+        <fields>Maximum</fields>
+        <fields>Increment</fields>
+        <relatedList>ProductQuantityRules</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>Policy</fields>
         <fields>PolicyCreatedBy</fields>
         <fields>IsPolicyActive</fields>
@@ -102,6 +113,10 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedPricebookEntryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>PriceBookEntry_PBS__c.Product_PBS__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>

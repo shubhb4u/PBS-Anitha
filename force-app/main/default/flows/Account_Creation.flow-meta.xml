@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <name>acc</name>
-        <label>acc</label>
-        <locationX>308</locationX>
-        <locationY>384</locationY>
-        <actionName>Account.New_Account_Creation</actionName>
-        <actionType>emailAlert</actionType>
+        <name>Test_Email</name>
+        <label>Test Email</label>
+        <locationX>50</locationX>
+        <locationY>276</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
-            <name>SObjectRowId</name>
+            <name>emailAddresses</name>
             <value>
-                <elementReference>$Record.Id</elementReference>
+                <stringValue>sathalye@salesforce.com</stringValue>
             </value>
         </inputParameters>
-        <nameSegment>Account.New_Account_Creation</nameSegment>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Sample Email</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Account</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
         <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>60.0</apiVersion>
@@ -40,32 +52,16 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordUpdates>
-        <name>Update_Status</name>
-        <label>Update Status</label>
-        <locationX>308</locationX>
-        <locationY>276</locationY>
-        <connector>
-            <targetReference>acc</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>Status__c</field>
-            <value>
-                <stringValue>Pending Verification</stringValue>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
+        <connector>
+            <targetReference>Test_Email</targetReference>
+        </connector>
         <object>Account</object>
         <recordTriggerType>Create</recordTriggerType>
         <scheduledPaths>
             <name>Scheduled</name>
-            <connector>
-                <targetReference>Update_Status</targetReference>
-            </connector>
             <label>Scheduled</label>
             <offsetNumber>0</offsetNumber>
             <offsetUnit>Minutes</offsetUnit>
@@ -74,4 +70,9 @@
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
+    <textTemplates>
+        <name>Account</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Sample Email Body&lt;/p&gt;</text>
+    </textTemplates>
 </Flow>

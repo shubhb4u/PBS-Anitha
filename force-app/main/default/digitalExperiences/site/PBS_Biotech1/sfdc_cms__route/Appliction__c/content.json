@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Appliction",
+  "contentBody" : {
+    "activeViewId" : "Appliction",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-appliction",
+    "urlPrefix" : "appliction"
+  }
+}

@@ -183,7 +183,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CustomerApplicationFormController</apexClass>
+        <apexClass>CustomerApplicationController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -207,6 +207,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>InsertCustomer</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>MicrobatchSelfRegController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -224,6 +228,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>PdfUploaderController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PopulatePriceBookEntry_PBS</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -271,6 +279,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>UpdatePDFLinkonQuoteTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>companyName</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>generateQuotePdfDocument</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -284,6 +300,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>recsController_PBS</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>recsController_PBSBiotech</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1145,6 +1165,206 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.AccountNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Account_OpenedSince31__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Account_Opened_Since32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Account_Opened_Since33__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Address31__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Address32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Address33__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Bank_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.City__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Company_Billing_Address__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Company_Name31__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Company_Name32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Company_Name33__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Company_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Credit_Limit31__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Credit_Limit32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Credit_Limit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Current_Balance32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Current_Balance33__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Current_Balance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.DNB_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.E_mail31__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.E_mail32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.E_mail33__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.E_mail_Billing__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.E_mail_Purchasing__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.How_long_at_current_address__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Other_Loan__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Phone1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Phone31__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Phone32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Phone33__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Phone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Primary_Finance_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.State_Providence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Tax_I_D_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Type_of_Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Type_of_Business__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>B2B_Customer__c.Zip_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>BusinessBrand.OrgId</field>
         <readable>false</readable>
@@ -1938,6 +2158,56 @@
         <editable>false</editable>
         <field>CommSubscriptionTiming.PreferredTimeZone</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Account_Opened_Since__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.City__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Country__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Credit_Limit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Current_Balance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Phone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Postal_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.State__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Name__c.Street__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -5585,6 +5855,21 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>PriceBookEntry_PBS__c.Price_Book_PBS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>PriceBookEntry_PBS__c.Product_PBS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>PriceBookEntry_PBS__c.Unit_Price_PBS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Problem.Category</field>
         <readable>false</readable>
@@ -5668,6 +5953,11 @@
         <editable>false</editable>
         <field>Product2.Family</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.Inventory_Available__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -6232,7 +6522,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Quote.PBS_Pdf_Download__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -13361,6 +13651,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Shipping_Cost_Rules__mdt.Max_Order_Value__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Shipping_Cost_Rules__mdt.Min_Order_Value__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Shipping_Cost_Rules__mdt.Shipping_Cost__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Shipping_Cost_Rules__mdt.State__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Shipping_Cost_Rules__mdt.min__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Solution.IsPublished</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -13905,6 +14220,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Creation</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Generate_Quote_PDF</flow>
     </flowAccesses>
     <flowAccesses>
@@ -13914,6 +14233,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Send_Confirmation_Email_to_Owner</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>flow_desc</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -13953,6 +14276,9 @@
         <layout>CommerceEntitlementProduct-Entitlement Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Company_Name__c-Company Name Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Coupon-Coupon Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -13980,6 +14306,9 @@
         <layout>PriceAdjustmentTier-Price Adjustment Tier Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>PriceBookEntry_PBS__c-PriceBookEntry PBS Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ProductAttribute-Product Attribute Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -14001,6 +14330,9 @@
         <layout>ProductMedia-Product Media Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ProductQuantityRule-Product Quantity Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ProductSellingModel-Product Selling Model Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -14020,6 +14352,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>PromotionTarget-Promotion Target Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PurchaseQuantityRule-Quantity Rule Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Quote-Quote Layout</layout>

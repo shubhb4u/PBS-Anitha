@@ -15,11 +15,6 @@
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
-              "definition" : "c:customerApplicationForm",
-              "id" : "b45aa073-83b2-4c7d-a880-bba16cc97a10",
-              "type" : "component"
-            }, {
               "attributes" : {
                 "backgroundColor" : "",
                 "bannerAlignment" : "center",
@@ -164,6 +159,12 @@
           },
           "children" : [ {
             "children" : [ {
+              "attributes" : { },
+              "customCssClasses" : "creditform",
+              "definition" : "c:sampleform",
+              "id" : "9ae27867-e66f-411a-a8a5-1c3bc28b4040",
+              "type" : "component"
+            }, {
               "attributes" : {
                 "backgroundColor" : "",
                 "dxpStyle" : {
@@ -303,11 +304,6 @@
               "customCssClasses" : "",
               "definition" : "commerce_builder:quickOrder",
               "id" : "b2714fbe-2dc3-43f8-a9ee-9807df363e89",
-              "type" : "component"
-            }, {
-              "attributes" : { },
-              "definition" : "c:customerApplicationForm",
-              "id" : "328d438d-b249-4f1b-9e4e-625942104153",
               "type" : "component"
             } ],
             "id" : "b4b902d1-bbd0-459b-87cd-205da2e3c7db",
@@ -665,11 +661,6 @@
                   } ],
                   "definition" : "dxp_content_layout:banner",
                   "id" : "d47b05fc-b550-4309-a83f-3a5813dc6d6a",
-                  "type" : "component"
-                }, {
-                  "attributes" : { },
-                  "definition" : "c:customerApplicationForm",
-                  "id" : "63ef3f79-0870-456e-9ee4-00ace3bfaed4",
                   "type" : "component"
                 }, {
                   "attributes" : {

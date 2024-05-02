@@ -1,55 +1,67 @@
-import { LightningElement,api } from 'lwc';
-import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import { LightningElement, track } from 'lwc';
+import submitApplication from '@salesforce/apex/CustomerApplicationController.submitApplication';
 
-export default class AddressAutocomplete_UsingGoogleAPI extends LightningElement {
-    @api recordId;
-    @api objectAPIName;
-    strName = 'test123';
-    strStreet;
-    strCity;
-    strState;
-    strCountry;
-    strPostalCode;
-    handleSuccess( event ) {
-    console.log( 'Updated Record Id is ', event.detail.id );
-    this.dispatchEvent(
-    new ShowToastEvent({
-    title: 'Successful Record Update',
-    message: 'Record Updated Surccessfully!!!',
-    variant: 'success'
-    })
-    );
-    }
-    handleSubmit( event )
-    
-    {
-    let fields = event.detail.fields;
-    console.log( 'Fields are ' + JSON.stringify( fields ) );
-    event.preventDefault();
-    if ( this.objectAPIName === 'B2B_Customer__c' ) {
+export default class CustomerApplicationForm extends LightningElement {
+    @track name = '';
+    @track companyName= '';
+    @track date= '';
+    @track type = '';
+    typeOptions = [
+        { label: 'Option 1', value: 'Corporation' },
+        { label: 'Option 2', value: 'Non-Corporation' },
+        
+    ];
+    @track phone = '';
+    @track phoneval = '';
+    @track email = '';
+    @track emailval = '';
+    @track address = '';
 
-    fields.Company_Billing_Address__Street__s = this.strStreet;
-    fields.Name = this.strName;
-    //fields.BillingCity = this.strCity;
-    //fields.BillingState = this.strState;
-    //fields.BillingCountry = this.strCountry;
-    //fields.BillingPostalCode = this.strPostalCode;
-    } else if ( this.objectAPIName === 'Contact' ) {
-    fields.MailingStreet = this.strStreet;
-    fields.MailingCity = this.strCity;
-    fields.MailingState = this.strState;
-    fields.MailingCountry = this.strCountry;
-    fields.MailingPostalCode = this.strPostalCode;
+    handleNameChange(event) {
+        this.name = event.target.value;
     }
-    this.template.querySelector( 'lightning-record-edit-form' ).submit( fields );
+    handleCompanyNameChange(event) {
+        this.companyName = event.target.value;
     }
-    addressInputChange( event ) {
-    this.strStreet = event.target.street;
-    this.strCity = event.target.city;
-    this.strState = event.target.province;
-    this.strCountry = event.target.country;
-    this.strPostalCode = event.target.postalCode;
+    handleDateChange(event) {
+        this.date = event.target.value;
+    }
+    handleTypeChange(event) {
+        this.type = event.target.value;
     }
 
+    handlePhoneChange(event) {
+        this.phone = event.target.value;
+    }
+    handlePhone(event) {
+        this.phoneval = event.target.value;
+    }
+    handleEmailChange(event) {
+        this.email = event.target.value;
+    }
+    handleEmailChangeval(event) {
+        this.emailval = event.target.value;
+    }
 
+    handleAddressChange(event) {
+        this.address = event.target.value;
+    }
+
+    handleSubmit() {
+        // Implement your submission logic here, such as sending data to a server
+        console.log('Name:', this.name);
+        console.log('Phone:', this.phone);
+        console.log('Address:', this.address);
+
+        // Reset fields after submission
+        this.name = '';
+        this.companyName= '';
+        this.date = '';
+        this.type= '';
+        this.phone = '';
+        this.phoneval = '';
+        this.email = '';
+        this.emailval = '';
+        this.address = '';
+    }
 }

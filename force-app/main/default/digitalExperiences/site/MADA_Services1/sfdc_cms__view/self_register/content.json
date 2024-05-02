@@ -23,6 +23,13 @@
               "definition" : "dxp_content_layout:siteLogo",
               "id" : "c2c88dd0-2787-44c8-8f0f-98384adfb83e",
               "type" : "component"
+            }, {
+              "attributes" : {
+                "flowName" : "{\"flowName\":\"Creation\",\"flowLabel\":\"Creation\"}"
+              },
+              "definition" : "dxp_flow:flow",
+              "id" : "7dc4328b-9d8f-4f84-ad33-872977aa330b",
+              "type" : "component"
             } ],
             "id" : "eedf003c-c464-48ff-a059-fbb418998601",
             "name" : "col1",

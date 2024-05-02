@@ -1,46 +1,6 @@
 public with sharing class updatePDFLinkonQuote {
 
-    // public static void handleContentVersion(List<ContentVersion> newContentDistributions, Map<Id, ContentVersion> oldMap) {
-    //     List<Id> contentDocumentIds = new List<Id>();
-        
-    //     for (ContentDistribution cd : newContentDistributions) {
-    //         // Check if the ContentDocumentId is present and the record is new or the DistributionPublicUrl field has changed
-    //         if (cd.ContentDocumentId != null && (oldMap == null || cd.DistributionPublicUrl != oldMap.get(cd.Id).DistributionPublicUrl)) {
-    //             contentDocumentIds.add(cd.ContentDocumentId);
-    //         }
-    //     }
-        
-    //     // Query ContentDocumentLink records related to ContentDocumentIds
-    //     Map<Id, Id> contentDocumentToQuoteMap = new Map<Id, Id>();
-    //     for (ContentDocumentLink cdl : [SELECT ContentDocumentId, LinkedEntityId FROM ContentDocumentLink WHERE ContentDocumentId IN :contentDocumentIds]) {
-    //         contentDocumentToQuoteMap.put(cdl.ContentDocumentId, cdl.LinkedEntityId);
-    //     }
-        
-    //     // Query Quote records related to ContentDocumentLink records
-    //     Map<Id, Quote> quotesToUpdate = new Map<Id, Quote>();
-    //     for (Id contentDocumentId : contentDocumentToQuoteMap.keySet()) {
-    //         Id quoteId = contentDocumentToQuoteMap.get(contentDocumentId);
-    //         if (!quotesToUpdate.containsKey(quoteId)) {
-    //             quotesToUpdate.put(quoteId, new Quote(Id = quoteId, PBS_Pdf_Download__c = ''));
-    //         }
-    //     }
-        
-    //     // Update Quote records with DistributionPublicUrl
-    //     for (ContentDistribution cd : newContentDistributions) {
-    //         if (contentDocumentToQuoteMap.containsKey(cd.ContentDocumentId)) {
-    //             Quote relatedQuote = quotesToUpdate.get(contentDocumentToQuoteMap.get(cd.ContentDocumentId));
-    //             relatedQuote.PBS_Pdf_Download__c = cd.DistributionPublicUrl;
-    //         }
-    //     }
-        
-    //     // Perform update on Quote records
-    //     if (!quotesToUpdate.isEmpty()) {
-    //         update quotesToUpdate.values();
-    //     }
-    // }
-
-
-    // ***************************************************************************************************************************
+    
     
     public static void updatePdfUrlonQuote(List<ContentVersion> conVerList){
 
@@ -90,7 +50,6 @@ public with sharing class updatePDFLinkonQuote {
         if (!updateQuotes.isEmpty()) {
             update updateQuotes;
         }
-
 
     }
 }

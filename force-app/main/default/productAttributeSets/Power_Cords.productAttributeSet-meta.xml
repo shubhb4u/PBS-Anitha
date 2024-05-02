@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductAttributeSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Power cords for the product</description>
+    <developerName>Power_Cords</developerName>
+    <masterLabel>Power Cords</masterLabel>
+    <productAttributeSetItems>
+        <field>Power_Cords__c</field>
+        <sequence>0</sequence>
+    </productAttributeSetItems>
+</ProductAttributeSet>

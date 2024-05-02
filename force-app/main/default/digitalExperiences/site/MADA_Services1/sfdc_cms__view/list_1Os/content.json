@@ -54,7 +54,7 @@
                 "noOrderMessageText" : "After you place an order, it appears here.",
                 "noResultsText" : "To view orders, adjust your filters.",
                 "numberOfMonthsForFilter" : 12,
-                "orderSummaryFieldMapping" : "[{\"entity\": \"OrderSummary\",\"name\": \"Id\",\"label\": \"Order Number\",\"type\": \"Lookup()\"},{\"entity\": \"OrderSummary\",\"name\": \"OrderedDate\",\"label\": \"Ordered Date\",\"type\": \"Date/Time\"},{\"entity\": \"OrderSummary\",\"name\": \"Status\",\"label\": \"Status\",\"type\": \"Picklist\"},{\"entity\": \"OrderSummary\",\"name\": \"GrandTotalAmount\",\"label\": \"Total\",\"type\": \"Formula (Currency)\"}]",
+                "orderSummaryFieldMapping" : "[{\"entity\":\"OrderSummary\",\"name\":\"Id\",\"label\":\"Order Number\",\"type\":\"Lookup()\"},{\"entity\":\"OrderSummary\",\"name\":\"OrderedDate\",\"label\":\"Ordered Date\",\"type\":\"Date/Time\"},{\"entity\":\"OrderSummary\",\"name\":\"Description\",\"label\":\"Description\",\"type\":\"Long Text Area(1175)\"},{\"entity\":\"OrderSummary\",\"name\":\"GrandTotalAmount\",\"label\":\"Total\",\"type\":\"Formula (Currency)\"},{\"entity\":\"OrderSummary\",\"name\":\"Description\",\"label\":\"Description\",\"type\":\"Long Text Area(1175)\"}]",
                 "ordersListCount" : 25,
                 "reorderLabel" : "Start Reorder",
                 "showMoreLabel" : "Show More",

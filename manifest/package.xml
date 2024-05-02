@@ -190,6 +190,7 @@
 		<members>AuthorizationFormConsent</members>
 		<members>AuthorizationFormDataUse</members>
 		<members>AuthorizationFormText</members>
+		<members>B2B_Customer__c</members>
 		<members>BatchJob</members>
 		<members>BatchJobPart</members>
 		<members>BatchJobPartFailedRecord</members>
@@ -244,6 +245,7 @@
 		<members>CommerceEntitlementBuyerGroup</members>
 		<members>CommerceEntitlementPolicy</members>
 		<members>CommerceEntitlementProduct</members>
+		<members>Company_Name__c</members>
 		<members>ConsumptionRate</members>
 		<members>ConsumptionSchedule</members>
 		<members>Contact</members>
@@ -386,6 +388,7 @@
 		<members>PaymentLineInvoice</members>
 		<members>PaymentMethod</members>
 		<members>PersonAccount</members>
+		<members>PriceBookEntry_PBS__c</members>
 		<members>Pricebook2</members>
 		<members>PricebookEntry</members>
 		<members>PrivacyJobSession</members>
@@ -532,6 +535,7 @@
 		<members>ShippingConfigurationSet</members>
 		<members>ShippingRateArea</members>
 		<members>ShippingRateGroup</members>
+		<members>Shipping_Cost_Rules__mdt</members>
 		<members>SignatureTask</members>
 		<members>SignatureTaskLineItem</members>
 		<members>Site</members>
@@ -828,6 +832,7 @@
 	</types>
 	<types>
 		<members>Colors</members>
+		<members>Power_Cords</members>
 		<name>ProductAttributeSet</name>
 	</types>
 	<types>

@@ -26,33 +26,12 @@
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Amount_0</name>
-            <conditionLogic>(1 AND 2 ) OR ( 3 AND 4 )</conditionLogic>
+            <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.Status</leftValueReference>
-                <operator>IsChanged</operator>
+                <leftValueReference>$Record.TotalPrice</leftValueReference>
+                <operator>GreaterThan</operator>
                 <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Status</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Approved</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>RecordIsNew</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Status</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Draft</stringValue>
+                    <numberValue>0.0</numberValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -94,12 +73,19 @@
         <connector>
             <targetReference>Quote_Amount</targetReference>
         </connector>
-        <filterLogic>(1 AND 2) OR 3</filterLogic>
+        <filterLogic>(1 OR 2) AND (3 OR 4)</filterLogic>
         <filters>
             <field>Status</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Accepted</stringValue>
             </value>
         </filters>
         <filters>
@@ -110,15 +96,15 @@
             </value>
         </filters>
         <filters>
-            <field>Status</field>
-            <operator>EqualTo</operator>
+            <field>TotalPrice</field>
+            <operator>IsChanged</operator>
             <value>
-                <stringValue>Draft</stringValue>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>Quote</object>
-        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
 </Flow>

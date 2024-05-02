@@ -1,0 +1,112 @@
+h2 {
+    padding-top: 25px;
+    color: #f77c00;
+    font-weight: 800;
+    font-size: 22px;
+    text-align: center;
+}
+ 
+.sampleform{
+    background-color: #f3f3f3;
+    font-weight: 400
+}
+ 
+/* .custom-input{
+    width: 70%;
+    height: 50px;
+    line-height: 25px;
+} */
+ 
+/* label {
+    margin-bottom: .25rem;
+    font-weight: 500;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: 700;
+    display: block;
+} */
+
+/* .slds-p-around_medium, .sampleform {
+    text-align: unset;
+} */
+
+/* .company{
+    columns: 1fr 1fr 1fr;
+    display: flex;
+
+} */
+
+
+/* .company1, .company2, .company3{
+    width: 35%;
+    left: 80px;
+    position: relative;
+} */
+
+
+
+
+/* .page3{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    column-gap: 30px;
+    grid-template-rows: auto;
+    
+    grid-auto-columns: 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    top: 10px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+} */
+
+
+
+/* .custom-input {
+    height: 50px;
+} */
+
+
+
+/* .company{
+    text-align: center;
+    position:relative;
+    right: 50px;
+} */
+
+
+
+.slds-button_brand {
+    width: 100px;
+    background-color: #f77c00;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-wrapper {
+    margin-top: 1rem; /* Adjust as needed */
+}
+
+.slds-input {
+    border: 2px solid red;
+}
+
+/* .inner {
+    display: inline-block;
+    text-align: left;
+}
+.outer {
+    text-align: center;
+} */
+
+/* 
+.custom-input input {
+    width: 200px; 
+    height: 40px;
+} */

@@ -1,0 +1,336 @@
+<template>
+    <lightning-card title="Sampleform-cc" icon-name="custom:custom14">
+        <div class="slds-p-around_medium sampleform">
+            <!-- Section 1: Customer Information -->
+            <template if:true={showSection1}>
+                <div class="sampleform" style=" margin-bottom: 20px;">
+                    <h2>BUSINESS CONTACT INFORMATION</h2>
+                </div>
+                <div class="sampleform" style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; margin-right: 10px;">
+
+                        <lightning-input class="custom-input" placeholder="e.g. John Doe" label="Customer Name"
+                            value={customerName} onchange={handleCustomerNameChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. ABC Corporation" label="Company Name"
+                            value={companyName} onchange={handleCompanyNameChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. jan 3, 2024"
+                            label="Date of Business Commenced" type="date" value={businessDate}
+                            onchange={handledateOfBusinessCommercedChange}></lightning-input>
+
+                        <lightning-combobox class="custom-input" placeholder="Select..." label="Type of Business"
+                            value={businessType} options={typeOptions} onchange={handletypeOfBusinessChange}>
+                        </lightning-combobox>
+
+                        <lightning-input class="custom-input" placeholder="e.g. 123-456-7890"
+                            label="Primary Finance Contact" type="tel" value={primaryPhone}
+                            onchange={handleprimaryFinanceContactChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. 123-456-7890" label="Phone" type="tel"
+                            value={secondaryPhone} onchange={handleSecondaryPhoneChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. email@example.com"
+                            label="E-mail-Purchasing" type="email" value={billingEmail}
+                            onchange={handleBillingEmailChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. email@example.com"
+                            label="E-mail-Billing" type="email" value={purchasingEmail}
+                            onchange={handlePurchasingEmailChange}></lightning-input>
+
+                    </div>
+                    <div class="sampleform" style="flex: 1; margin-left: 10px;">
+
+                        <!-- street -->
+                        <lightning-input class="custom-input" label="Street" value={street}
+                            placeholder="e.g., 123 Main St" onchange={handleStreetChange11}>
+                        </lightning-input>
+
+                        <!-- City -->
+                        <lightning-input class="custom-input" label="City" value={city} placeholder="e.g., New York"
+                            onchange={handleCityChange11}>
+                        </lightning-input>
+
+                        <!-- State/Province -->
+                        <lightning-input class="custom-input" label="State/Province" value={province}
+                            placeholder="e.g., California" onchange={handleProvinceChange11}>
+                        </lightning-input>
+
+                        <!-- Postal Code -->
+                        <lightning-input class="custom-input" label="Postal Code" value={postalCode}
+                            placeholder="e.g., 12345" onchange={handlePostalCodeChange11}>
+                        </lightning-input>
+
+                        <!-- Country -->
+                        <lightning-input class="custom-input" label="Country" value={country}
+                            placeholder="e.g., United States" onchange={handleCountryChange11}>
+                        </lightning-input>
+
+                        <!-- Include all fields of Section 1 -->
+                        <!-- Add onchange event handlers for each input field -->
+                    </div>
+                </div>
+            </template>
+
+            <!-- Section 2: Business Information -->
+
+            <template if:true={showSection2}>
+                <div class="outer">
+                    <div class="">
+                        <h2>CREDIT INFORMATION</h2>
+                    </div>
+                    <div class="inner">
+                        <lightning-input class="custom-input" placeholder="e.g. XYZ Bank" label="Bank Name"
+                            value={bankName} onchange={handleBankNameChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. New York" label="City" value={city}
+                            onchange={handleCityChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. California" label="State/Providence"
+                            value={stateProvince} onchange={handleStateProvinceChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="12345..." label="Zip Code" value={zipCode}
+                            onchange={handleZipCodeChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. 123-456-7890" label="Phone" type="tel"
+                            value={primaryPhone} onchange={handlePrimaryPhoneChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. 123456789" label="Tax I.D. Number"
+                            type="number" value={taxIdNumber} onchange={handleTaxIdNumberChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. 123456789" label="DNB Number"
+                            type="number" value={dnbNumber} onchange={handleDnbNumberChange}></lightning-input>
+
+                        <lightning-input class="custom-input" placeholder="e.g. 123456789" label="Account Number"
+                            type="number" value={accountNumber} onchange={handleAccountNumberChange}></lightning-input>
+
+                        <lightning-combobox class="custom-input" placeholder="Select..." label="Type of Business"
+                            value={typeOfBusiness} options={typeOptions} onchange={handleTypeOfBusinessChange2}>
+                        </lightning-combobox>
+
+                        <lightning-input class="custom-input" placeholder="e.g. $100,000 or N/A" label="Other Loan"
+                            value={otherLoan} onchange={handleOtherLoanChange}></lightning-input>
+                    </div>
+                </div>
+
+                <!-- Include all fields of Section 2 -->
+                <!-- Add onchange event handlers for each input field -->
+            </template>
+
+            <!-- Section 3: Additional Information -->
+
+
+            <template if:true={showSection3}>
+                <div style=" margin-bottom: 20px;">
+                    <div>
+                        <h2>BUSINESS/TRADE REFERENCES</h2>
+                    </div>
+                    <div style="padding: 0px 300px;">
+                        <div class="slds-grid slds-gutters">
+                            <template if:true={showCompany1}>
+                                <div class="slds-col">
+                                    <div>
+                                        <h2 class="company">Company 1</h2>
+                                    </div>
+                                    <div class="cmp1">
+                                        <lightning-input class="custom-input" placeholder="e.g., ABC Corporation"
+                                            label="Company Name" value={CompanyName1} onchange={handleCompanyNameChange31}>
+                                        </lightning-input>
+
+                                        <!-- street -->
+                                        <lightning-input class="custom-input" label="Street" value={street}
+                                            placeholder="e.g., 123 Main St" onchange={handleStreetChange11}>
+                                        </lightning-input>
+
+                                        <!-- City -->
+                                        <lightning-input class="custom-input" label="City" value={city}
+                                            placeholder="e.g., New York" onchange={handleCityChange11}>
+                                        </lightning-input>
+
+                                        <!-- State/Province -->
+                                        <lightning-input class="custom-input" label="State/Province" value={province}
+                                            placeholder="e.g., California" onchange={handleProvinceChange11}>
+                                        </lightning-input>
+
+                                        <!-- Postal Code -->
+                                        <lightning-input class="custom-input" label="Postal Code" value={postalCode}
+                                            placeholder="e.g., 12345" onchange={handlePostalCodeChange11}>
+                                        </lightning-input>
+
+                                        <!-- Country -->
+                                        <lightning-input class="custom-input" label="Country" value={country}
+                                            placeholder="e.g., United States" onchange={handleCountryChange11}>
+                                        </lightning-input>
+
+                                        <lightning-input class="custom-input" placeholder="e.g., (123) 456-7890" label="Phone"
+                                            type="tel" value={primaryPhone31} onchange={handlePrimaryPhoneChange31}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., example@email.com"
+                                            label="E-mail" type="email" value={Email1} onchange={handleEmailChange1}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., $1000.00"
+                                            label="Current Balance" type="currency" value={Currrentbalance1}
+                                            onchange={handleCurrentBalanceChange1}></lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., $5000.00" label="Credit Limit"
+                                            type="currency" value={creditLimit1} onchange={handleCreditLimitChange1}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., 2023-01-01"
+                                            label="Account Opened Since" type="date" value={accountDate1}
+                                            onchange={handleDateChange1}></lightning-input>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <template if:true={showCompany2}>
+                                <div class="slds-col">
+                                    <div>
+                                        <h2 class="company">Company 2</h2>
+                                    </div>
+                                    <div>
+                                        <lightning-input class="custom-input" placeholder="e.g., 123 Inc." label="Company Name"
+                                            value={CompanyName3} onchange={handleCompanyNameChange33}>
+                                        </lightning-input>
+                                        <!-- street -->
+                                        <lightning-input class="custom-input" label="Street" value={street}
+                                            placeholder="e.g., 123 Main St" onchange={handleStreetChange11}>
+                                        </lightning-input>
+                                        <!-- City -->
+                                        <lightning-input class="custom-input" label="City" value={city} placeholder="e.g., New York" onchange={handleCityChange11}>
+                                        </lightning-input>
+                                        <!-- State/Province -->
+                                        <lightning-input class="custom-input" label="State/Province" value={province}
+                                            placeholder="e.g., California" onchange={handleProvinceChange11}>
+                                        </lightning-input>
+                                        <!-- Postal Code -->
+                                        <lightning-input class="custom-input" label="Postal Code" value={postalCode}
+                                            placeholder="e.g., 12345" onchange={handlePostalCodeChange11}>
+                                        </lightning-input>
+                                        <!-- Country -->
+                                        <lightning-input class="custom-input" label="Country" value={country}
+                                            placeholder="e.g., United States" onchange={handleCountryChange11}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., (987) 654-3210" label="Phone"
+                                            type="tel" value={primaryPhone32} onchange={handlePrimaryPhoneChange32}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., another@example.com" label="E-mail" type="email" value={Email2} onchange={handleEmailChange2}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., $2500.00" label="Current Balance"
+                                            type="currency" value={Currrentbalance2} onchange={handleCurrentBalanceChange2}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., $10000.00" label="Credit Limit"
+                                            type="currency" value={creditLimit2} onchange={handleCreditLimitChange2}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., 2022-05-15"
+                                            label="Account Opened Since" type="date" value={accountDate2}
+                                            onchange={handleDateChange2}>
+                                        </lightning-input>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <template if:true={showCompany3}>
+                                <div class="slds-col">
+                                    <div>
+                                        <h2 class="company">Company 3</h2>
+                                    </div>
+                                    <div>
+                                        <lightning-input class="custom-input" placeholder="e.g., XYZ Enterprises"
+                                            label="Company Name" value={CompanyName2} onchange={handleCompanyNameChange32}>
+                                        </lightning-input>
+
+                                        <!-- street -->
+                                        <lightning-input class="custom-input" label="Street" value={street}
+                                            placeholder="e.g., 123 Main St" onchange={handleStreetChange11}>
+                                        </lightning-input>
+
+                                        <!-- City -->
+                                        <lightning-input class="custom-input" label="City" value={city}
+                                            placeholder="e.g., New York" onchange={handleCityChange11}>
+                                        </lightning-input>
+
+                                        <!-- State/Province -->
+                                        <lightning-input class="custom-input" label="State/Province" value={province}
+                                            placeholder="e.g., California" onchange={handleProvinceChange11}>
+                                        </lightning-input>
+
+                                        <!-- Postal Code -->
+                                        <lightning-input class="custom-input" label="Postal Code" value={postalCode}
+                                            placeholder="e.g., 12345" onchange={handlePostalCodeChange11}>
+                                        </lightning-input>
+
+                                        <!-- Country -->
+                                        <lightning-input class="custom-input" label="Country" value={country}
+                                            placeholder="e.g., United States" onchange={handleCountryChange11}>
+                                        </lightning-input>
+
+
+                                        <lightning-input class="custom-input" placeholder="e.g., (555) 123-4567" label="Phone"
+                                            type="tel" value={primaryPhone33} onchange={handlePrimaryPhoneChange33}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., email@example.com"
+                                            label="E-mail" type="email" value={Email3} onchange={handleEmailChange3}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., $750.00"
+                                            label="Current Balance" type="currency" value={Currrentbalance3}
+                                            onchange={handleCurrentBalanceChange3}></lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., $2000.00" label="Credit Limit"
+                                            type="currency" value={creditLimit3} onchange={handleCreditLimitChange3}>
+                                        </lightning-input>
+                                        <lightning-input class="custom-input" placeholder="e.g., 2024-03-20"
+                                            label="Account Opened Since" type="date" value={accountDate3}
+                                            onchange={handleDateChange3}></lightning-input>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                        <!-- Button for Company -->
+                        <div class="button-container">
+                            <!-- Previous Button -->
+                            <template if:true={showCompPrvBtn}>
+                                <div class="button-wrapper">
+                                    <lightning-button variant="success" label="Prv Comp" onclick={handleCompPrv}>
+                                    </lightning-button>
+                                </div>
+                            </template>
+            
+                            <!-- Next Button -->
+                            <template if:true={showCompNxtBtn}>
+                                <div class="button-wrapper">
+                                    <lightning-button variant="success" label="Nxt Comp" onclick={handleCompNxt}></lightning-button>
+                                </div>
+                            </template>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Include all fields of Section 3 -->
+                <!-- Add onchange event handlers for each input field -->
+            </template>
+
+            <!-- Next Button -->
+
+            <div class="button-container">
+                <!-- Previous Button -->
+                <template if:true={showPreviousButton}>
+                    <div class="button-wrapper">
+                        <lightning-button variant="success" label="Previous" onclick={handlePrevious}>
+                        </lightning-button>
+                    </div>
+                </template>
+
+                <!-- Next Button -->
+                <template if:true={showNextButton}>
+                    <div class="button-wrapper">
+                        <lightning-button variant="success" label="Next" onclick={handleNext}></lightning-button>
+                    </div>
+                </template>
+                <!-- Submit Button -->
+                <template if:true={showSubmitButton}>
+                    <div class="slds-m-top_medium">
+                        <lightning-button variant="success" label="Submit" onclick={handleSubmit}></lightning-button>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

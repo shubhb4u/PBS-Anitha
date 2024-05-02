@@ -72,7 +72,7 @@
               "attributes" : {
                 "identifierName" : "SKU#",
                 "product" : "{!Product.Details}",
-                "productDetailSummaryFieldMapping" : "[{\"name\":\"Description\",\"label\":\"Product Description\",\"type\":\"TEXTAREA\"}]"
+                "productDetailSummaryFieldMapping" : "[{\"name\":\"Description\",\"label\":\"Product Description\",\"type\":\"TEXTAREA\"},{\"name\":\"Inventory_Available__c\",\"label\":\"Inventory Available\",\"type\":\"DOUBLE\"}]"
               },
               "children" : [ {
                 "children" : [ {
@@ -232,6 +232,14 @@
               "definition" : "commerce_builder:purchaseOptions",
               "id" : "8845bf23-bf1e-40ff-80d1-07ab43673cf4",
               "type" : "component"
+            }, {
+              "attributes" : {
+                "effectiveAccountId" : "{!CurrentUser.effectiveAccountId}",
+                "recordId" : "{!recordId}"
+              },
+              "definition" : "c:quoteForProduct",
+              "id" : "c647a455-0d1a-41ff-9f17-bf2d111cb204",
+              "type" : "component"
             } ],
             "id" : "2f553813-56ab-471c-aeba-13d64031d297",
             "name" : "col2",
@@ -275,6 +283,24 @@
       }
     } ],
     "themeLayoutType" : "Inner",
-    "viewType" : "detail-01t"
+    "viewType" : "detail-01t",
+    "contentOperations" : {
+      "operations" : [ {
+        "targetId" : "c647a455-0d1a-41ff-9f17-bf2d111cb204",
+        "isHiddenOnOperationSuccess" : true,
+        "isActive" : true,
+        "rule" : {
+          "name" : "52583b58-b047-4949-9edf-6d3dbefb485d",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "Product.Details.fields.ProductCode",
+            "operator" : "Equal",
+            "value" : "VSQKD-OHRRW",
+            "criterionNumber" : 1
+          } ]
+        }
+      } ]
+    }
   }
 }

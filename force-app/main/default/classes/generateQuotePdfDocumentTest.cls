@@ -5,7 +5,7 @@ private class generateQuotePdfDocumentTest {
     static void setup() {
     
         //Adjust the record type based on yoru setting
-        RecordType rt = [SELECT Id FROM RecordType WHERE SObjectType = 'Opportunity' AND developerName = 'Manufacturing'];
+        // RecordType rt = [SELECT Id FROM RecordType WHERE SObjectType = 'Opportunity' AND developerName = 'Manufacturing'];
         
         Product2 product = new Product2();
         product.Name = 'Test Product ';
@@ -20,18 +20,18 @@ private class generateQuotePdfDocumentTest {
         pbe.UnitPrice = 10;
         insert pbe;
         
-        Opportunity op = new Opportunity();
-        op.Name = 'Test';
-        // op.RecordTypeId = rt.Id;
-        op.Type = 'Value Proposition';
-        op.Amount= 1200;
-        op.CloseDate = Date.today().addDays(2);
-        op.StageName = 'Created';
+        // Opportunity op = new Opportunity();
+        // op.Name = 'Test';
+        // // op.RecordTypeId = rt.Id;
+        // op.Type = 'Value Proposition';
+        // op.Amount= 1200;
+        // op.CloseDate = Date.today().addDays(2);
+        // op.StageName = 'Created';
         
-        insert op;
+        // insert op;
                 
         Quote quote = new Quote();
-        quote.OpportunityId = op.Id;
+        // quote.OpportunityId = op.Id;
         quote.Name = 'TestQuote';
         quote.ExpirationDate = Date.today().addDays(5);
         quote.Status = 'Draft';

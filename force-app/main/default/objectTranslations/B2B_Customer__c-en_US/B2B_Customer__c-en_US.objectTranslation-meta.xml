@@ -8,5 +8,24 @@
         <plural>true</plural>
         <value>B2B Customers</value>
     </caseValues>
+    <layouts>
+        <layout>B2B Customer Layout</layout>
+        <sections>
+            <label></label>
+            <section>Business Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Business/Trade References</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Credit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

@@ -58,6 +58,20 @@
               "definition" : "commerce_builder:productGallery",
               "id" : "8f8331c3-9272-44ca-9517-990b61b8f946",
               "type" : "component"
+            }, {
+              "attributes" : {
+                "productId" : "{!recordId}"
+              },
+              "definition" : "c:proRecommendation",
+              "id" : "e3c312c1-27e7-41b9-a0dd-3a486a726d4e",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "productId" : "{!recordId}"
+              },
+              "definition" : "c:proRecommendation",
+              "id" : "860232e3-318f-45ef-a221-e396c9d51906",
+              "type" : "component"
             } ],
             "id" : "2915f806-b0fa-43af-94ab-0adc9c192da4",
             "name" : "col1",

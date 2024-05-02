@@ -3,28 +3,26 @@ Public class generateQuotePdfDocument{
      @InvocableMethod
      public static void CreateQuote(List<id> quoteIds)  
      { 
-    
          createQuoteFutureMethod(quoteIds);
          System.debug('quoteIds are -->>' + quoteIds);
      }
 
-    /*public static void CreateQuoteonInsert(List<quote> insertedQuotes)  
-    { 
+    //  public static void CreateQuote(List<quote> quoteList){
+
+    //     List<Id> quoteIds = new List<Id>();
+    //     if(!quoteList.isEmpty()){
+
+    //         for(Quote qo : quoteList){
+    //             if(qo.id != null && !quoteIds.contains(qo.Id)){
+                    
+    //                 quoteIds.add(qo.Id);
+    //             }
+    //         }
+    //         System.debug('quoteIds are -->>' + quoteIds);
+    //     }
+    //     createQuoteFutureMethod(quoteIds);
+    //  }
     
-        List<Id> quoteIds = new List<Id>();
-        if(!insertedQuotes.isEmpty()){
-            for(Quote qu :  insertedQuotes){
-                quoteIds.add(qu.id);
-            }
-            System.debug('quoteIds are -->>' + quoteIds);
-        }
-        
-        if(!quoteIds.isEmpty()){
-            System.debug('createQuoteFutureMethod  called');
-            createQuoteFutureMethod(quoteIds);
-        }
-        
-    }*/
     
     @future(callout=true)
     public static void createQuoteFutureMethod (List<Id> quoteIds) {
